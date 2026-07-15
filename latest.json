@@ -1,6 +1,6 @@
 {
-  "version": "2.23",
-  "notes": "İlk sürüm: otomatik güncelleme, şifreli veritabanı, yatay baskı, Hakkımızda/İletişim.",
+  "version": "2.24",
+  "notes": "Uzaktan lisans, çeviriler (terazi/rol/marka), F2-F8 kısayolları, Alan adları, birleşik Bilgi penceresi.",
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
     {
@@ -355,7 +355,7 @@
     },
     {
       "path": "_internal/base_library.zip",
-      "sha256": "2335ed29c50e6784af4d51a8219c6dc8b2bad4718e2793293f6c0160506f06be",
+      "sha256": "4e17fbac368f54b510ba7b73fa5e83546ae55142f9d331a0a141daf4514267df",
       "size": 1397246
     },
     {
@@ -1440,9 +1440,9 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "9b5f4ba254d7298f8851efaae3b36ac33e9f5e371d195eb1b2dfefa80b4cbb8c",
-      "size": 5196887
+      "sha256": "e1e7941d0604f4c529ed7778bbf4cfbf33d5a932af24f73901a19e75262d4236",
+      "size": 5202819
     }
   ],
-  "sig": "959b60ad28921ab924f4c10ca9daa21d78e79eb8e6aca90f0f31a2cad52f9cfb"
+  "sig": "e35532c902b95fca7ff87d0cdf1fc20a851cddfa3e9c936bb8109f0df6c739f7"
 }
