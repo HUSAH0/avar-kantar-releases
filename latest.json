@@ -1,6 +1,10 @@
 {
-  "version": "2.25",
-  "notes": "Yazdırma yazı tipi ayarları (tip/boyut/kalınlık/koyuluk), A4 taşma düzeltmesi, kayıt bütünlüğü denetimi, internet durumu, Güncelleme sekmesi, beyaz temada simge düzeltmesi, Arapça sayı sıralaması.",
+  "version": "2.26",
+  "notes": {
+    "tr": "• Fiş yazı tipi ayarları: yazı tipi, boyut, kalınlık, koyuluk, satır aralığı (Ayarlar > Yazıcı)\n• A4 dikey fiş artık tek sayfaya sığıyor (13 satırlık düzen 2. sayfaya taşıyordu)\n• Ayarlar > Kaydet artık yazıcı sekmesinin TÜM alt sayfalarını kaydediyor — seçtiğiniz yazıcı artık kayboluyor değil\n• Kayıt bütünlüğü denetimi: kayıtlarda izinsiz değişiklik/silme açılışta bildirilir\n• Alt barda internet bağlantı durumu\n• Ayarlar'da Güncelleme sekmesi: sürüm + bu notlar\n• Beyaz temada görünmeyen simgeler düzeltildi\n• Arapça'da sayıların kelime sırasını bozması düzeltildi\n• Vazgeç düğmesi yanlışlıkla 'İptal Edildi' yazıyordu",
+    "en": "• Receipt font settings: family, size, weight, darkness, line spacing (Settings > Printer)\n• A4 portrait receipts now fit on one page (a 13-row layout spilled onto page 2)\n• Settings > Save now saves ALL printer sub-pages — your selected printer is no longer lost\n• Record integrity check: unauthorised changes or deletions are reported at startup\n• Internet connection status in the footer\n• New Update tab in Settings: version + these notes\n• Fixed icons being invisible on the white theme\n• Fixed numbers breaking word order in Arabic\n• The Cancel button wrongly read 'Cancelled'",
+    "ar": "• إعدادات خط الإيصال: نوع الخط، الحجم، السماكة، كثافة الحبر، تباعد الأسطر (الإعدادات ← الطابعة)\n• إيصال A4 العمودي صار يسع صفحة واحدة (كان تخطيط 13 صفاً يفيض لصفحة ثانية)\n• زر الحفظ في الإعدادات صار يحفظ كل الصفحات الفرعية للطابعة — الطابعة التي تختارها لم تعد تضيع\n• فحص سلامة السجلات: أي تعديل أو حذف غير مصرّح به يُبلَّغ عنه عند التشغيل\n• حالة الاتصال بالإنترنت في الشريط السفلي\n• تبويبة التحديث في الإعدادات: الإصدار + هذه الملاحظات\n• إصلاح اختفاء الأيقونات في الثيم الأبيض\n• إصلاح إفساد الأرقام لترتيب الكلمات في العربية\n• زر الإلغاء كان يكتب «ملغاة» خطأً"
+  },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
     {
@@ -150,8 +154,8 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "61fac76c07a7b94886e7c1391be5e1a395033767142ff8f65ed8976577060685",
-      "size": 19703808
+      "sha256": "4e5a7ea158f1755e91bef7168d818983beb122c3ff498df43b466b246197b7b3",
+      "size": 19713536
     },
     {
       "path": "configs/indikator_presets.json",
@@ -459,5 +463,5 @@
       "size": 75264
     }
   ],
-  "sig": "ed45b2d3334fbb57c5003e995bc6ba0f937ea74ef1779bede6d5b3cf983ad28a"
+  "sig": "8b5ce5292895b8d26525b1b6d6ce5cc17a73b2a0388efdca4fc299884ae8c1cb"
 }
