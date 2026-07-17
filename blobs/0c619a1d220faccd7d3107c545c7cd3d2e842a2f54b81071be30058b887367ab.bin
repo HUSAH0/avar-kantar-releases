@@ -1,0 +1,71 @@
+{
+  "_note": "Ayarlar > COM > VERI DENETIMI > Oto. Presetler PROTOKOL DAVRANISINA gore adlandirilir; marka adi KULLANILMAZ. Oto butonu bunlari canli cercevelere karsi puanlar ve en iyisini kendisi uygular - kullanici listeden secmez. Kontrol karakterleri: STX=0x02, GS=0x1D, CR=0x0D.",
+  "presets": {
+    "virgul_ayrac_s0": {
+      "label": "Virgül ayraçlı · 'S' kararlı (konum 0)",
+      "example_frame": "S,+00150.0kg <CR>",
+      "ignored_chars": [],
+      "prefix_anchor": ",",
+      "suffix_anchor": "\r",
+      "stable_index": 0,
+      "stable_char": "S"
+    },
+    "kontrol_karakterli_s1": {
+      "label": "Kontrol karakterli (STX/GS) · 'S' kararlı (konum 1)",
+      "example_frame": "<STX>S<GS>+00450.000kg<CR>",
+      "ignored_chars": [
+        "\u0002",
+        "\u001d"
+      ],
+      "prefix_anchor": "",
+      "suffix_anchor": "\r",
+      "stable_index": 1,
+      "stable_char": "S"
+    },
+    "bosluk_ayrac_s0": {
+      "label": "Boşluk ayraçlı · 'S' kararlı (konum 0)",
+      "example_frame": "S +00150.0 kg <CR>",
+      "ignored_chars": [],
+      "prefix_anchor": " ",
+      "suffix_anchor": "\r",
+      "stable_index": 0,
+      "stable_char": "S"
+    },
+    "net_karakter_n0": {
+      "label": "'N' (net) göstergeli · konum 0",
+      "example_frame": "N  +0000150.000 kg <CR>",
+      "ignored_chars": [],
+      "prefix_anchor": "",
+      "suffix_anchor": "\r",
+      "stable_index": 0,
+      "stable_char": "N"
+    },
+    "onek_gs_s1": {
+      "label": "'GS,' önekli · 'S' kararlı (konum 1)",
+      "example_frame": "<STX>ST,GS,+00150.0kg<CR>",
+      "ignored_chars": [],
+      "prefix_anchor": "GS,",
+      "suffix_anchor": "\r",
+      "stable_index": 1,
+      "stable_char": "S"
+    },
+    "onek_yok_s0": {
+      "label": "Öneksiz · 'S' kararlı (konum 0)",
+      "example_frame": "S+00150.0<CR> · virgüllü ondalık da olur: S +150,5 g<CR>",
+      "ignored_chars": [],
+      "prefix_anchor": "",
+      "suffix_anchor": "\r",
+      "stable_index": 0,
+      "stable_char": "S"
+    },
+    "kararlilik_yok": {
+      "label": "Kararlılık denetimi yok (son çare)",
+      "example_frame": "Sadece sayı: +00150.0 veya 150 veya 150kg",
+      "ignored_chars": [],
+      "prefix_anchor": "",
+      "suffix_anchor": "\r",
+      "stable_index": -1,
+      "stable_char": ""
+    }
+  }
+}
