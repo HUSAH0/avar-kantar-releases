@@ -1,6 +1,6 @@
 {
-  "version": "2.26",
-  "notes": "تجربة اخرى فقط",
+  "version": "2.27",
+  "notes": "ikinci deneme",
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
     {
@@ -459,5 +459,5 @@
       "size": 75264
     }
   ],
-  "sig": "e212de5c15ae384ede856b7ac312401cb4c9ee0f337138a41ee9b8790aad2b59"
+  "sig": "06674584ff9609bf4cf1fee9ca944f53dbe4cf9603aed209814dd0cdeb805350"
 }
