@@ -1,6 +1,10 @@
 {
   "version": "2.27",
-  "notes": "ikinci deneme",
+  "notes": {
+    "tr": "• ÖNEMLİ: Program artık ESKİ işlemcili bilgisayarlarda da çalışır. Önceki sürümler yalnız yeni işlemcilerde açılıyor, eski Celeron/Atom PC'lerde 'illegal instruction' ile çöküyordu. Bu sürüm tüm 64-bit Windows 10 makinelerinde çalışır.\n• Kurulum dosyası (avarelektroniksetup.exe) ile düzgün kurulum, kaldırma ve dil seçimi.\n• En az Windows 10 (64-bit) gerekir; kurulum eski Windows'u net bir mesajla reddeder.",
+    "en": "• IMPORTANT: the program now runs on OLDER CPUs too. Earlier versions only started on newer processors and crashed with an 'illegal instruction' on old Celeron/Atom PCs. This build runs on every 64-bit Windows 10 machine.\n• Proper install/uninstall and language selection via the installer (avarelektroniksetup.exe).\n• Requires Windows 10 (64-bit) or newer; the installer refuses older Windows with a clear message.",
+    "ar": "• مهم: البرنامج صار يعمل على المعالجات القديمة أيضاً. الإصدارات السابقة كانت تعمل فقط على المعالجات الحديثة وتنهار على أجهزة Celeron/Atom القديمة بخطأ 'تعليمة غير مشروعة'. هذا الإصدار يعمل على كل أجهزة Windows 10 (64 بت).\n• تثبيت وإزالة واختيار لغة عبر المثبِّت (avarelektroniksetup.exe).\n• يتطلب Windows 10 (64 بت) أو أحدث؛ والمثبِّت يرفض الأقدم برسالة واضحة."
+  },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
     {
@@ -150,8 +154,8 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "c09c203d59c70836d862f4392fd42447f2f1085ad2ff3eb9b8761f134212ded9",
-      "size": 19715584
+      "sha256": "edf66028f556311180a69d0f93f15794d1542fbf6da88c5bc671bbf1e9e4d448",
+      "size": 19806720
     },
     {
       "path": "configs/indikator_presets.json",
@@ -459,5 +463,5 @@
       "size": 75264
     }
   ],
-  "sig": "06674584ff9609bf4cf1fee9ca944f53dbe4cf9603aed209814dd0cdeb805350"
+  "sig": "f1be2f54d5c17ec3d0b140f3116342ee6f384c7c1e6f476303ab08fc42afe608"
 }
