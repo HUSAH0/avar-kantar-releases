@@ -1,9 +1,9 @@
 {
-  "version": "2.29",
+  "version": "2.30",
   "notes": {
-    "tr": "• Manuel giriş yetkisi artık uzaktan değiştiğinde YENİDEN BAŞLATMADAN uygulanır: lisans her 30 dakikada bir arka planda yeniden denetlenir; yetki geri alınırsa buton anında gizlenir.\n• Küçük iyileştirmeler ve kararlılık düzeltmeleri.",
-    "en": "• Manual-entry authority is now applied WITHOUT a restart when it changes remotely: the licence is re-checked in the background every 30 minutes; if revoked, the button hides immediately.\n• Minor improvements and stability fixes.",
-    "ar": "• صلاحية الإدخال اليدوي صارت تُطبَّق بلا إعادة تشغيل عند تغييرها عن بُعد: يُعاد فحص الرخصة في الخلفية كل 30 دقيقة؛ وإن سُحبت الصلاحية يختفي الزر فوراً.\n• تحسينات صغيرة وإصلاحات استقرار."
+    "tr": "• Gizlilik: güncelleme sunucusu adresi artık günlüğe veya bağlantı ipucuna yazılmaz.\n• Küçük iyileştirmeler ve kararlılık düzeltmeleri.",
+    "en": "• Privacy: the update-server address is no longer written to the log or the connection tooltip.\n• Minor improvements and stability fixes.",
+    "ar": "• الخصوصية: عنوان خادم التحديث لم يعد يُكتب في السجل أو تلميح الاتصال.\n• تحسينات صغيرة وإصلاحات استقرار."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -154,8 +154,8 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "f675d4ce8a18f7949ee7cc8cd6291de98e4a70e06e7812b032b4766bdba8b804",
-      "size": 19825152
+      "sha256": "4355b30059f24d3a58ca8b5f99002859f6f29dcd4b30d35991367125bcf11ee1",
+      "size": 19827712
     },
     {
       "path": "configs/indikator_presets.json",
@@ -463,5 +463,5 @@
       "size": 75264
     }
   ],
-  "sig": "680a56e851fb3906cc9ca6fb29fa2d8ee38a1d7394209c8b2d7298fb718d7c2b"
+  "sig": "b0596933722c4776fefc40073c1b943c27a5c08804a0c82dd7f94d8914772665"
 }
