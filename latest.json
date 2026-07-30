@@ -1,9 +1,9 @@
 {
-  "version": "2.28",
+  "version": "2.29",
   "notes": {
-    "tr": "• Açılışta çöken bir hata giderildi (2.27'deki başlatma hatası).\n• Program artık ESKİ işlemcili bilgisayarlarda da çalışır (AVX'siz Celeron/Atom dâhil); önceki sürümler 'illegal instruction' ile çöküyordu.\n• Daha hızlı açılış: bütünlük denetimi ve otomatik tamamlama artık açılışı bekletmiyor.\n• Kurulum artık her zaman Program Files'a yapılır.\n• En az Windows 10 (64-bit) gerekir.",
-    "en": "• Fixed a crash on startup (the launch error in 2.27).\n• The program now runs on OLDER CPUs too (including AVX-less Celeron/Atom); earlier builds crashed with an 'illegal instruction'.\n• Faster startup: the integrity check and autocomplete no longer hold up launch.\n• The installer now always installs to Program Files.\n• Requires Windows 10 (64-bit) or newer.",
-    "ar": "• إصلاح انهيار عند الإقلاع (خطأ التشغيل في 2.27).\n• البرنامج صار يعمل على المعالجات القديمة أيضاً (بما فيها Celeron/Atom بلا AVX)؛ الإصدارات السابقة كانت تنهار بخطأ 'تعليمة غير مشروعة'.\n• إقلاع أسرع: فحص السلامة والإكمال التلقائي لم يعودا يؤخّران الظهور.\n• المثبِّت صار يثبّت دائماً في Program Files.\n• يتطلب Windows 10 (64 بت) أو أحدث."
+    "tr": "• Manuel giriş yetkisi artık uzaktan değiştiğinde YENİDEN BAŞLATMADAN uygulanır: lisans her 30 dakikada bir arka planda yeniden denetlenir; yetki geri alınırsa buton anında gizlenir.\n• Küçük iyileştirmeler ve kararlılık düzeltmeleri.",
+    "en": "• Manual-entry authority is now applied WITHOUT a restart when it changes remotely: the licence is re-checked in the background every 30 minutes; if revoked, the button hides immediately.\n• Minor improvements and stability fixes.",
+    "ar": "• صلاحية الإدخال اليدوي صارت تُطبَّق بلا إعادة تشغيل عند تغييرها عن بُعد: يُعاد فحص الرخصة في الخلفية كل 30 دقيقة؛ وإن سُحبت الصلاحية يختفي الزر فوراً.\n• تحسينات صغيرة وإصلاحات استقرار."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -154,8 +154,8 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "6e2055e65b04d08475384344808f3056e112ba4697a57d71a7c5c4f84accc8f1",
-      "size": 19809280
+      "sha256": "f675d4ce8a18f7949ee7cc8cd6291de98e4a70e06e7812b032b4766bdba8b804",
+      "size": 19825152
     },
     {
       "path": "configs/indikator_presets.json",
@@ -463,5 +463,5 @@
       "size": 75264
     }
   ],
-  "sig": "b09c22fe3719d3163a826e29dfff386de5edb55fcef2c073a97d96e9dbf34ee0"
+  "sig": "680a56e851fb3906cc9ca6fb29fa2d8ee38a1d7394209c8b2d7298fb718d7c2b"
 }
