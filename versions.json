@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "2.37",
+      "notes": {
+        "tr": "• Cihaz kimliği artık program açılışında bir kez hesaplanıyor. Önceden her lisans denetiminde (açılışta ve her 30 dakikada bir) arka planda bir sistem sorgusu başlatılıyordu; gereksizdi ve programı yavaşlatıyordu.\n• Çeviri denetimi genişletildi ve gözden kaçmış iki metin bulundu: lisans etkinleştirme mesajı ve 'Kalan deneme' uyarısı artık İngilizce ve Arapça'da da doğru görünüyor.\n• Güncelleme yolu 11 ayrı arıza senaryosuna karşı yeniden denetlendi (bozuk imza, sahte sunucu adresi, yanlış/eksik dosya, yarım kalan indirme, yanlış klasör, sürüm karşılaştırma); hepsi güvenli davranıyor.",
+        "en": "• The device identifier is now computed once at startup. Previously every licence check (at startup and every 30 minutes) launched a background system query; it was unnecessary and slowed the program down.\n• The translation check was widened and found two texts that had slipped through: the licence activation message and the 'Attempts left' warning now appear correctly in English and Arabic too.\n• The update path was re-audited against 11 separate failure scenarios (tampered signature, forged server address, wrong/missing file, interrupted download, wrong folder, version comparison); all behave safely.",
+        "ar": "• صار مُعرِّف الجهاز يُحسب مرة واحدة عند بدء التشغيل. سابقاً كان كل فحص للرخصة (عند البدء وكل 30 دقيقة) يشغّل استعلام نظام في الخلفية؛ وهو غير ضروري ويبطئ البرنامج.\n• وُسِّع فحص الترجمة فظهر نصّان كانا يفلتان منه: رسالة تفعيل الرخصة وتنبيه «المحاولات المتبقية» صارا يظهران بالإنجليزية والعربية بشكل صحيح.\n• أُعيد تدقيق مسار التحديث أمام 11 سيناريو فشل (توقيع مزوَّر، عنوان خادم مزيَّف، ملف خاطئ أو ناقص، تنزيل منقطع، مجلد خاطئ، مقارنة الإصدارات)؛ وكلها تتصرف بأمان."
+      },
+      "manifest": "v/2.37.json"
+    },
+    {
       "version": "2.35",
       "notes": {
         "tr": "• Tema değiştirince Ayarlar penceresi de ANINDA yeni temaya geçiyor; artık kapatıp açmak gerekmiyor.\n• Temasız kalan alanlar düzeltildi: yazı boyutu/genişliği/harf aralığı/koyuluk/satır aralığı kutuları, COM → Veri Denetimi'ndeki işlenmiş+ham veri çerçevesi ve yazdırma düzenindeki alan yerleşimi.\n• Simgeler artık ekran çözünürlüğünde çiziliyor — %125/%150 ölçeklemede görülen pikselli görüntü giderildi.\n• Kutu başlıklarının çevresindeki istenmeyen çerçeve kaldırıldı.\n• Güvenlik: kimse kendinden ÜSTÜN yetkide hesap oluşturamaz, düzenleyemez veya silemez (admin artık 'yönetici' hesabı açamaz/silemez).\n• Güncelleme: kesintili bağlantıda indirme otomatik yeniden deneniyor; çok eski sürümlere geri dönüş kapatıldı.",
@@ -37,5 +46,5 @@
       "manifest": "v/2.31.json"
     }
   ],
-  "sig": "32bda083c85103d91ff8a1dc574c8f63a3ba37c1b12ea0ba0e890624b87e2474"
+  "sig": "19aa4a522a331761ee4605fafe3be404e722de83ee6860fa489e24d82f5daa44"
 }
