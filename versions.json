@@ -1,0 +1,14 @@
+{
+  "versions": [
+    {
+      "version": "2.31",
+      "notes": {
+        "tr": "• Güncelleme artık gerçekten kuruluyor. Program Files'a kurulu sürümde dosyalar yönetici izni olmadan değiştirilemediği için güncelleme sessizce uygulanmıyordu: program yeniden başlıyor ama eski sürümde kalıyordu. Artık gereken izin isteniyor, kopyalama doğrulanıyor ve başarısız olursa açıkça bildiriliyor.\n• Yazdırma: seçilen kağıt boyutu (A5 / 80mm termal) bazı yazıcılarda yok sayılıp yazıcının kendi varsayılanıyla basılıyordu. Düzeltildi.\n• Beyaz Tema: ağırlık göstergesi panelinin renkleri düzeltildi, rakamlar daha okunaklı.\n• Lisans uyarıları artık İngilizce ve Arapça arayüzde de doğru dilde görünüyor.\n• Ağ yazıcısı yanıt vermeyi bıraktığında oluşan kaynak sızıntısı giderildi.",
+        "en": "• Updates now actually install. In the Program Files installation the files could not be replaced without administrator permission, so the update was applied silently: the program restarted but stayed on the old version. The required permission is now requested, the copy is verified, and any failure is reported clearly.\n• Printing: the selected paper size (A5 / 80mm thermal) was ignored on some printers, which printed with their own default instead. Fixed.\n• White Theme: the weight display panel colours were corrected and the digits are easier to read.\n• License warnings now appear in the correct language in the English and Arabic interfaces.\n• Fixed a resource leak that occurred when a network printer stopped responding.",
+        "ar": "• التحديث صار يُثبَّت فعلاً. في النسخة المثبَّتة داخل Program Files لم يكن بالإمكان استبدال الملفات دون إذن المسؤول، فكان التحديث يُطبَّق بصمت: يُعاد تشغيل البرنامج لكنه يبقى على الإصدار القديم. الآن يُطلَب الإذن اللازم ويُتحقَّق من النسخ، وأي فشل يُبلَّغ بوضوح.\n• الطباعة: مقاس الورق المختار (A5 / حراري 80mm) كان يُتجاهَل في بعض الطابعات فتطبع بمقاسها الافتراضي. تم الإصلاح.\n• الثيم الأبيض: صُحِّحت ألوان لوحة عرض الوزن وصارت الأرقام أوضح.\n• تنبيهات الرخصة تظهر الآن باللغة الصحيحة في الواجهتين الإنجليزية والعربية.\n• عولج تسريب في الموارد كان يحدث عند توقّف طابعة الشبكة عن الاستجابة."
+      },
+      "manifest": "v/2.31.json"
+    }
+  ],
+  "sig": "a89c6268d7eafc3fc2f64f5b616a80d39b1d58b405e19ff2db65365ac6dfbee8"
+}
