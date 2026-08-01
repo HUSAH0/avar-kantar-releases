@@ -154,13 +154,13 @@
     },
     {
       "path": "AVAR Guncelleyici.exe",
-      "sha256": "fce93fab18ad5e98a053bf6c1e25dc7d4941348fa50c3249daeb8a6f2cf15189",
+      "sha256": "a2d284ffa7b81c1cfe1a445c268494e2f653b4aa52c330c430b7768ee137cfe3",
       "size": 7566848
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "a7c4df74c50b8257bfe85b03d3fd9a31a446c7bced8944f4250c9e7ae9eaa537",
-      "size": 19080192
+      "sha256": "7b37b52c67a035a767e927f62aae016ed5672271c9412af4a48445e5eba7098a",
+      "size": 20796416
     },
     {
       "path": "configs/indikator_presets.json",
@@ -468,5 +468,5 @@
       "size": 75264
     }
   ],
-  "sig": "7a8127c009f6febd4b11d9c1efcb207a4f01e23931c94f554c610cefcdfb28f0"
+  "sig": "2183ba57543ca19d1028926cd77bf6c08e486d75f0391c77b28352b4e81dd8c0"
 }
