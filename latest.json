@@ -1,9 +1,9 @@
 {
-  "version": "2.31",
+  "version": "2.33",
   "notes": {
-    "tr": "• Güncelleme artık gerçekten kuruluyor. Program Files'a kurulu sürümde dosyalar yönetici izni olmadan değiştirilemediği için güncelleme sessizce uygulanmıyordu: program yeniden başlıyor ama eski sürümde kalıyordu. Artık gereken izin isteniyor, kopyalama doğrulanıyor ve başarısız olursa açıkça bildiriliyor.\n• Yazdırma: seçilen kağıt boyutu (A5 / 80mm termal) bazı yazıcılarda yok sayılıp yazıcının kendi varsayılanıyla basılıyordu. Düzeltildi.\n• Beyaz Tema: ağırlık göstergesi panelinin renkleri düzeltildi, rakamlar daha okunaklı.\n• Lisans uyarıları artık İngilizce ve Arapça arayüzde de doğru dilde görünüyor.\n• Ağ yazıcısı yanıt vermeyi bıraktığında oluşan kaynak sızıntısı giderildi.",
-    "en": "• Updates now actually install. In the Program Files installation the files could not be replaced without administrator permission, so the update was applied silently: the program restarted but stayed on the old version. The required permission is now requested, the copy is verified, and any failure is reported clearly.\n• Printing: the selected paper size (A5 / 80mm thermal) was ignored on some printers, which printed with their own default instead. Fixed.\n• White Theme: the weight display panel colours were corrected and the digits are easier to read.\n• License warnings now appear in the correct language in the English and Arabic interfaces.\n• Fixed a resource leak that occurred when a network printer stopped responding.",
-    "ar": "• التحديث صار يُثبَّت فعلاً. في النسخة المثبَّتة داخل Program Files لم يكن بالإمكان استبدال الملفات دون إذن المسؤول، فكان التحديث يُطبَّق بصمت: يُعاد تشغيل البرنامج لكنه يبقى على الإصدار القديم. الآن يُطلَب الإذن اللازم ويُتحقَّق من النسخ، وأي فشل يُبلَّغ بوضوح.\n• الطباعة: مقاس الورق المختار (A5 / حراري 80mm) كان يُتجاهَل في بعض الطابعات فتطبع بمقاسها الافتراضي. تم الإصلاح.\n• الثيم الأبيض: صُحِّحت ألوان لوحة عرض الوزن وصارت الأرقام أوضح.\n• تنبيهات الرخصة تظهر الآن باللغة الصحيحة في الواجهتين الإنجليزية والعربية.\n• عولج تسريب في الموارد كان يحدث عند توقّف طابعة الشبكة عن الاستجابة."
+    "tr": "• ÖNEMLİ düzeltme: güncelleme %100'e ulaşıp da kurulmuyordu. Yardımcı betik konsolsuz başlatıldığı için hiç çalışmadan kapanıyor, hiçbir dosya kopyalanmıyordu. Artık uçtan uca doğrulandı.\n• Yazı otomatik olarak seçilen kağıda sığdırılıyor; büyük yazı artık sayfanın dışına taşmıyor (Ayarlar → Yazıcı → «Kağıda otomatik sığdır», kapatılabilir).\n• Yeni yazı ayarları: kalınlık, genişlik ve harf aralığı (mevcut yazı tipi, boyut ve koyuluk ayarlarının yanına).\n• Yazıcı değiştirildiğinde, seçili kağıt o yazıcıda desteklenmiyorsa uyumlu bir boyuta otomatik geçilir.\n• Güvenlik: korumalı ayarlarda doğrulama 5 kez yanlış girilirse program tamamen kapanır.\n• Sekiz kağıt boyutunun tümü (A4/A5/A6/B5/Letter/Legal/Executive + termal) dikey ve yatayda gerçek baskıyla test edildi.",
+    "en": "• IMPORTANT fix: the update reached 100% but never installed. The helper script was started without a console, so it exited without running and no files were copied. The whole flow is now verified end to end.\n• Text is fitted to the selected paper automatically, so large fonts no longer run off the page (Settings → Printer → «Auto-fit to paper», can be turned off).\n• New font settings: weight, width and letter spacing (next to the existing font, size and darkness settings).\n• When you change printer, if the selected paper is not supported it switches to a compatible size automatically.\n• Security: in the protected settings, five wrong verification answers now close the program completely.\n• All eight paper sizes (A4/A5/A6/B5/Letter/Legal/Executive + thermal) were tested with real output in portrait and landscape.",
+    "ar": "• إصلاح مهم: كان التحديث يصل إلى 100% ثم لا يُثبَّت. السكربت المساعد كان يُشغَّل بلا كونسول فيُغلق دون أن ينفّذ شيئاً ولا يُنسخ أي ملف. تم التحقق من المسار كاملاً الآن.\n• يُلاءَم حجم الخط تلقائياً مع الورق المختار، فلم يعد الخط الكبير يخرج عن حدود الصفحة (الإعدادات ← الطابعة ← «ملاءمة تلقائية للورق»، ويمكن إيقافها).\n• إعدادات خط جديدة: السماكة والعرض وتباعد الحروف (إلى جانب نوع الخط والحجم والقتامة).\n• عند تغيير الطابعة، إذا كان الورق المختار غير مدعوم يتم الانتقال تلقائياً إلى مقاس متوافق.\n• الأمان: في الإعدادات المحمية، خمس محاولات تحقّق خاطئة تُغلق البرنامج بالكامل.\n• جرى اختبار مقاسات الورق الثمانية كلها (A4/A5/A6/B5/Letter/Legal/Executive + الحراري) بطباعة فعلية طولياً وعرضياً."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -153,9 +153,14 @@
       "size": 3508454
     },
     {
+      "path": "AVAR Guncelleyici.exe",
+      "sha256": "a2d284ffa7b81c1cfe1a445c268494e2f653b4aa52c330c430b7768ee137cfe3",
+      "size": 7566848
+    },
+    {
       "path": "AVAR Kantar.exe",
-      "sha256": "d8deb33443fe923e173083b00e6a24d14046ec39f5ad933a8ec22456ebadafc2",
-      "size": 20650496
+      "sha256": "7b37b52c67a035a767e927f62aae016ed5672271c9412af4a48445e5eba7098a",
+      "size": 20796416
     },
     {
       "path": "configs/indikator_presets.json",
@@ -463,5 +468,5 @@
       "size": 75264
     }
   ],
-  "sig": "49633e3afbd33c99ae9b70d0427dac95e6866e39aaa6e6ac147e839086a4ea62"
+  "sig": "2183ba57543ca19d1028926cd77bf6c08e486d75f0391c77b28352b4e81dd8c0"
 }
