@@ -1,9 +1,9 @@
 {
-  "version": "2.31",
+  "version": "2.32",
   "notes": {
-    "tr": "• Güncelleme artık gerçekten kuruluyor. Program Files'a kurulu sürümde dosyalar yönetici izni olmadan değiştirilemediği için güncelleme sessizce uygulanmıyordu: program yeniden başlıyor ama eski sürümde kalıyordu. Artık gereken izin isteniyor, kopyalama doğrulanıyor ve başarısız olursa açıkça bildiriliyor.\n• Yazdırma: seçilen kağıt boyutu (A5 / 80mm termal) bazı yazıcılarda yok sayılıp yazıcının kendi varsayılanıyla basılıyordu. Düzeltildi.\n• Beyaz Tema: ağırlık göstergesi panelinin renkleri düzeltildi, rakamlar daha okunaklı.\n• Lisans uyarıları artık İngilizce ve Arapça arayüzde de doğru dilde görünüyor.\n• Ağ yazıcısı yanıt vermeyi bıraktığında oluşan kaynak sızıntısı giderildi.",
-    "en": "• Updates now actually install. In the Program Files installation the files could not be replaced without administrator permission, so the update was applied silently: the program restarted but stayed on the old version. The required permission is now requested, the copy is verified, and any failure is reported clearly.\n• Printing: the selected paper size (A5 / 80mm thermal) was ignored on some printers, which printed with their own default instead. Fixed.\n• White Theme: the weight display panel colours were corrected and the digits are easier to read.\n• License warnings now appear in the correct language in the English and Arabic interfaces.\n• Fixed a resource leak that occurred when a network printer stopped responding.",
-    "ar": "• التحديث صار يُثبَّت فعلاً. في النسخة المثبَّتة داخل Program Files لم يكن بالإمكان استبدال الملفات دون إذن المسؤول، فكان التحديث يُطبَّق بصمت: يُعاد تشغيل البرنامج لكنه يبقى على الإصدار القديم. الآن يُطلَب الإذن اللازم ويُتحقَّق من النسخ، وأي فشل يُبلَّغ بوضوح.\n• الطباعة: مقاس الورق المختار (A5 / حراري 80mm) كان يُتجاهَل في بعض الطابعات فتطبع بمقاسها الافتراضي. تم الإصلاح.\n• الثيم الأبيض: صُحِّحت ألوان لوحة عرض الوزن وصارت الأرقام أوضح.\n• تنبيهات الرخصة تظهر الآن باللغة الصحيحة في الواجهتين الإنجليزية والعربية.\n• عولج تسريب في الموارد كان يحدث عند توقّف طابعة الشبكة عن الاستجابة."
+    "tr": "• Yeni: AVAR Güncelleyici. Güncelleme işi artık ana programın yanındaki küçük, bağımsız bir programda. Yönetici izni yalnızca ona verilir; AVAR Kantar normal kullanıcı hakkıyla çalışmaya devam eder.\n• Yeni: sürüm geri alma. Güncelleyici son sürümleri listeler; bir sürümde sorun yaşarsanız kimseyi beklemeden çalışan bir sürüme dönebilirsiniz. Tartı kayıtlarınız etkilenmez.\n• Düzeltme: güncelleme indirme sırasında yarıda kalıyordu (sunucuda eksik dosyalar). Yayın süreci artık her dosyayı sunucuda doğruluyor.\n• Yeni: lazer/mürekkep yazıcı kağıt boyutları — A4, A5, A6, B5, Letter, Legal, Executive (termal 80mm rulo yanında). Ayarlar → Yazıcı bölümünden seçilir.",
+    "en": "• New: AVAR Updater. Updating now lives in a small, separate program next to the main app. Administrator permission is granted only to it; AVAR Kantar keeps running as a normal user.\n• New: version rollback. The updater lists recent versions, so if a release causes trouble you can return to a working one without waiting for anyone. Your weighing records are not affected.\n• Fix: updates stopped part-way through the download (files missing on the server). The publishing process now verifies every file on the server.\n• New: laser/inkjet paper sizes — A4, A5, A6, B5, Letter, Legal, Executive (alongside the 80mm thermal roll). Selectable under Settings → Printer.",
+    "ar": "• جديد: محدّث AVAR. صار التحديث في برنامج صغير مستقل بجانب البرنامج الرئيسي. إذن المسؤول يُعطى له وحده، ويبقى AVAR Kantar يعمل بصلاحية مستخدم عادي.\n• جديد: الرجوع لإصدار سابق. المحدّث يعرض آخر الإصدارات، فإذا سبّب إصدار مشكلة يمكنك العودة إلى إصدار يعمل دون انتظار أحد. سجلات الوزن لا تتأثر.\n• إصلاح: كان التحديث يتوقف في منتصف التنزيل (ملفات ناقصة على الخادم). عملية النشر صارت تتحقق من كل ملف على الخادم.\n• جديد: مقاسات ورق الطابعات الليزر/النافثة — A4 و A5 و A6 و B5 و Letter و Legal و Executive (إلى جانب الرول الحراري 80mm). تُختار من الإعدادات ← الطابعة."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -153,9 +153,14 @@
       "size": 3508454
     },
     {
+      "path": "AVAR Guncelleyici.exe",
+      "sha256": "01b3ec25fa11da795cd8f2029dd4c00d5bf5af694086829b6e4643b08dfd2f83",
+      "size": 7566848
+    },
+    {
       "path": "AVAR Kantar.exe",
-      "sha256": "d8deb33443fe923e173083b00e6a24d14046ec39f5ad933a8ec22456ebadafc2",
-      "size": 20650496
+      "sha256": "3b8d5c1a2961357c3365e587c36ebef089977ba34d9958d06b1cc74a2834e80c",
+      "size": 18984448
     },
     {
       "path": "configs/indikator_presets.json",
@@ -463,5 +468,5 @@
       "size": 75264
     }
   ],
-  "sig": "49633e3afbd33c99ae9b70d0427dac95e6866e39aaa6e6ac147e839086a4ea62"
+  "sig": "38ffa90e325f60dbb56ff06f5385cd9b8025b68dddd847afbd002f64d1b0fd09"
 }
