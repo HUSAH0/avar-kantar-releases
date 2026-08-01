@@ -1,9 +1,9 @@
 {
-  "version": "2.32",
+  "version": "2.33",
   "notes": {
-    "tr": "• Yeni: AVAR Güncelleyici. Güncelleme işi artık ana programın yanındaki küçük, bağımsız bir programda. Yönetici izni yalnızca ona verilir; AVAR Kantar normal kullanıcı hakkıyla çalışmaya devam eder.\n• Yeni: sürüm geri alma. Güncelleyici son sürümleri listeler; bir sürümde sorun yaşarsanız kimseyi beklemeden çalışan bir sürüme dönebilirsiniz. Tartı kayıtlarınız etkilenmez.\n• Düzeltme: güncelleme indirme sırasında yarıda kalıyordu (sunucuda eksik dosyalar). Yayın süreci artık her dosyayı sunucuda doğruluyor.\n• Yeni: lazer/mürekkep yazıcı kağıt boyutları — A4, A5, A6, B5, Letter, Legal, Executive (termal 80mm rulo yanında). Ayarlar → Yazıcı bölümünden seçilir.",
-    "en": "• New: AVAR Updater. Updating now lives in a small, separate program next to the main app. Administrator permission is granted only to it; AVAR Kantar keeps running as a normal user.\n• New: version rollback. The updater lists recent versions, so if a release causes trouble you can return to a working one without waiting for anyone. Your weighing records are not affected.\n• Fix: updates stopped part-way through the download (files missing on the server). The publishing process now verifies every file on the server.\n• New: laser/inkjet paper sizes — A4, A5, A6, B5, Letter, Legal, Executive (alongside the 80mm thermal roll). Selectable under Settings → Printer.",
-    "ar": "• جديد: محدّث AVAR. صار التحديث في برنامج صغير مستقل بجانب البرنامج الرئيسي. إذن المسؤول يُعطى له وحده، ويبقى AVAR Kantar يعمل بصلاحية مستخدم عادي.\n• جديد: الرجوع لإصدار سابق. المحدّث يعرض آخر الإصدارات، فإذا سبّب إصدار مشكلة يمكنك العودة إلى إصدار يعمل دون انتظار أحد. سجلات الوزن لا تتأثر.\n• إصلاح: كان التحديث يتوقف في منتصف التنزيل (ملفات ناقصة على الخادم). عملية النشر صارت تتحقق من كل ملف على الخادم.\n• جديد: مقاسات ورق الطابعات الليزر/النافثة — A4 و A5 و A6 و B5 و Letter و Legal و Executive (إلى جانب الرول الحراري 80mm). تُختار من الإعدادات ← الطابعة."
+    "tr": "• ÖNEMLİ düzeltme: güncelleme %100'e ulaşıp da kurulmuyordu. Yardımcı betik konsolsuz başlatıldığı için hiç çalışmadan kapanıyor, hiçbir dosya kopyalanmıyordu. Artık uçtan uca doğrulandı.\n• Yazı otomatik olarak seçilen kağıda sığdırılıyor; büyük yazı artık sayfanın dışına taşmıyor (Ayarlar → Yazıcı → «Kağıda otomatik sığdır», kapatılabilir).\n• Yeni yazı ayarları: kalınlık, genişlik ve harf aralığı (mevcut yazı tipi, boyut ve koyuluk ayarlarının yanına).\n• Yazıcı değiştirildiğinde, seçili kağıt o yazıcıda desteklenmiyorsa uyumlu bir boyuta otomatik geçilir.\n• Güvenlik: korumalı ayarlarda doğrulama 5 kez yanlış girilirse program tamamen kapanır.\n• Sekiz kağıt boyutunun tümü (A4/A5/A6/B5/Letter/Legal/Executive + termal) dikey ve yatayda gerçek baskıyla test edildi.",
+    "en": "• IMPORTANT fix: the update reached 100% but never installed. The helper script was started without a console, so it exited without running and no files were copied. The whole flow is now verified end to end.\n• Text is fitted to the selected paper automatically, so large fonts no longer run off the page (Settings → Printer → «Auto-fit to paper», can be turned off).\n• New font settings: weight, width and letter spacing (next to the existing font, size and darkness settings).\n• When you change printer, if the selected paper is not supported it switches to a compatible size automatically.\n• Security: in the protected settings, five wrong verification answers now close the program completely.\n• All eight paper sizes (A4/A5/A6/B5/Letter/Legal/Executive + thermal) were tested with real output in portrait and landscape.",
+    "ar": "• إصلاح مهم: كان التحديث يصل إلى 100% ثم لا يُثبَّت. السكربت المساعد كان يُشغَّل بلا كونسول فيُغلق دون أن ينفّذ شيئاً ولا يُنسخ أي ملف. تم التحقق من المسار كاملاً الآن.\n• يُلاءَم حجم الخط تلقائياً مع الورق المختار، فلم يعد الخط الكبير يخرج عن حدود الصفحة (الإعدادات ← الطابعة ← «ملاءمة تلقائية للورق»، ويمكن إيقافها).\n• إعدادات خط جديدة: السماكة والعرض وتباعد الحروف (إلى جانب نوع الخط والحجم والقتامة).\n• عند تغيير الطابعة، إذا كان الورق المختار غير مدعوم يتم الانتقال تلقائياً إلى مقاس متوافق.\n• الأمان: في الإعدادات المحمية، خمس محاولات تحقّق خاطئة تُغلق البرنامج بالكامل.\n• جرى اختبار مقاسات الورق الثمانية كلها (A4/A5/A6/B5/Letter/Legal/Executive + الحراري) بطباعة فعلية طولياً وعرضياً."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -154,13 +154,13 @@
     },
     {
       "path": "AVAR Guncelleyici.exe",
-      "sha256": "01b3ec25fa11da795cd8f2029dd4c00d5bf5af694086829b6e4643b08dfd2f83",
+      "sha256": "fce93fab18ad5e98a053bf6c1e25dc7d4941348fa50c3249daeb8a6f2cf15189",
       "size": 7566848
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "3b8d5c1a2961357c3365e587c36ebef089977ba34d9958d06b1cc74a2834e80c",
-      "size": 18984448
+      "sha256": "a7c4df74c50b8257bfe85b03d3fd9a31a446c7bced8944f4250c9e7ae9eaa537",
+      "size": 19080192
     },
     {
       "path": "configs/indikator_presets.json",
@@ -468,5 +468,5 @@
       "size": 75264
     }
   ],
-  "sig": "38ffa90e325f60dbb56ff06f5385cd9b8025b68dddd847afbd002f64d1b0fd09"
+  "sig": "7a8127c009f6febd4b11d9c1efcb207a4f01e23931c94f554c610cefcdfb28f0"
 }
