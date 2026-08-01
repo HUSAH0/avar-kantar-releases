@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "2.32",
+      "notes": {
+        "tr": "• Yeni: AVAR Güncelleyici. Güncelleme işi artık ana programın yanındaki küçük, bağımsız bir programda. Yönetici izni yalnızca ona verilir; AVAR Kantar normal kullanıcı hakkıyla çalışmaya devam eder.\n• Yeni: sürüm geri alma. Güncelleyici son sürümleri listeler; bir sürümde sorun yaşarsanız kimseyi beklemeden çalışan bir sürüme dönebilirsiniz. Tartı kayıtlarınız etkilenmez.\n• Düzeltme: güncelleme indirme sırasında yarıda kalıyordu (sunucuda eksik dosyalar). Yayın süreci artık her dosyayı sunucuda doğruluyor.\n• Yeni: lazer/mürekkep yazıcı kağıt boyutları — A4, A5, A6, B5, Letter, Legal, Executive (termal 80mm rulo yanında). Ayarlar → Yazıcı bölümünden seçilir.",
+        "en": "• New: AVAR Updater. Updating now lives in a small, separate program next to the main app. Administrator permission is granted only to it; AVAR Kantar keeps running as a normal user.\n• New: version rollback. The updater lists recent versions, so if a release causes trouble you can return to a working one without waiting for anyone. Your weighing records are not affected.\n• Fix: updates stopped part-way through the download (files missing on the server). The publishing process now verifies every file on the server.\n• New: laser/inkjet paper sizes — A4, A5, A6, B5, Letter, Legal, Executive (alongside the 80mm thermal roll). Selectable under Settings → Printer.",
+        "ar": "• جديد: محدّث AVAR. صار التحديث في برنامج صغير مستقل بجانب البرنامج الرئيسي. إذن المسؤول يُعطى له وحده، ويبقى AVAR Kantar يعمل بصلاحية مستخدم عادي.\n• جديد: الرجوع لإصدار سابق. المحدّث يعرض آخر الإصدارات، فإذا سبّب إصدار مشكلة يمكنك العودة إلى إصدار يعمل دون انتظار أحد. سجلات الوزن لا تتأثر.\n• إصلاح: كان التحديث يتوقف في منتصف التنزيل (ملفات ناقصة على الخادم). عملية النشر صارت تتحقق من كل ملف على الخادم.\n• جديد: مقاسات ورق الطابعات الليزر/النافثة — A4 و A5 و A6 و B5 و Letter و Legal و Executive (إلى جانب الرول الحراري 80mm). تُختار من الإعدادات ← الطابعة."
+      },
+      "manifest": "v/2.32.json"
+    },
+    {
       "version": "2.31",
       "notes": {
         "tr": "• Güncelleme artık gerçekten kuruluyor. Program Files'a kurulu sürümde dosyalar yönetici izni olmadan değiştirilemediği için güncelleme sessizce uygulanmıyordu: program yeniden başlıyor ama eski sürümde kalıyordu. Artık gereken izin isteniyor, kopyalama doğrulanıyor ve başarısız olursa açıkça bildiriliyor.\n• Yazdırma: seçilen kağıt boyutu (A5 / 80mm termal) bazı yazıcılarda yok sayılıp yazıcının kendi varsayılanıyla basılıyordu. Düzeltildi.\n• Beyaz Tema: ağırlık göstergesi panelinin renkleri düzeltildi, rakamlar daha okunaklı.\n• Lisans uyarıları artık İngilizce ve Arapça arayüzde de doğru dilde görünüyor.\n• Ağ yazıcısı yanıt vermeyi bıraktığında oluşan kaynak sızıntısı giderildi.",
@@ -10,5 +19,5 @@
       "manifest": "v/2.31.json"
     }
   ],
-  "sig": "a89c6268d7eafc3fc2f64f5b616a80d39b1d58b405e19ff2db65365ac6dfbee8"
+  "sig": "dd749b734b0183310a5c89f0472ac261a0cdffa67e764a5f4584e27142b19692"
 }
