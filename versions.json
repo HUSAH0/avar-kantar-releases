@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "2.34",
+      "notes": {
+        "tr": "• Güncelleme yolu baştan sona gözden geçirildi ve sağlamlaştırıldı.\n• Sürüm geri alma artık güncelleyicinin kendisini silmiyor. Eski bir sürüme dönerken kurtarma aracı korunuyor; böylece istediğiniz zaman ileri/geri gidebilirsiniz.\n• Güncelleyici, AVAR Kantar açıkken güncelleme uygulamıyor; önce kapatmanızı istiyor (açık program dosyalarını kilitler ve kopyalama yarım kalırdı).\n• Güvenlik: güncelleyici, AVAR Kantar kurulumunu doğrulayamadığı hiçbir klasörde dosya silmiyor.\n• Yayın öncesi otomatik denetim: sürüm numarası ile derlenen programın sürümü uyuşmazsa yayın durduruluyor.",
+        "en": "• The whole update path was reviewed and hardened.\n• Rolling back to an older version no longer deletes the updater itself. The recovery tool is preserved, so you can move back and forward whenever you want.\n• The updater will not apply an update while AVAR Kantar is open; it asks you to close it first (an open program locks its files and the copy would be left half-done).\n• Safety: the updater deletes nothing in any folder where it cannot verify an AVAR Kantar installation.\n• Pre-publish check: if the version number and the built program's version do not match, publishing is stopped.",
+        "ar": "• مراجعة شاملة لمسار التحديث وتقويته.\n• الرجوع إلى إصدار أقدم لم يعد يحذف المحدّث نفسه. أداة الاسترجاع محفوظة، فيمكنك التنقل بين الإصدارات ذهاباً وإياباً متى شئت.\n• المحدّث لا يطبّق التحديث وبرنامج AVAR Kantar مفتوح؛ يطلب إغلاقه أولاً (البرنامج المفتوح يقفل ملفاته فيبقى النسخ ناقصاً).\n• الأمان: المحدّث لا يحذف أي ملف في مجلد لا يستطيع التأكد أنه مجلد تثبيت AVAR Kantar.\n• فحص ما قبل النشر: إذا لم يتطابق رقم الإصدار مع إصدار البرنامج المبني يتوقف النشر."
+      },
+      "manifest": "v/2.34.json"
+    },
+    {
       "version": "2.33",
       "notes": {
         "tr": "• ÖNEMLİ düzeltme: güncelleme %100'e ulaşıp da kurulmuyordu. Yardımcı betik konsolsuz başlatıldığı için hiç çalışmadan kapanıyor, hiçbir dosya kopyalanmıyordu. Artık uçtan uca doğrulandı.\n• Yazı otomatik olarak seçilen kağıda sığdırılıyor; büyük yazı artık sayfanın dışına taşmıyor (Ayarlar → Yazıcı → «Kağıda otomatik sığdır», kapatılabilir).\n• Yeni yazı ayarları: kalınlık, genişlik ve harf aralığı (mevcut yazı tipi, boyut ve koyuluk ayarlarının yanına).\n• Yazıcı değiştirildiğinde, seçili kağıt o yazıcıda desteklenmiyorsa uyumlu bir boyuta otomatik geçilir.\n• Güvenlik: korumalı ayarlarda doğrulama 5 kez yanlış girilirse program tamamen kapanır.\n• Sekiz kağıt boyutunun tümü (A4/A5/A6/B5/Letter/Legal/Executive + termal) dikey ve yatayda gerçek baskıyla test edildi.",
@@ -19,5 +28,5 @@
       "manifest": "v/2.31.json"
     }
   ],
-  "sig": "f219cf9a925b1992860f637efacf303b2500a51121bc1510bd30b7c2aea0f9ec"
+  "sig": "c66e9a08b7e302029c2828dc282f15395ea66d66fa251420ddf57c6999aab991"
 }
