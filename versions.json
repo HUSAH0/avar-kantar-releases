@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "2.38",
+      "notes": {
+        "tr": "• Güncelleyici artık TAMAMEN BAĞIMSIZ: kendi klasöründe (updater\\), kendi Qt kütüphaneleriyle, ana programla tek bir dosya bile paylaşmadan çalışıyor. Önceden dosyaları ana programla ortaktı; bir güncelleme o dosyaların üzerine yazdığında kurtarma aracı da çalışamaz hâle gelebiliyordu.\n• Kopyalama sırasında program hâlâ açıksa güncelleme artık YARIM BIRAKILMIYOR: hiç dokunmadan iptal ediliyor ve durum bildiriliyor. Önceden 2 dakika bekleyip kilitli dosyaları atlıyor, kurulum karışık kalıyordu.\n• Kurulumdaki Başlat menüsü kısayolu yeni konuma güncellendi.\n\nÖNEMLİ: Güncelleyicinin kendisi eski/bozuk kaldıysa güncelleme onu değiştiremez (güncellemeyi yapan program odur). Bu durumda kurulum dosyasını bir kez çalıştırmanız yeterlidir; sonrasında güncellemeler normal çalışır.",
+        "en": "• The updater is now FULLY INDEPENDENT: it lives in its own folder (updater\\) with its own Qt libraries and shares no file at all with the main program. Previously its files were shared with the main app, so an update overwriting them could take the recovery tool down too.\n• If the program is still open while files are copied, the update is no longer left half-done: it is cancelled without touching anything and reported. Previously it waited 2 minutes, skipped locked files and left a mixed installation.\n• The Start menu shortcut in Setup was updated to the new location.\n\nIMPORTANT: if the updater itself is left old or broken, an update cannot replace it (it is the program doing the updating). In that case run the setup file once; updates work normally afterwards.",
+        "ar": "• صار المحدّث مستقلاً تماماً: في مجلده الخاص (updater\\) ومع مكتبات Qt الخاصة به، ولا يشارك البرنامج الرئيسي أي ملف. سابقاً كانت ملفاته مشتركة، فإذا كتب التحديث فوقها قد تتعطل أداة الاسترجاع أيضاً.\n• إذا كان البرنامج ما زال مفتوحاً أثناء النسخ لم يعد التحديث يُترك ناقصاً: يُلغى دون المساس بشيء ويُبلَّغ عن ذلك. سابقاً كان ينتظر دقيقتين ثم يتخطى الملفات المقفلة فيبقى التثبيت مختلطاً.\n• حُدِّث اختصار قائمة ابدأ في المثبِّت إلى الموقع الجديد.\n\nمهم: إذا بقي المحدّث نفسه قديماً أو معطوباً فلن يستطيع التحديث استبداله (فهو البرنامج الذي ينفّذ التحديث). في هذه الحالة شغّل ملف التثبيت مرة واحدة، وبعدها تعمل التحديثات بشكل طبيعي."
+      },
+      "manifest": "v/2.38.json"
+    },
+    {
       "version": "2.37",
       "notes": {
         "tr": "• Cihaz kimliği artık program açılışında bir kez hesaplanıyor. Önceden her lisans denetiminde (açılışta ve her 30 dakikada bir) arka planda bir sistem sorgusu başlatılıyordu; gereksizdi ve programı yavaşlatıyordu.\n• Çeviri denetimi genişletildi ve gözden kaçmış iki metin bulundu: lisans etkinleştirme mesajı ve 'Kalan deneme' uyarısı artık İngilizce ve Arapça'da da doğru görünüyor.\n• Güncelleme yolu 11 ayrı arıza senaryosuna karşı yeniden denetlendi (bozuk imza, sahte sunucu adresi, yanlış/eksik dosya, yarım kalan indirme, yanlış klasör, sürüm karşılaştırma); hepsi güvenli davranıyor.",
@@ -35,16 +44,7 @@
         "ar": "• إصلاح مهم: كان التحديث يصل إلى 100% ثم لا يُثبَّت. السكربت المساعد كان يُشغَّل بلا كونسول فيُغلق دون أن ينفّذ شيئاً ولا يُنسخ أي ملف. تم التحقق من المسار كاملاً الآن.\n• يُلاءَم حجم الخط تلقائياً مع الورق المختار، فلم يعد الخط الكبير يخرج عن حدود الصفحة (الإعدادات ← الطابعة ← «ملاءمة تلقائية للورق»، ويمكن إيقافها).\n• إعدادات خط جديدة: السماكة والعرض وتباعد الحروف (إلى جانب نوع الخط والحجم والقتامة).\n• عند تغيير الطابعة، إذا كان الورق المختار غير مدعوم يتم الانتقال تلقائياً إلى مقاس متوافق.\n• الأمان: في الإعدادات المحمية، خمس محاولات تحقّق خاطئة تُغلق البرنامج بالكامل.\n• جرى اختبار مقاسات الورق الثمانية كلها (A4/A5/A6/B5/Letter/Legal/Executive + الحراري) بطباعة فعلية طولياً وعرضياً."
       },
       "manifest": "v/2.33.json"
-    },
-    {
-      "version": "2.31",
-      "notes": {
-        "tr": "• Güncelleme artık gerçekten kuruluyor. Program Files'a kurulu sürümde dosyalar yönetici izni olmadan değiştirilemediği için güncelleme sessizce uygulanmıyordu: program yeniden başlıyor ama eski sürümde kalıyordu. Artık gereken izin isteniyor, kopyalama doğrulanıyor ve başarısız olursa açıkça bildiriliyor.\n• Yazdırma: seçilen kağıt boyutu (A5 / 80mm termal) bazı yazıcılarda yok sayılıp yazıcının kendi varsayılanıyla basılıyordu. Düzeltildi.\n• Beyaz Tema: ağırlık göstergesi panelinin renkleri düzeltildi, rakamlar daha okunaklı.\n• Lisans uyarıları artık İngilizce ve Arapça arayüzde de doğru dilde görünüyor.\n• Ağ yazıcısı yanıt vermeyi bıraktığında oluşan kaynak sızıntısı giderildi.",
-        "en": "• Updates now actually install. In the Program Files installation the files could not be replaced without administrator permission, so the update was applied silently: the program restarted but stayed on the old version. The required permission is now requested, the copy is verified, and any failure is reported clearly.\n• Printing: the selected paper size (A5 / 80mm thermal) was ignored on some printers, which printed with their own default instead. Fixed.\n• White Theme: the weight display panel colours were corrected and the digits are easier to read.\n• License warnings now appear in the correct language in the English and Arabic interfaces.\n• Fixed a resource leak that occurred when a network printer stopped responding.",
-        "ar": "• التحديث صار يُثبَّت فعلاً. في النسخة المثبَّتة داخل Program Files لم يكن بالإمكان استبدال الملفات دون إذن المسؤول، فكان التحديث يُطبَّق بصمت: يُعاد تشغيل البرنامج لكنه يبقى على الإصدار القديم. الآن يُطلَب الإذن اللازم ويُتحقَّق من النسخ، وأي فشل يُبلَّغ بوضوح.\n• الطباعة: مقاس الورق المختار (A5 / حراري 80mm) كان يُتجاهَل في بعض الطابعات فتطبع بمقاسها الافتراضي. تم الإصلاح.\n• الثيم الأبيض: صُحِّحت ألوان لوحة عرض الوزن وصارت الأرقام أوضح.\n• تنبيهات الرخصة تظهر الآن باللغة الصحيحة في الواجهتين الإنجليزية والعربية.\n• عولج تسريب في الموارد كان يحدث عند توقّف طابعة الشبكة عن الاستجابة."
-      },
-      "manifest": "v/2.31.json"
     }
   ],
-  "sig": "19aa4a522a331761ee4605fafe3be404e722de83ee6860fa489e24d82f5daa44"
+  "sig": "c704bbb4e40a20aa0718321bc3c6a6b6d21cf0ca083a08049b8c6b1e3268cf75"
 }
