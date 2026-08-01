@@ -1,9 +1,9 @@
 {
-  "version": "2.34",
+  "version": "2.35",
   "notes": {
-    "tr": "• Güncelleme yolu baştan sona gözden geçirildi ve sağlamlaştırıldı.\n• Sürüm geri alma artık güncelleyicinin kendisini silmiyor. Eski bir sürüme dönerken kurtarma aracı korunuyor; böylece istediğiniz zaman ileri/geri gidebilirsiniz.\n• Güncelleyici, AVAR Kantar açıkken güncelleme uygulamıyor; önce kapatmanızı istiyor (açık program dosyalarını kilitler ve kopyalama yarım kalırdı).\n• Güvenlik: güncelleyici, AVAR Kantar kurulumunu doğrulayamadığı hiçbir klasörde dosya silmiyor.\n• Yayın öncesi otomatik denetim: sürüm numarası ile derlenen programın sürümü uyuşmazsa yayın durduruluyor.",
-    "en": "• The whole update path was reviewed and hardened.\n• Rolling back to an older version no longer deletes the updater itself. The recovery tool is preserved, so you can move back and forward whenever you want.\n• The updater will not apply an update while AVAR Kantar is open; it asks you to close it first (an open program locks its files and the copy would be left half-done).\n• Safety: the updater deletes nothing in any folder where it cannot verify an AVAR Kantar installation.\n• Pre-publish check: if the version number and the built program's version do not match, publishing is stopped.",
-    "ar": "• مراجعة شاملة لمسار التحديث وتقويته.\n• الرجوع إلى إصدار أقدم لم يعد يحذف المحدّث نفسه. أداة الاسترجاع محفوظة، فيمكنك التنقل بين الإصدارات ذهاباً وإياباً متى شئت.\n• المحدّث لا يطبّق التحديث وبرنامج AVAR Kantar مفتوح؛ يطلب إغلاقه أولاً (البرنامج المفتوح يقفل ملفاته فيبقى النسخ ناقصاً).\n• الأمان: المحدّث لا يحذف أي ملف في مجلد لا يستطيع التأكد أنه مجلد تثبيت AVAR Kantar.\n• فحص ما قبل النشر: إذا لم يتطابق رقم الإصدار مع إصدار البرنامج المبني يتوقف النشر."
+    "tr": "• Tema değiştirince Ayarlar penceresi de ANINDA yeni temaya geçiyor; artık kapatıp açmak gerekmiyor.\n• Temasız kalan alanlar düzeltildi: yazı boyutu/genişliği/harf aralığı/koyuluk/satır aralığı kutuları, COM → Veri Denetimi'ndeki işlenmiş+ham veri çerçevesi ve yazdırma düzenindeki alan yerleşimi.\n• Simgeler artık ekran çözünürlüğünde çiziliyor — %125/%150 ölçeklemede görülen pikselli görüntü giderildi.\n• Kutu başlıklarının çevresindeki istenmeyen çerçeve kaldırıldı.\n• Güvenlik: kimse kendinden ÜSTÜN yetkide hesap oluşturamaz, düzenleyemez veya silemez (admin artık 'yönetici' hesabı açamaz/silemez).\n• Güncelleme: kesintili bağlantıda indirme otomatik yeniden deneniyor; çok eski sürümlere geri dönüş kapatıldı.",
+    "en": "• Changing the theme now restyles the Settings window INSTANTLY; you no longer need to close and reopen it.\n• Fixed areas that ignored the theme: the font size/width/letter-spacing/darkness/line-spacing boxes, the processed+raw data frame in COM → Data Monitor, and the field placement area in the print layout.\n• Icons are now rendered at screen resolution — the pixelated look at 125%/150% scaling is gone.\n• Removed the unwanted frame drawn around group box titles.\n• Security: nobody can create, edit or delete an account with a role HIGHER than their own (an admin can no longer create or delete a 'yönetici' account).\n• Updates: downloads retry automatically on a flaky connection; rolling back to very old versions is now blocked.",
+    "ar": "• عند تغيير الثيم تتحدّث نافذة الإعدادات فوراً؛ لم تعد بحاجة إلى إغلاقها وفتحها.\n• أُصلحت المناطق التي لم تكن تتبع الثيم: حقول حجم الخط وعرضه وتباعد الحروف والقتامة وتباعد الأسطر، وإطار البيانات المعالجة والخام في COM ← مراقبة البيانات، ومكان الحقول في تخطيط الطباعة.\n• صارت الأيقونات تُرسم بدقة الشاشة — واختفت البكسلات الظاهرة عند تكبير 125%/150%.\n• أُزيل الإطار غير المرغوب حول عناوين الصناديق.\n• الأمان: لا يستطيع أحد إنشاء أو تعديل أو حذف حساب بصلاحية أعلى من صلاحيته (لم يعد بإمكان admin إنشاء أو حذف حساب yönetici).\n• التحديث: يُعاد المحاولة تلقائياً عند ضعف الاتصال، ومُنع الرجوع إلى الإصدارات القديمة جداً."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -154,13 +154,13 @@
     },
     {
       "path": "AVAR Guncelleyici.exe",
-      "sha256": "da85c03969bec3031c30f812c611f7be0e0cb3e819d77a276d05694d3c451342",
-      "size": 7589888
+      "sha256": "768db84ac7bae7e4a4d8380dc49df85e12dfd7a42dd9fe02e083f0ebf67bdae5",
+      "size": 7606272
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "bf9b3e201c6c4009b800c84a217ecb4d55764f6d2aa3e5b085ef8b1122067d63",
-      "size": 20814848
+      "sha256": "9c09afe37e0996e2d1d6019d867679ae01de5fff5a2b4bb39363b308796b6f37",
+      "size": 20880384
     },
     {
       "path": "configs/indikator_presets.json",
@@ -333,6 +333,21 @@
       "size": 4804320
     },
     {
+      "path": "PySide6/translations/qtbase_ar.qm",
+      "sha256": "e03fe68d83201543698fd7fe267dd5dfc5bfd195147e74ff2f19ac3491401263",
+      "size": 160017
+    },
+    {
+      "path": "PySide6/translations/qtbase_en.qm",
+      "sha256": "494ac9a2b2cb2fdeced353f4a9f898ed8dcf616e9bc667438c62681e3f7f79cf",
+      "size": 33
+    },
+    {
+      "path": "PySide6/translations/qtbase_tr.qm",
+      "sha256": "353fdfd7165659a49212e7a25bf91c0a71588e52c836f7496640f26782414634",
+      "size": 248720
+    },
+    {
       "path": "pyside6.abi3.dll",
       "sha256": "e9fbf3fbd8b97f9dee645ece52789643e7472537cd035d07c0aacab3bc6e6047",
       "size": 260320
@@ -468,5 +483,5 @@
       "size": 75264
     }
   ],
-  "sig": "7442ba228f62fe42582fc5d1bf22b67c65b2d92ddd84e556924740417c5e4fd7"
+  "sig": "8657590061be07612cf79e58d6852fb85d6ebe6732359834c40a0d59f71299f2"
 }
