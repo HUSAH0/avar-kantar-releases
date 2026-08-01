@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "2.35",
+      "notes": {
+        "tr": "• Tema değiştirince Ayarlar penceresi de ANINDA yeni temaya geçiyor; artık kapatıp açmak gerekmiyor.\n• Temasız kalan alanlar düzeltildi: yazı boyutu/genişliği/harf aralığı/koyuluk/satır aralığı kutuları, COM → Veri Denetimi'ndeki işlenmiş+ham veri çerçevesi ve yazdırma düzenindeki alan yerleşimi.\n• Simgeler artık ekran çözünürlüğünde çiziliyor — %125/%150 ölçeklemede görülen pikselli görüntü giderildi.\n• Kutu başlıklarının çevresindeki istenmeyen çerçeve kaldırıldı.\n• Güvenlik: kimse kendinden ÜSTÜN yetkide hesap oluşturamaz, düzenleyemez veya silemez (admin artık 'yönetici' hesabı açamaz/silemez).\n• Güncelleme: kesintili bağlantıda indirme otomatik yeniden deneniyor; çok eski sürümlere geri dönüş kapatıldı.",
+        "en": "• Changing the theme now restyles the Settings window INSTANTLY; you no longer need to close and reopen it.\n• Fixed areas that ignored the theme: the font size/width/letter-spacing/darkness/line-spacing boxes, the processed+raw data frame in COM → Data Monitor, and the field placement area in the print layout.\n• Icons are now rendered at screen resolution — the pixelated look at 125%/150% scaling is gone.\n• Removed the unwanted frame drawn around group box titles.\n• Security: nobody can create, edit or delete an account with a role HIGHER than their own (an admin can no longer create or delete a 'yönetici' account).\n• Updates: downloads retry automatically on a flaky connection; rolling back to very old versions is now blocked.",
+        "ar": "• عند تغيير الثيم تتحدّث نافذة الإعدادات فوراً؛ لم تعد بحاجة إلى إغلاقها وفتحها.\n• أُصلحت المناطق التي لم تكن تتبع الثيم: حقول حجم الخط وعرضه وتباعد الحروف والقتامة وتباعد الأسطر، وإطار البيانات المعالجة والخام في COM ← مراقبة البيانات، ومكان الحقول في تخطيط الطباعة.\n• صارت الأيقونات تُرسم بدقة الشاشة — واختفت البكسلات الظاهرة عند تكبير 125%/150%.\n• أُزيل الإطار غير المرغوب حول عناوين الصناديق.\n• الأمان: لا يستطيع أحد إنشاء أو تعديل أو حذف حساب بصلاحية أعلى من صلاحيته (لم يعد بإمكان admin إنشاء أو حذف حساب yönetici).\n• التحديث: يُعاد المحاولة تلقائياً عند ضعف الاتصال، ومُنع الرجوع إلى الإصدارات القديمة جداً."
+      },
+      "manifest": "v/2.35.json"
+    },
+    {
       "version": "2.34",
       "notes": {
         "tr": "• Güncelleme yolu baştan sona gözden geçirildi ve sağlamlaştırıldı.\n• Sürüm geri alma artık güncelleyicinin kendisini silmiyor. Eski bir sürüme dönerken kurtarma aracı korunuyor; böylece istediğiniz zaman ileri/geri gidebilirsiniz.\n• Güncelleyici, AVAR Kantar açıkken güncelleme uygulamıyor; önce kapatmanızı istiyor (açık program dosyalarını kilitler ve kopyalama yarım kalırdı).\n• Güvenlik: güncelleyici, AVAR Kantar kurulumunu doğrulayamadığı hiçbir klasörde dosya silmiyor.\n• Yayın öncesi otomatik denetim: sürüm numarası ile derlenen programın sürümü uyuşmazsa yayın durduruluyor.",
@@ -28,5 +37,5 @@
       "manifest": "v/2.31.json"
     }
   ],
-  "sig": "c66e9a08b7e302029c2828dc282f15395ea66d66fa251420ddf57c6999aab991"
+  "sig": "32bda083c85103d91ff8a1dc574c8f63a3ba37c1b12ea0ba0e890624b87e2474"
 }
