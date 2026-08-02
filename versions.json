@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "2.39",
+      "notes": {
+        "tr": "• Güncelleyici artık PROGRAMIN DİLİNİ kullanıyor (Türkçe/İngilizce/Arapça); Arapça'da arayüz sağdan sola akıyor. Önceden yalnız Türkçe idi.\n• Kaldırma (uninstall) üç seçenek sunuyor: Normal (yalnız program), Sıfırdan başla (program + ayarlar), Derin (program + ayarlar + lisans + TÜM tartım kayıtları — iki kez onay ister).\n• Kaldırma artık geride dosya BIRAKMIYOR. Önceden program klasöründe eski güncelleyici ve boş klasörler kalıyordu.\n• Başlıktaki logo düzeltildi: tasarım kaynağı olan ve başka bir firmanın logosunu da içeren dev dosya artık ne kullanılıyor ne de kuruluma konuyor (~3.4 MB küçülme).",
+        "en": "• The updater now follows the PROGRAM'S LANGUAGE (Turkish/English/Arabic); in Arabic the interface runs right-to-left. It was Turkish-only before.\n• Uninstall now offers three choices: Normal (program only), Fresh start (program + settings), Deep (program + settings + licence + ALL weighing records — asks twice).\n• Uninstall no longer LEAVES FILES BEHIND. The old updater and empty folders used to remain in the program folder.\n• The header logo was corrected: the huge design-source file, which also contained another company's logo, is no longer used or shipped (~3.4 MB smaller).",
+        "ar": "• صار المحدّث يستخدم لغة البرنامج (التركية/الإنجليزية/العربية)، وفي العربية تسير الواجهة من اليمين إلى اليسار. كان بالتركية فقط.\n• الإزالة صارت تقدّم ثلاثة خيارات: عادية (البرنامج فقط)، بداية جديدة (البرنامج والإعدادات)، عميقة (البرنامج والإعدادات والرخصة وكل سجلات الأوزان — تطلب تأكيداً مرتين).\n• الإزالة لم تعد تترك ملفات خلفها. كان المحدّث القديم والمجلدات الفارغة تبقى في مجلد البرنامج.\n• صُحِّح شعار الشريط العلوي: الملف الضخم (وهو ملف تصميم يحتوي أيضاً شعار شركة أخرى) لم يعد يُستخدم ولا يُرسل مع التثبيت (توفير ~3.4 م.ب)."
+      },
+      "manifest": "v/2.39.json"
+    },
+    {
       "version": "2.38",
       "notes": {
         "tr": "• Güncelleyici artık TAMAMEN BAĞIMSIZ: kendi klasöründe (updater\\), kendi Qt kütüphaneleriyle, ana programla tek bir dosya bile paylaşmadan çalışıyor. Önceden dosyaları ana programla ortaktı; bir güncelleme o dosyaların üzerine yazdığında kurtarma aracı da çalışamaz hâle gelebiliyordu.\n• Kopyalama sırasında program hâlâ açıksa güncelleme artık YARIM BIRAKILMIYOR: hiç dokunmadan iptal ediliyor ve durum bildiriliyor. Önceden 2 dakika bekleyip kilitli dosyaları atlıyor, kurulum karışık kalıyordu.\n• Kurulumdaki Başlat menüsü kısayolu yeni konuma güncellendi.\n\nÖNEMLİ: Güncelleyicinin kendisi eski/bozuk kaldıysa güncelleme onu değiştiremez (güncellemeyi yapan program odur). Bu durumda kurulum dosyasını bir kez çalıştırmanız yeterlidir; sonrasında güncellemeler normal çalışır.",
@@ -35,16 +44,7 @@
         "ar": "• مراجعة شاملة لمسار التحديث وتقويته.\n• الرجوع إلى إصدار أقدم لم يعد يحذف المحدّث نفسه. أداة الاسترجاع محفوظة، فيمكنك التنقل بين الإصدارات ذهاباً وإياباً متى شئت.\n• المحدّث لا يطبّق التحديث وبرنامج AVAR Kantar مفتوح؛ يطلب إغلاقه أولاً (البرنامج المفتوح يقفل ملفاته فيبقى النسخ ناقصاً).\n• الأمان: المحدّث لا يحذف أي ملف في مجلد لا يستطيع التأكد أنه مجلد تثبيت AVAR Kantar.\n• فحص ما قبل النشر: إذا لم يتطابق رقم الإصدار مع إصدار البرنامج المبني يتوقف النشر."
       },
       "manifest": "v/2.34.json"
-    },
-    {
-      "version": "2.33",
-      "notes": {
-        "tr": "• ÖNEMLİ düzeltme: güncelleme %100'e ulaşıp da kurulmuyordu. Yardımcı betik konsolsuz başlatıldığı için hiç çalışmadan kapanıyor, hiçbir dosya kopyalanmıyordu. Artık uçtan uca doğrulandı.\n• Yazı otomatik olarak seçilen kağıda sığdırılıyor; büyük yazı artık sayfanın dışına taşmıyor (Ayarlar → Yazıcı → «Kağıda otomatik sığdır», kapatılabilir).\n• Yeni yazı ayarları: kalınlık, genişlik ve harf aralığı (mevcut yazı tipi, boyut ve koyuluk ayarlarının yanına).\n• Yazıcı değiştirildiğinde, seçili kağıt o yazıcıda desteklenmiyorsa uyumlu bir boyuta otomatik geçilir.\n• Güvenlik: korumalı ayarlarda doğrulama 5 kez yanlış girilirse program tamamen kapanır.\n• Sekiz kağıt boyutunun tümü (A4/A5/A6/B5/Letter/Legal/Executive + termal) dikey ve yatayda gerçek baskıyla test edildi.",
-        "en": "• IMPORTANT fix: the update reached 100% but never installed. The helper script was started without a console, so it exited without running and no files were copied. The whole flow is now verified end to end.\n• Text is fitted to the selected paper automatically, so large fonts no longer run off the page (Settings → Printer → «Auto-fit to paper», can be turned off).\n• New font settings: weight, width and letter spacing (next to the existing font, size and darkness settings).\n• When you change printer, if the selected paper is not supported it switches to a compatible size automatically.\n• Security: in the protected settings, five wrong verification answers now close the program completely.\n• All eight paper sizes (A4/A5/A6/B5/Letter/Legal/Executive + thermal) were tested with real output in portrait and landscape.",
-        "ar": "• إصلاح مهم: كان التحديث يصل إلى 100% ثم لا يُثبَّت. السكربت المساعد كان يُشغَّل بلا كونسول فيُغلق دون أن ينفّذ شيئاً ولا يُنسخ أي ملف. تم التحقق من المسار كاملاً الآن.\n• يُلاءَم حجم الخط تلقائياً مع الورق المختار، فلم يعد الخط الكبير يخرج عن حدود الصفحة (الإعدادات ← الطابعة ← «ملاءمة تلقائية للورق»، ويمكن إيقافها).\n• إعدادات خط جديدة: السماكة والعرض وتباعد الحروف (إلى جانب نوع الخط والحجم والقتامة).\n• عند تغيير الطابعة، إذا كان الورق المختار غير مدعوم يتم الانتقال تلقائياً إلى مقاس متوافق.\n• الأمان: في الإعدادات المحمية، خمس محاولات تحقّق خاطئة تُغلق البرنامج بالكامل.\n• جرى اختبار مقاسات الورق الثمانية كلها (A4/A5/A6/B5/Letter/Legal/Executive + الحراري) بطباعة فعلية طولياً وعرضياً."
-      },
-      "manifest": "v/2.33.json"
     }
   ],
-  "sig": "c704bbb4e40a20aa0718321bc3c6a6b6d21cf0ca083a08049b8c6b1e3268cf75"
+  "sig": "eb64d350afa5d4adbd3cfe81c74a82727413b07f497b4bc5ceab4e3610d650e9"
 }
