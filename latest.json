@@ -1,9 +1,9 @@
 {
-  "version": "2.38",
+  "version": "2.39",
   "notes": {
-    "tr": "• Güncelleyici artık TAMAMEN BAĞIMSIZ: kendi klasöründe (updater\\), kendi Qt kütüphaneleriyle, ana programla tek bir dosya bile paylaşmadan çalışıyor. Önceden dosyaları ana programla ortaktı; bir güncelleme o dosyaların üzerine yazdığında kurtarma aracı da çalışamaz hâle gelebiliyordu.\n• Kopyalama sırasında program hâlâ açıksa güncelleme artık YARIM BIRAKILMIYOR: hiç dokunmadan iptal ediliyor ve durum bildiriliyor. Önceden 2 dakika bekleyip kilitli dosyaları atlıyor, kurulum karışık kalıyordu.\n• Kurulumdaki Başlat menüsü kısayolu yeni konuma güncellendi.\n\nÖNEMLİ: Güncelleyicinin kendisi eski/bozuk kaldıysa güncelleme onu değiştiremez (güncellemeyi yapan program odur). Bu durumda kurulum dosyasını bir kez çalıştırmanız yeterlidir; sonrasında güncellemeler normal çalışır.",
-    "en": "• The updater is now FULLY INDEPENDENT: it lives in its own folder (updater\\) with its own Qt libraries and shares no file at all with the main program. Previously its files were shared with the main app, so an update overwriting them could take the recovery tool down too.\n• If the program is still open while files are copied, the update is no longer left half-done: it is cancelled without touching anything and reported. Previously it waited 2 minutes, skipped locked files and left a mixed installation.\n• The Start menu shortcut in Setup was updated to the new location.\n\nIMPORTANT: if the updater itself is left old or broken, an update cannot replace it (it is the program doing the updating). In that case run the setup file once; updates work normally afterwards.",
-    "ar": "• صار المحدّث مستقلاً تماماً: في مجلده الخاص (updater\\) ومع مكتبات Qt الخاصة به، ولا يشارك البرنامج الرئيسي أي ملف. سابقاً كانت ملفاته مشتركة، فإذا كتب التحديث فوقها قد تتعطل أداة الاسترجاع أيضاً.\n• إذا كان البرنامج ما زال مفتوحاً أثناء النسخ لم يعد التحديث يُترك ناقصاً: يُلغى دون المساس بشيء ويُبلَّغ عن ذلك. سابقاً كان ينتظر دقيقتين ثم يتخطى الملفات المقفلة فيبقى التثبيت مختلطاً.\n• حُدِّث اختصار قائمة ابدأ في المثبِّت إلى الموقع الجديد.\n\nمهم: إذا بقي المحدّث نفسه قديماً أو معطوباً فلن يستطيع التحديث استبداله (فهو البرنامج الذي ينفّذ التحديث). في هذه الحالة شغّل ملف التثبيت مرة واحدة، وبعدها تعمل التحديثات بشكل طبيعي."
+    "tr": "• Güncelleyici artık PROGRAMIN DİLİNİ kullanıyor (Türkçe/İngilizce/Arapça); Arapça'da arayüz sağdan sola akıyor. Önceden yalnız Türkçe idi.\n• Kaldırma (uninstall) üç seçenek sunuyor: Normal (yalnız program), Sıfırdan başla (program + ayarlar), Derin (program + ayarlar + lisans + TÜM tartım kayıtları — iki kez onay ister).\n• Kaldırma artık geride dosya BIRAKMIYOR. Önceden program klasöründe eski güncelleyici ve boş klasörler kalıyordu.\n• Başlıktaki logo düzeltildi: tasarım kaynağı olan ve başka bir firmanın logosunu da içeren dev dosya artık ne kullanılıyor ne de kuruluma konuyor (~3.4 MB küçülme).",
+    "en": "• The updater now follows the PROGRAM'S LANGUAGE (Turkish/English/Arabic); in Arabic the interface runs right-to-left. It was Turkish-only before.\n• Uninstall now offers three choices: Normal (program only), Fresh start (program + settings), Deep (program + settings + licence + ALL weighing records — asks twice).\n• Uninstall no longer LEAVES FILES BEHIND. The old updater and empty folders used to remain in the program folder.\n• The header logo was corrected: the huge design-source file, which also contained another company's logo, is no longer used or shipped (~3.4 MB smaller).",
+    "ar": "• صار المحدّث يستخدم لغة البرنامج (التركية/الإنجليزية/العربية)، وفي العربية تسير الواجهة من اليمين إلى اليسار. كان بالتركية فقط.\n• الإزالة صارت تقدّم ثلاثة خيارات: عادية (البرنامج فقط)، بداية جديدة (البرنامج والإعدادات)، عميقة (البرنامج والإعدادات والرخصة وكل سجلات الأوزان — تطلب تأكيداً مرتين).\n• الإزالة لم تعد تترك ملفات خلفها. كان المحدّث القديم والمجلدات الفارغة تبقى في مجلد البرنامج.\n• صُحِّح شعار الشريط العلوي: الملف الضخم (وهو ملف تصميم يحتوي أيضاً شعار شركة أخرى) لم يعد يُستخدم ولا يُرسل مع التثبيت (توفير ~3.4 م.ب)."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -148,13 +148,8 @@
       "size": 400215
     },
     {
-      "path": "assets/logo/full_logo.png",
-      "sha256": "2c05f431383bafa641e34abb3f4eb7f575d50d9db9b84ce0390de4a98d5f5b6c",
-      "size": 3508454
-    },
-    {
       "path": "AVAR Kantar.exe",
-      "sha256": "bdb08145674a66a13a645780dea61183b56aa1a9407ba0b96daf7b9c39e0d3bd",
+      "sha256": "e7eea76d6ba7795e73edf5d11a57da1bc96d7fdd95c5608065448721ba9a60fa",
       "size": 20886528
     },
     {
@@ -494,8 +489,8 @@
     },
     {
       "path": "updater/AVAR Guncelleyici.exe",
-      "sha256": "6576b62c7e16461b0461503a539e9707566f4f23bac7c64180ea36ced3eb80e9",
-      "size": 7611904
+      "sha256": "bba1d81d37d782216de8b1d0401d772bae0bbaff6d02ae410289cd377b89e836",
+      "size": 7637504
     },
     {
       "path": "updater/libcrypto-3.dll",
@@ -778,5 +773,5 @@
       "size": 75264
     }
   ],
-  "sig": "4598507a0317942ec16d6ca5815e87a6e0cd314e06560adcab6057c183ed0431"
+  "sig": "5c6e63ae7be17ab7b229a4ad177a2d00bba4dcf83ca53c6c29b384ac090530c4"
 }
