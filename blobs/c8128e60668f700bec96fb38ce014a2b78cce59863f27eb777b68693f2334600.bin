@@ -1,0 +1,50 @@
+AVAR Kantar — Third-Party Software Licenses
+============================================
+
+This folder contains the full, unmodified license texts of the
+open-source components used by AVAR Kantar. All rights of the
+respective components belong to their original authors.
+
+The application itself (AVAR Kantar) is proprietary; the licenses
+below apply ONLY to the specific third-party components listed.
+
+Components and their licenses
+-----------------------------
+
+  * Qt for Python (PySide6) — LGPLv3
+      → LGPL-3.0.txt (and GPL-3.0.txt, referenced by the LGPL)
+      Qt is used dynamically via separate DLLs shipped alongside the
+      program (folder: AVAR Kantar/PySide6/*). These DLLs may be
+      replaced by the end user with LGPL-compatible builds obtained
+      from the Qt Project. AVAR Kantar has NOT modified Qt.
+
+  * SQLCipher (community edition) — 3-clause BSD
+      → sqlcipher-LICENSE.txt
+
+  * openpyxl — MIT
+      → openpyxl-LICENSE.txt
+
+  * pyserial — 3-clause BSD
+      → pyserial-LICENSE.txt
+
+  * pywin32 — PSF-derived BSD
+      → pywin32-LICENSE.txt
+
+  * Lucide Icons — ISC (with historical MIT contributions)
+      → lucide-LICENSE.txt
+
+  * OpenSSL (bundled with SQLCipher/Python) — Apache 2.0
+      → openssl-LICENSE.txt / Apache-2.0.txt
+
+  * Python — PSF License 2.0
+      → PSF-2.0.txt
+
+Where to obtain sources
+-----------------------
+
+Sources for every LGPL / GPL-covered component are available from
+the upstream project pages, e.g.:
+  * Qt / PySide6  — https://www.qt.io/  |  https://pypi.org/project/PySide6/
+  * Python        — https://www.python.org/
+  * OpenSSL       — https://www.openssl.org/
+  * SQLCipher     — https://www.zetetic.net/sqlcipher/
