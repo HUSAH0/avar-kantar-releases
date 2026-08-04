@@ -1,10 +1,6 @@
 {
-  "version": "2.39",
-  "notes": {
-    "tr": "• Güncelleyici artık PROGRAMIN DİLİNİ kullanıyor (Türkçe/İngilizce/Arapça); Arapça'da arayüz sağdan sola akıyor. Önceden yalnız Türkçe idi.\n• Kaldırma (uninstall) üç seçenek sunuyor: Normal (yalnız program), Sıfırdan başla (program + ayarlar), Derin (program + ayarlar + lisans + TÜM tartım kayıtları — iki kez onay ister).\n• Kaldırma artık geride dosya BIRAKMIYOR. Önceden program klasöründe eski güncelleyici ve boş klasörler kalıyordu.\n• Başlıktaki logo düzeltildi: tasarım kaynağı olan ve başka bir firmanın logosunu da içeren dev dosya artık ne kullanılıyor ne de kuruluma konuyor (~3.4 MB küçülme).",
-    "en": "• The updater now follows the PROGRAM'S LANGUAGE (Turkish/English/Arabic); in Arabic the interface runs right-to-left. It was Turkish-only before.\n• Uninstall now offers three choices: Normal (program only), Fresh start (program + settings), Deep (program + settings + licence + ALL weighing records — asks twice).\n• Uninstall no longer LEAVES FILES BEHIND. The old updater and empty folders used to remain in the program folder.\n• The header logo was corrected: the huge design-source file, which also contained another company's logo, is no longer used or shipped (~3.4 MB smaller).",
-    "ar": "• صار المحدّث يستخدم لغة البرنامج (التركية/الإنجليزية/العربية)، وفي العربية تسير الواجهة من اليمين إلى اليسار. كان بالتركية فقط.\n• الإزالة صارت تقدّم ثلاثة خيارات: عادية (البرنامج فقط)، بداية جديدة (البرنامج والإعدادات)، عميقة (البرنامج والإعدادات والرخصة وكل سجلات الأوزان — تطلب تأكيداً مرتين).\n• الإزالة لم تعد تترك ملفات خلفها. كان المحدّث القديم والمجلدات الفارغة تبقى في مجلد البرنامج.\n• صُحِّح شعار الشريط العلوي: الملف الضخم (وهو ملف تصميم يحتوي أيضاً شعار شركة أخرى) لم يعد يُستخدم ولا يُرسل مع التثبيت (توفير ~3.4 م.ب)."
-  },
+  "version": "2.40",
+  "notes": "• Çoklu İndikatör desteği (en fazla 6 cihaz): her indikatör ayrı COM portunda tanımlanır. Ayarlar → İndikatörler'den ekleyip düzenlenebilir. Ana ekrandaki ağırlık göstergesine tıklayarak tüm indikatörlerin canlı okumaları görülür ve birincil (ana LCD'ye giden) indikatör değiştirilebilir.\r\n• Kameralar sekmesi: USB kameralar otomatik algılanır; + kartıyla IP/RTSP kamera manuel eklenir; silinen otomatik kameralar tekrar geri gelmez.\r\n• Sık kullanılan araçlar seçicisi: 1. tartıma başlarken en çok kaydedilen plakalar (firma + malzeme ile birlikte) sunulur; seçildiğinde form otomatik doldurulur.\r\n• Fiş logosu: Ayarlar → Yazıcı → Firma Bilgileri'nden logo yüklenebilir; her kağıt boyutu için sabit yükseklikte fişin üstüne basılır.\r\n• Ana ekran: gösterge/yazıcı/kamera durum ışıkları sıralandı; ağırlık göstergesi veri gelmezken 0 yerine \"-\" gösteriyor ve bu durumda BRÜT/DARA kartları okuma kabul etmiyor (yanlış sıfır ağırlık kaydını engeller).\r\n• Diller sekmesi kaldırıldı; dil seçimi artık Temalar sekmesinin altında. Gizli tabaklar açılana kadar dil değiştirilemez.\r\n• Yasal sekmesi + licenses/ klasörü: LGPLv3 (Qt) bildirimi ve tüm bileşenlerin tam lisans metinleri kurulumla birlikte gelir.",
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
     {
@@ -149,8 +145,8 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "e7eea76d6ba7795e73edf5d11a57da1bc96d7fdd95c5608065448721ba9a60fa",
-      "size": 20886528
+      "sha256": "402a84e12955a4b970a69f633bef815237cdf896749f79ab91f01ca7240cbdb0",
+      "size": 21480960
     },
     {
       "path": "configs/indikator_presets.json",
@@ -171,6 +167,66 @@
       "path": "libssl-3.dll",
       "sha256": "2e4d35b681a172d3298caf7dc670451be7a8ba27c26446efc67470742497a950",
       "size": 792856
+    },
+    {
+      "path": "licenses/Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size": 11358
+    },
+    {
+      "path": "licenses/GPL-3.0.txt",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "size": 35149
+    },
+    {
+      "path": "licenses/LGPL-3.0.txt",
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+      "size": 7652
+    },
+    {
+      "path": "licenses/lucide-LICENSE.txt",
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+      "size": 3208
+    },
+    {
+      "path": "licenses/openpyxl-LICENSE.txt",
+      "sha256": "0c84bb42f5d367e5ebf9fc2dde35b16141df5ee0fdc189250858bc6c5560f69e",
+      "size": 1131
+    },
+    {
+      "path": "licenses/openssl-LICENSE.txt",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a",
+      "size": 10175
+    },
+    {
+      "path": "licenses/pkg-PySide6-LicenseRef-Qt-Commercial.txt",
+      "sha256": "4f54763ac0fe2abd8f7f8d8fe370a94a08ebf84786aa0b91045bd6628deb08a3",
+      "size": 470
+    },
+    {
+      "path": "licenses/PSF-2.0.txt",
+      "sha256": "78b12c3a81360b357002334f0e70ea0e92eebf7a9b358805c03c48484945f3bb",
+      "size": 13809
+    },
+    {
+      "path": "licenses/pyserial-LICENSE.txt",
+      "sha256": "f30d42819c1b52d6b9bb3d95414e587cb60bb0934aa6c8844eea7bfbd43d5e50",
+      "size": 1886
+    },
+    {
+      "path": "licenses/pywin32-LICENSE.txt",
+      "sha256": "ae254460373deef5dff3e08104f4c1f03a045c2ae1b34760b5c30f7efcef9078",
+      "size": 1511
+    },
+    {
+      "path": "licenses/README.txt",
+      "sha256": "c8128e60668f700bec96fb38ce014a2b78cce59863f27eb777b68693f2334600",
+      "size": 1725
+    },
+    {
+      "path": "licenses/sqlcipher-LICENSE.txt",
+      "sha256": "2a2826f6acf46fa650730cf42cbb22a642be33a7ef119c9c4f4bf6daf3bef48e",
+      "size": 1463
     },
     {
       "path": "msvcp140.dll",
@@ -298,6 +354,11 @@
       "size": 3867872
     },
     {
+      "path": "PySide6/QtMultimedia.pyd",
+      "sha256": "c1ec760508822b4ecaf0ddb453e8c76ca7d89617b6c23c183f48d9113f38ad97",
+      "size": 568544
+    },
+    {
       "path": "PySide6/QtNetwork.pyd",
       "sha256": "53f1c164055bdee206ead2c1ca8bcbed1a4dd70a1258d7e058f867eeacdfe318",
       "size": 1000160
@@ -371,6 +432,11 @@
       "path": "qt6gui.dll",
       "sha256": "79c426ba4debf971c3dc38b38192cbcc5d536b2a92299d6d82cf946643beb397",
       "size": 9446112
+    },
+    {
+      "path": "qt6multimedia.dll",
+      "sha256": "916110a3003c1c1a6ba212217629622595c99cae28153fb0eb41142ab3f70523",
+      "size": 1227488
     },
     {
       "path": "qt6network.dll",
@@ -489,8 +555,8 @@
     },
     {
       "path": "updater/AVAR Guncelleyici.exe",
-      "sha256": "bba1d81d37d782216de8b1d0401d772bae0bbaff6d02ae410289cd377b89e836",
-      "size": 7637504
+      "sha256": "566410507cc4d3a9402a1cc0a34dfe69eed77b0d5d6b3f10337764cea327ef5b",
+      "size": 7639552
     },
     {
       "path": "updater/libcrypto-3.dll",
@@ -773,5 +839,5 @@
       "size": 75264
     }
   ],
-  "sig": "5c6e63ae7be17ab7b229a4ad177a2d00bba4dcf83ca53c6c29b384ac090530c4"
+  "sig": "069d5a26a81b03d430585cc901e3950ed543f265169830d96914512112eee528"
 }
