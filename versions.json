@@ -1,6 +1,11 @@
 {
   "versions": [
     {
+      "version": "2.40",
+      "notes": "• Çoklu İndikatör desteği (en fazla 6 cihaz): her indikatör ayrı COM portunda tanımlanır. Ayarlar → İndikatörler'den ekleyip düzenlenebilir. Ana ekrandaki ağırlık göstergesine tıklayarak tüm indikatörlerin canlı okumaları görülür ve birincil (ana LCD'ye giden) indikatör değiştirilebilir.\r\n• Kameralar sekmesi: USB kameralar otomatik algılanır; + kartıyla IP/RTSP kamera manuel eklenir; silinen otomatik kameralar tekrar geri gelmez.\r\n• Sık kullanılan araçlar seçicisi: 1. tartıma başlarken en çok kaydedilen plakalar (firma + malzeme ile birlikte) sunulur; seçildiğinde form otomatik doldurulur.\r\n• Fiş logosu: Ayarlar → Yazıcı → Firma Bilgileri'nden logo yüklenebilir; her kağıt boyutu için sabit yükseklikte fişin üstüne basılır.\r\n• Ana ekran: gösterge/yazıcı/kamera durum ışıkları sıralandı; ağırlık göstergesi veri gelmezken 0 yerine \"-\" gösteriyor ve bu durumda BRÜT/DARA kartları okuma kabul etmiyor (yanlış sıfır ağırlık kaydını engeller).\r\n• Diller sekmesi kaldırıldı; dil seçimi artık Temalar sekmesinin altında. Gizli tabaklar açılana kadar dil değiştirilemez.\r\n• Yasal sekmesi + licenses/ klasörü: LGPLv3 (Qt) bildirimi ve tüm bileşenlerin tam lisans metinleri kurulumla birlikte gelir.",
+      "manifest": "v/2.40.json"
+    },
+    {
       "version": "2.39",
       "notes": {
         "tr": "• Güncelleyici artık PROGRAMIN DİLİNİ kullanıyor (Türkçe/İngilizce/Arapça); Arapça'da arayüz sağdan sola akıyor. Önceden yalnız Türkçe idi.\n• Kaldırma (uninstall) üç seçenek sunuyor: Normal (yalnız program), Sıfırdan başla (program + ayarlar), Derin (program + ayarlar + lisans + TÜM tartım kayıtları — iki kez onay ister).\n• Kaldırma artık geride dosya BIRAKMIYOR. Önceden program klasöründe eski güncelleyici ve boş klasörler kalıyordu.\n• Başlıktaki logo düzeltildi: tasarım kaynağı olan ve başka bir firmanın logosunu da içeren dev dosya artık ne kullanılıyor ne de kuruluma konuyor (~3.4 MB küçülme).",
@@ -35,16 +40,7 @@
         "ar": "• عند تغيير الثيم تتحدّث نافذة الإعدادات فوراً؛ لم تعد بحاجة إلى إغلاقها وفتحها.\n• أُصلحت المناطق التي لم تكن تتبع الثيم: حقول حجم الخط وعرضه وتباعد الحروف والقتامة وتباعد الأسطر، وإطار البيانات المعالجة والخام في COM ← مراقبة البيانات، ومكان الحقول في تخطيط الطباعة.\n• صارت الأيقونات تُرسم بدقة الشاشة — واختفت البكسلات الظاهرة عند تكبير 125%/150%.\n• أُزيل الإطار غير المرغوب حول عناوين الصناديق.\n• الأمان: لا يستطيع أحد إنشاء أو تعديل أو حذف حساب بصلاحية أعلى من صلاحيته (لم يعد بإمكان admin إنشاء أو حذف حساب yönetici).\n• التحديث: يُعاد المحاولة تلقائياً عند ضعف الاتصال، ومُنع الرجوع إلى الإصدارات القديمة جداً."
       },
       "manifest": "v/2.35.json"
-    },
-    {
-      "version": "2.34",
-      "notes": {
-        "tr": "• Güncelleme yolu baştan sona gözden geçirildi ve sağlamlaştırıldı.\n• Sürüm geri alma artık güncelleyicinin kendisini silmiyor. Eski bir sürüme dönerken kurtarma aracı korunuyor; böylece istediğiniz zaman ileri/geri gidebilirsiniz.\n• Güncelleyici, AVAR Kantar açıkken güncelleme uygulamıyor; önce kapatmanızı istiyor (açık program dosyalarını kilitler ve kopyalama yarım kalırdı).\n• Güvenlik: güncelleyici, AVAR Kantar kurulumunu doğrulayamadığı hiçbir klasörde dosya silmiyor.\n• Yayın öncesi otomatik denetim: sürüm numarası ile derlenen programın sürümü uyuşmazsa yayın durduruluyor.",
-        "en": "• The whole update path was reviewed and hardened.\n• Rolling back to an older version no longer deletes the updater itself. The recovery tool is preserved, so you can move back and forward whenever you want.\n• The updater will not apply an update while AVAR Kantar is open; it asks you to close it first (an open program locks its files and the copy would be left half-done).\n• Safety: the updater deletes nothing in any folder where it cannot verify an AVAR Kantar installation.\n• Pre-publish check: if the version number and the built program's version do not match, publishing is stopped.",
-        "ar": "• مراجعة شاملة لمسار التحديث وتقويته.\n• الرجوع إلى إصدار أقدم لم يعد يحذف المحدّث نفسه. أداة الاسترجاع محفوظة، فيمكنك التنقل بين الإصدارات ذهاباً وإياباً متى شئت.\n• المحدّث لا يطبّق التحديث وبرنامج AVAR Kantar مفتوح؛ يطلب إغلاقه أولاً (البرنامج المفتوح يقفل ملفاته فيبقى النسخ ناقصاً).\n• الأمان: المحدّث لا يحذف أي ملف في مجلد لا يستطيع التأكد أنه مجلد تثبيت AVAR Kantar.\n• فحص ما قبل النشر: إذا لم يتطابق رقم الإصدار مع إصدار البرنامج المبني يتوقف النشر."
-      },
-      "manifest": "v/2.34.json"
     }
   ],
-  "sig": "eb64d350afa5d4adbd3cfe81c74a82727413b07f497b4bc5ceab4e3610d650e9"
+  "sig": "ce10e016060be03ac985aeb737ca72b2a62d7e313e920725c7cc71d3efbf1250"
 }
