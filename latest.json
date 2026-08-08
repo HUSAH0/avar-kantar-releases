@@ -1,10 +1,6 @@
 {
-  "version": "2.39",
-  "notes": {
-    "tr": "• Güncelleyici artık PROGRAMIN DİLİNİ kullanıyor (Türkçe/İngilizce/Arapça); Arapça'da arayüz sağdan sola akıyor. Önceden yalnız Türkçe idi.\n• Kaldırma (uninstall) üç seçenek sunuyor: Normal (yalnız program), Sıfırdan başla (program + ayarlar), Derin (program + ayarlar + lisans + TÜM tartım kayıtları — iki kez onay ister).\n• Kaldırma artık geride dosya BIRAKMIYOR. Önceden program klasöründe eski güncelleyici ve boş klasörler kalıyordu.\n• Başlıktaki logo düzeltildi: tasarım kaynağı olan ve başka bir firmanın logosunu da içeren dev dosya artık ne kullanılıyor ne de kuruluma konuyor (~3.4 MB küçülme).",
-    "en": "• The updater now follows the PROGRAM'S LANGUAGE (Turkish/English/Arabic); in Arabic the interface runs right-to-left. It was Turkish-only before.\n• Uninstall now offers three choices: Normal (program only), Fresh start (program + settings), Deep (program + settings + licence + ALL weighing records — asks twice).\n• Uninstall no longer LEAVES FILES BEHIND. The old updater and empty folders used to remain in the program folder.\n• The header logo was corrected: the huge design-source file, which also contained another company's logo, is no longer used or shipped (~3.4 MB smaller).",
-    "ar": "• صار المحدّث يستخدم لغة البرنامج (التركية/الإنجليزية/العربية)، وفي العربية تسير الواجهة من اليمين إلى اليسار. كان بالتركية فقط.\n• الإزالة صارت تقدّم ثلاثة خيارات: عادية (البرنامج فقط)، بداية جديدة (البرنامج والإعدادات)، عميقة (البرنامج والإعدادات والرخصة وكل سجلات الأوزان — تطلب تأكيداً مرتين).\n• الإزالة لم تعد تترك ملفات خلفها. كان المحدّث القديم والمجلدات الفارغة تبقى في مجلد البرنامج.\n• صُحِّح شعار الشريط العلوي: الملف الضخم (وهو ملف تصميم يحتوي أيضاً شعار شركة أخرى) لم يعد يُستخدم ولا يُرسل مع التثبيت (توفير ~3.4 م.ب)."
-  },
+  "version": "2.42",
+  "notes": "Kullanıcı-başına kurulum ve yükseltmesiz kendi kendine güncelleme altyapısı.",
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
     {
@@ -149,8 +145,23 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "e7eea76d6ba7795e73edf5d11a57da1bc96d7fdd95c5608065448721ba9a60fa",
-      "size": 20886528
+      "sha256": "d23b428f778a99c54346683973fda06ad906b3629b815cb848602f389e55fefe",
+      "size": 21998080
+    },
+    {
+      "path": "avcodec-61.dll",
+      "sha256": "5d02f566bfc7116aa2e758191ac60728a6b085f52f0c9df6b0449c3e39fc1eff",
+      "size": 13919968
+    },
+    {
+      "path": "avformat-61.dll",
+      "sha256": "9c9aad9c40ff2c8894b2d677c495aabe21a824b2df92e8dc1d77b8e508ff9bfb",
+      "size": 2642656
+    },
+    {
+      "path": "avutil-59.dll",
+      "sha256": "92e7a65f6ead544506276a9af38ce1ffabfce1691a81d0eab2ab5098576fbe82",
+      "size": 1199328
     },
     {
       "path": "configs/indikator_presets.json",
@@ -171,6 +182,66 @@
       "path": "libssl-3.dll",
       "sha256": "2e4d35b681a172d3298caf7dc670451be7a8ba27c26446efc67470742497a950",
       "size": 792856
+    },
+    {
+      "path": "licenses/Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size": 11358
+    },
+    {
+      "path": "licenses/GPL-3.0.txt",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "size": 35149
+    },
+    {
+      "path": "licenses/LGPL-3.0.txt",
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+      "size": 7652
+    },
+    {
+      "path": "licenses/lucide-LICENSE.txt",
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+      "size": 3208
+    },
+    {
+      "path": "licenses/openpyxl-LICENSE.txt",
+      "sha256": "0c84bb42f5d367e5ebf9fc2dde35b16141df5ee0fdc189250858bc6c5560f69e",
+      "size": 1131
+    },
+    {
+      "path": "licenses/openssl-LICENSE.txt",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a",
+      "size": 10175
+    },
+    {
+      "path": "licenses/pkg-PySide6-LicenseRef-Qt-Commercial.txt",
+      "sha256": "4f54763ac0fe2abd8f7f8d8fe370a94a08ebf84786aa0b91045bd6628deb08a3",
+      "size": 470
+    },
+    {
+      "path": "licenses/PSF-2.0.txt",
+      "sha256": "78b12c3a81360b357002334f0e70ea0e92eebf7a9b358805c03c48484945f3bb",
+      "size": 13809
+    },
+    {
+      "path": "licenses/pyserial-LICENSE.txt",
+      "sha256": "f30d42819c1b52d6b9bb3d95414e587cb60bb0934aa6c8844eea7bfbd43d5e50",
+      "size": 1886
+    },
+    {
+      "path": "licenses/pywin32-LICENSE.txt",
+      "sha256": "ae254460373deef5dff3e08104f4c1f03a045c2ae1b34760b5c30f7efcef9078",
+      "size": 1511
+    },
+    {
+      "path": "licenses/README.txt",
+      "sha256": "c8128e60668f700bec96fb38ce014a2b78cce59863f27eb777b68693f2334600",
+      "size": 1725
+    },
+    {
+      "path": "licenses/sqlcipher-LICENSE.txt",
+      "sha256": "2a2826f6acf46fa650730cf42cbb22a642be33a7ef119c9c4f4bf6daf3bef48e",
+      "size": 1463
     },
     {
       "path": "msvcp140.dll",
@@ -248,6 +319,16 @@
       "size": 562912
     },
     {
+      "path": "PySide6/qt-plugins/multimedia/ffmpegmediaplugin.dll",
+      "sha256": "75c70afaa74659b4686869d536cb0ca19414ddb2e895ee59a421c55370268fab",
+      "size": 632544
+    },
+    {
+      "path": "PySide6/qt-plugins/multimedia/windowsmediaplugin.dll",
+      "sha256": "cd3e1ddbcf2735c5df4a0be2ce2e3f1521635eb5922f09900d1d1127cca7daef",
+      "size": 288992
+    },
+    {
       "path": "PySide6/qt-plugins/platforms/qdirect2d.dll",
       "sha256": "2465439563b82e2032e511203c7ab5456167c89ecaefbcf7e5df24ec9c2e2194",
       "size": 1079008
@@ -296,6 +377,16 @@
       "path": "PySide6/QtGui.pyd",
       "sha256": "97612d89bc8a10389751fa96542a49a7b290ac598cb4e6310d0d9afcfc99bed9",
       "size": 3867872
+    },
+    {
+      "path": "PySide6/QtMultimedia.pyd",
+      "sha256": "c1ec760508822b4ecaf0ddb453e8c76ca7d89617b6c23c183f48d9113f38ad97",
+      "size": 568544
+    },
+    {
+      "path": "PySide6/QtMultimediaWidgets.pyd",
+      "sha256": "0e16d8b997d36ca19f92c7d189895ebe85d9173aab05ad24252bf0a3591ef0aa",
+      "size": 142048
     },
     {
       "path": "PySide6/QtNetwork.pyd",
@@ -373,6 +464,16 @@
       "size": 9446112
     },
     {
+      "path": "qt6multimedia.dll",
+      "sha256": "916110a3003c1c1a6ba212217629622595c99cae28153fb0eb41142ab3f70523",
+      "size": 1227488
+    },
+    {
+      "path": "qt6multimediawidgets.dll",
+      "sha256": "b4cc85ad36ca7c49096cc70353953c14c2a8237e8f2d4d5f0ca1f8591b8b96df",
+      "size": 62176
+    },
+    {
       "path": "qt6network.dll",
       "sha256": "9ec562e4a338e3bdee306877f9b10130fba412e3eaddd15215cb6f7dfcc21083",
       "size": 1741024
@@ -443,6 +544,16 @@
       "size": 5918720
     },
     {
+      "path": "swresample-5.dll",
+      "sha256": "7d6dede2e7212dd25b04459e7a8d9f328b17fa47aa0b414cf0db4419070569dc",
+      "size": 248032
+    },
+    {
+      "path": "swscale-8.dll",
+      "sha256": "b42ce981f6884c74c458196db073a7dc0f5804849a1500560b034ffa7028cdc0",
+      "size": 753376
+    },
+    {
       "path": "unicodedata.pyd",
       "sha256": "a67eec238162fde20ac24ca7df931792734aad0611be22d1b3a71bc15acf72f3",
       "size": 711160
@@ -489,8 +600,8 @@
     },
     {
       "path": "updater/AVAR Guncelleyici.exe",
-      "sha256": "bba1d81d37d782216de8b1d0401d772bae0bbaff6d02ae410289cd377b89e836",
-      "size": 7637504
+      "sha256": "e122ecd8d8bbaec1c7f88e6f0af8c421d6b470fcefc1d15ec37d65b6ba8bb3d2",
+      "size": 7656960
     },
     {
       "path": "updater/libcrypto-3.dll",
@@ -773,5 +884,5 @@
       "size": 75264
     }
   ],
-  "sig": "5c6e63ae7be17ab7b229a4ad177a2d00bba4dcf83ca53c6c29b384ac090530c4"
+  "sig": "0402e4477f165e7a2b1b1885050aad45897fb349abf7e03d64b7effcc7469b56"
 }
