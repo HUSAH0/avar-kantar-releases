@@ -1,6 +1,11 @@
 {
   "versions": [
     {
+      "version": "2.42",
+      "notes": "Kullanıcı-başına kurulum ve yükseltmesiz kendi kendine güncelleme altyapısı.",
+      "manifest": "v/2.42.json"
+    },
+    {
       "version": "2.39",
       "notes": {
         "tr": "• Güncelleyici artık PROGRAMIN DİLİNİ kullanıyor (Türkçe/İngilizce/Arapça); Arapça'da arayüz sağdan sola akıyor. Önceden yalnız Türkçe idi.\n• Kaldırma (uninstall) üç seçenek sunuyor: Normal (yalnız program), Sıfırdan başla (program + ayarlar), Derin (program + ayarlar + lisans + TÜM tartım kayıtları — iki kez onay ister).\n• Kaldırma artık geride dosya BIRAKMIYOR. Önceden program klasöründe eski güncelleyici ve boş klasörler kalıyordu.\n• Başlıktaki logo düzeltildi: tasarım kaynağı olan ve başka bir firmanın logosunu da içeren dev dosya artık ne kullanılıyor ne de kuruluma konuyor (~3.4 MB küçülme).",
@@ -37,5 +42,5 @@
       "manifest": "v/2.35.json"
     }
   ],
-  "sig": "5662a8e3d6c0254c889158feba49d2e08fbad534928fe8c12f50cc5fdf25775e"
+  "sig": "da8f5282b0ca450714c1794f3a1a3796f9932321265c42d656c8eb6b2ebda522"
 }
