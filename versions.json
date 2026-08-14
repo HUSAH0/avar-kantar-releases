@@ -1,6 +1,11 @@
 {
   "versions": [
     {
+      "version": "2.44",
+      "notes": "Kamera: görüntü gecikmesi giderildi, kare/sn ayarı artık uygulanıyor. Bazı kameraların 'yanıt vermiyor' hatası düzeltildi. R tuşu: canlıya atla. Kamera bağlantı adresleri artık şifreli saklanıyor.\nAyarlar: yeni 'Dosya Konumları' sekmesi — yedekleme klasörü ve sıklığı (günlük/2 günde bir/haftalık/aylık), rapor ve anlık görüntü klasörleri.\nFiş: düzenlenen kayıtlarda yalnız değişen alanın yanına '(Düzenlendi)' yazılır.\nRaporlar: büyük dışa aktarımlarda bekleme imleci.",
+      "manifest": "v/2.44.json"
+    },
+    {
       "version": "2.43",
       "notes": "• Bilgi/Yardım artık F12; F1 kamera görünümünü açar/kapatır.\r\n• Ana ekran sadeleşti: gereksiz F1 ve gösterge etiketleri kaldırıldı.\r\n• Ayarlarda tüm 'Kapat' düğmeleri aynı görünümde.\r\n• Bağlantı/yazıcı/kamera durumları daha hızlı denetleniyor.\r\n• Yardım içeriği artık kullanıcının açık özelliklerine (kamera/manuel) göre gösteriliyor.",
       "manifest": "v/2.43.json"
@@ -27,16 +32,7 @@
         "ar": "• صار المحدّث مستقلاً تماماً: في مجلده الخاص (updater\\) ومع مكتبات Qt الخاصة به، ولا يشارك البرنامج الرئيسي أي ملف. سابقاً كانت ملفاته مشتركة، فإذا كتب التحديث فوقها قد تتعطل أداة الاسترجاع أيضاً.\n• إذا كان البرنامج ما زال مفتوحاً أثناء النسخ لم يعد التحديث يُترك ناقصاً: يُلغى دون المساس بشيء ويُبلَّغ عن ذلك. سابقاً كان ينتظر دقيقتين ثم يتخطى الملفات المقفلة فيبقى التثبيت مختلطاً.\n• حُدِّث اختصار قائمة ابدأ في المثبِّت إلى الموقع الجديد.\n\nمهم: إذا بقي المحدّث نفسه قديماً أو معطوباً فلن يستطيع التحديث استبداله (فهو البرنامج الذي ينفّذ التحديث). في هذه الحالة شغّل ملف التثبيت مرة واحدة، وبعدها تعمل التحديثات بشكل طبيعي."
       },
       "manifest": "v/2.38.json"
-    },
-    {
-      "version": "2.37",
-      "notes": {
-        "tr": "• Cihaz kimliği artık program açılışında bir kez hesaplanıyor. Önceden her lisans denetiminde (açılışta ve her 30 dakikada bir) arka planda bir sistem sorgusu başlatılıyordu; gereksizdi ve programı yavaşlatıyordu.\n• Çeviri denetimi genişletildi ve gözden kaçmış iki metin bulundu: lisans etkinleştirme mesajı ve 'Kalan deneme' uyarısı artık İngilizce ve Arapça'da da doğru görünüyor.\n• Güncelleme yolu 11 ayrı arıza senaryosuna karşı yeniden denetlendi (bozuk imza, sahte sunucu adresi, yanlış/eksik dosya, yarım kalan indirme, yanlış klasör, sürüm karşılaştırma); hepsi güvenli davranıyor.",
-        "en": "• The device identifier is now computed once at startup. Previously every licence check (at startup and every 30 minutes) launched a background system query; it was unnecessary and slowed the program down.\n• The translation check was widened and found two texts that had slipped through: the licence activation message and the 'Attempts left' warning now appear correctly in English and Arabic too.\n• The update path was re-audited against 11 separate failure scenarios (tampered signature, forged server address, wrong/missing file, interrupted download, wrong folder, version comparison); all behave safely.",
-        "ar": "• صار مُعرِّف الجهاز يُحسب مرة واحدة عند بدء التشغيل. سابقاً كان كل فحص للرخصة (عند البدء وكل 30 دقيقة) يشغّل استعلام نظام في الخلفية؛ وهو غير ضروري ويبطئ البرنامج.\n• وُسِّع فحص الترجمة فظهر نصّان كانا يفلتان منه: رسالة تفعيل الرخصة وتنبيه «المحاولات المتبقية» صارا يظهران بالإنجليزية والعربية بشكل صحيح.\n• أُعيد تدقيق مسار التحديث أمام 11 سيناريو فشل (توقيع مزوَّر، عنوان خادم مزيَّف، ملف خاطئ أو ناقص، تنزيل منقطع، مجلد خاطئ، مقارنة الإصدارات)؛ وكلها تتصرف بأمان."
-      },
-      "manifest": "v/2.37.json"
     }
   ],
-  "sig": "25c73fa7f2edc9ccc9ac75acfb2baad50813223f54b6e0a24950009346659ceb"
+  "sig": "1df37ffd9c0b533aff6ef0f526a82622856a8efaae69328386c7209c9be4dd36"
 }
