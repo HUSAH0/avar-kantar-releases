@@ -1,6 +1,6 @@
 {
-  "version": "2.43",
-  "notes": "• Bilgi/Yardım artık F12; F1 kamera görünümünü açar/kapatır.\r\n• Ana ekran sadeleşti: gereksiz F1 ve gösterge etiketleri kaldırıldı.\r\n• Ayarlarda tüm 'Kapat' düğmeleri aynı görünümde.\r\n• Bağlantı/yazıcı/kamera durumları daha hızlı denetleniyor.\r\n• Yardım içeriği artık kullanıcının açık özelliklerine (kamera/manuel) göre gösteriliyor.",
+  "version": "2.44",
+  "notes": "Kamera: görüntü gecikmesi giderildi, kare/sn ayarı artık uygulanıyor. Bazı kameraların 'yanıt vermiyor' hatası düzeltildi. R tuşu: canlıya atla. Kamera bağlantı adresleri artık şifreli saklanıyor.\nAyarlar: yeni 'Dosya Konumları' sekmesi — yedekleme klasörü ve sıklığı (günlük/2 günde bir/haftalık/aylık), rapor ve anlık görüntü klasörleri.\nFiş: düzenlenen kayıtlarda yalnız değişen alanın yanına '(Düzenlendi)' yazılır.\nRaporlar: büyük dışa aktarımlarda bekleme imleci.",
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
     {
@@ -145,8 +145,8 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "447a80b0ae428376922a9f35eae5a14de10edaf3f6235f33d74586f785f6c30f",
-      "size": 22004224
+      "sha256": "e78d5c7dc133a3b5255802d0fe16a7eab534680a2b6622ec0eab48b0419105af",
+      "size": 22434304
     },
     {
       "path": "avcodec-61.dll",
@@ -584,5 +584,5 @@
       "size": 75264
     }
   ],
-  "sig": "523d374abb7ca608aaf1c9fe96e0f2cde89e33c89924b3dfe4edbe615e797c86"
+  "sig": "b8f464ed3545e3dda1ac404b40024c85b15740fa0febdbd17640bb453e722de2"
 }
