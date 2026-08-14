@@ -1,6 +1,11 @@
 {
   "versions": [
     {
+      "version": "2.45",
+      "notes": "YENİ: Yedekten geri yükleme. Ayarlar → Dosya Konumları → 'Yedekten Geri Yükle' ile yedeklerinizi (tarih, boyut ve kayıt sayısıyla) görüp seçtiğinizi geri yükleyebilirsiniz; mevcut veritabanınız önce güvenlik kopyası olarak saklanır.\nEski sürümlerden gelen bazı veritabanlarında raporların ve geçmişin açılmamasına yol açan eksik sütun, açılışta otomatik onarılıyor.\nRapor yazdırma: A4 yatay sayfa düzeni artık korunuyor (bazı yazıcılarda sütunlar kırpılıyordu).\nGeçmiş kaydı düzenleme: plaka boş bırakıldığında verilen uyarıda diğer değişiklikleriniz artık kaybolmuyor.\nTartım akışı: tamamlanan araç bekleyenler listesinden hemen düşüyor; silinmiş veya başka yerde tamamlanmış bir fiş seçildiğinde işlem en başta anlaşılır bir mesajla durduruluyor. Kayıt sonrası bekleme kısaldı.\nAğırlık negatif göründüğünde (terazi sıfırlanmamış olabilir) kayıttan önce uyarı veriliyor.\nKüçük kağıtlarda fiş yazısı daha okunaklı basılıyor.\nKamera: uzun kullanımda bellek büyümesi giderildi; kapanışta kamera düzgün serbest bırakılıyor.",
+      "manifest": "v/2.45.json"
+    },
+    {
       "version": "2.44",
       "notes": "Kamera: görüntü gecikmesi giderildi, kare/sn ayarı artık uygulanıyor. Bazı kameraların 'yanıt vermiyor' hatası düzeltildi. R tuşu: canlıya atla. Kamera bağlantı adresleri artık şifreli saklanıyor.\nAyarlar: yeni 'Dosya Konumları' sekmesi — yedekleme klasörü ve sıklığı (günlük/2 günde bir/haftalık/aylık), rapor ve anlık görüntü klasörleri.\nFiş: düzenlenen kayıtlarda yalnız değişen alanın yanına '(Düzenlendi)' yazılır.\nRaporlar: büyük dışa aktarımlarda bekleme imleci.",
       "manifest": "v/2.44.json"
@@ -23,16 +28,7 @@
         "ar": "• صار المحدّث يستخدم لغة البرنامج (التركية/الإنجليزية/العربية)، وفي العربية تسير الواجهة من اليمين إلى اليسار. كان بالتركية فقط.\n• الإزالة صارت تقدّم ثلاثة خيارات: عادية (البرنامج فقط)، بداية جديدة (البرنامج والإعدادات)، عميقة (البرنامج والإعدادات والرخصة وكل سجلات الأوزان — تطلب تأكيداً مرتين).\n• الإزالة لم تعد تترك ملفات خلفها. كان المحدّث القديم والمجلدات الفارغة تبقى في مجلد البرنامج.\n• صُحِّح شعار الشريط العلوي: الملف الضخم (وهو ملف تصميم يحتوي أيضاً شعار شركة أخرى) لم يعد يُستخدم ولا يُرسل مع التثبيت (توفير ~3.4 م.ب)."
       },
       "manifest": "v/2.39.json"
-    },
-    {
-      "version": "2.38",
-      "notes": {
-        "tr": "• Güncelleyici artık TAMAMEN BAĞIMSIZ: kendi klasöründe (updater\\), kendi Qt kütüphaneleriyle, ana programla tek bir dosya bile paylaşmadan çalışıyor. Önceden dosyaları ana programla ortaktı; bir güncelleme o dosyaların üzerine yazdığında kurtarma aracı da çalışamaz hâle gelebiliyordu.\n• Kopyalama sırasında program hâlâ açıksa güncelleme artık YARIM BIRAKILMIYOR: hiç dokunmadan iptal ediliyor ve durum bildiriliyor. Önceden 2 dakika bekleyip kilitli dosyaları atlıyor, kurulum karışık kalıyordu.\n• Kurulumdaki Başlat menüsü kısayolu yeni konuma güncellendi.\n\nÖNEMLİ: Güncelleyicinin kendisi eski/bozuk kaldıysa güncelleme onu değiştiremez (güncellemeyi yapan program odur). Bu durumda kurulum dosyasını bir kez çalıştırmanız yeterlidir; sonrasında güncellemeler normal çalışır.",
-        "en": "• The updater is now FULLY INDEPENDENT: it lives in its own folder (updater\\) with its own Qt libraries and shares no file at all with the main program. Previously its files were shared with the main app, so an update overwriting them could take the recovery tool down too.\n• If the program is still open while files are copied, the update is no longer left half-done: it is cancelled without touching anything and reported. Previously it waited 2 minutes, skipped locked files and left a mixed installation.\n• The Start menu shortcut in Setup was updated to the new location.\n\nIMPORTANT: if the updater itself is left old or broken, an update cannot replace it (it is the program doing the updating). In that case run the setup file once; updates work normally afterwards.",
-        "ar": "• صار المحدّث مستقلاً تماماً: في مجلده الخاص (updater\\) ومع مكتبات Qt الخاصة به، ولا يشارك البرنامج الرئيسي أي ملف. سابقاً كانت ملفاته مشتركة، فإذا كتب التحديث فوقها قد تتعطل أداة الاسترجاع أيضاً.\n• إذا كان البرنامج ما زال مفتوحاً أثناء النسخ لم يعد التحديث يُترك ناقصاً: يُلغى دون المساس بشيء ويُبلَّغ عن ذلك. سابقاً كان ينتظر دقيقتين ثم يتخطى الملفات المقفلة فيبقى التثبيت مختلطاً.\n• حُدِّث اختصار قائمة ابدأ في المثبِّت إلى الموقع الجديد.\n\nمهم: إذا بقي المحدّث نفسه قديماً أو معطوباً فلن يستطيع التحديث استبداله (فهو البرنامج الذي ينفّذ التحديث). في هذه الحالة شغّل ملف التثبيت مرة واحدة، وبعدها تعمل التحديثات بشكل طبيعي."
-      },
-      "manifest": "v/2.38.json"
     }
   ],
-  "sig": "1df37ffd9c0b533aff6ef0f526a82622856a8efaae69328386c7209c9be4dd36"
+  "sig": "c10c83524029ad13c860571841bdc43ea00c2b1b16aa9e825409cafa5b25fc7b"
 }
