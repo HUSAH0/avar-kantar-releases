@@ -1,6 +1,6 @@
 {
-  "version": "2.44",
-  "notes": "Kamera: görüntü gecikmesi giderildi, kare/sn ayarı artık uygulanıyor. Bazı kameraların 'yanıt vermiyor' hatası düzeltildi. R tuşu: canlıya atla. Kamera bağlantı adresleri artık şifreli saklanıyor.\nAyarlar: yeni 'Dosya Konumları' sekmesi — yedekleme klasörü ve sıklığı (günlük/2 günde bir/haftalık/aylık), rapor ve anlık görüntü klasörleri.\nFiş: düzenlenen kayıtlarda yalnız değişen alanın yanına '(Düzenlendi)' yazılır.\nRaporlar: büyük dışa aktarımlarda bekleme imleci.",
+  "version": "2.45",
+  "notes": "YENİ: Yedekten geri yükleme. Ayarlar → Dosya Konumları → 'Yedekten Geri Yükle' ile yedeklerinizi (tarih, boyut ve kayıt sayısıyla) görüp seçtiğinizi geri yükleyebilirsiniz; mevcut veritabanınız önce güvenlik kopyası olarak saklanır.\nEski sürümlerden gelen bazı veritabanlarında raporların ve geçmişin açılmamasına yol açan eksik sütun, açılışta otomatik onarılıyor.\nRapor yazdırma: A4 yatay sayfa düzeni artık korunuyor (bazı yazıcılarda sütunlar kırpılıyordu).\nGeçmiş kaydı düzenleme: plaka boş bırakıldığında verilen uyarıda diğer değişiklikleriniz artık kaybolmuyor.\nTartım akışı: tamamlanan araç bekleyenler listesinden hemen düşüyor; silinmiş veya başka yerde tamamlanmış bir fiş seçildiğinde işlem en başta anlaşılır bir mesajla durduruluyor. Kayıt sonrası bekleme kısaldı.\nAğırlık negatif göründüğünde (terazi sıfırlanmamış olabilir) kayıttan önce uyarı veriliyor.\nKüçük kağıtlarda fiş yazısı daha okunaklı basılıyor.\nKamera: uzun kullanımda bellek büyümesi giderildi; kapanışta kamera düzgün serbest bırakılıyor.",
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
     {
@@ -145,8 +145,8 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "e78d5c7dc133a3b5255802d0fe16a7eab534680a2b6622ec0eab48b0419105af",
-      "size": 22434304
+      "sha256": "71757dc62a4d428b3a40bbf4240d255e8ccb7b016fd8739e5c37e86f5cbffb27",
+      "size": 22551040
     },
     {
       "path": "avcodec-61.dll",
@@ -584,5 +584,5 @@
       "size": 75264
     }
   ],
-  "sig": "b8f464ed3545e3dda1ac404b40024c85b15740fa0febdbd17640bb453e722de2"
+  "sig": "f9c8d1531495a5956842763963ec1bec5104b01971f1d51f3bf81913fdbe038a"
 }
