@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "2.47",
+      "notes": {
+        "tr": "• Güncelleme sistemi baştan sona yenilendi: güncellemeler artık güvenilir biçimde kuruluyor, ilerleme doğru gösteriliyor ve bir sorun çıkarsa programınız hiç değişmeden kalıyor.\n• Güncelleme mesajları sadeleşti: ne yapmanız gerektiğini doğrudan söylüyor.\n• Güncelleyici penceresi artık her durumda kapanıyor.\n• Kamera sayfaları arasında geçerken oluşan kapanma sorunu giderildi.\n• «1. TARTIM» artık doğrudan tartım formunu açıyor; sık kullanılan araç listesi plaka/firma/malzeme alanlarındaki «⋯» düğmesinde.\n• Küçük arayüz iyileştirmeleri.",
+        "en": "• The update system was rebuilt: updates now install reliably, progress is shown accurately, and if anything goes wrong your program is left completely unchanged.\n• Update messages are simpler and tell you exactly what to do.\n• The updater window now always closes.\n• Fixed a shutdown that could happen when switching camera pages.\n• \"1st WEIGHING\" now opens the weighing form directly; the frequent-vehicle list is on the \"⋯\" button in the plate/company/material fields.\n• Minor interface improvements.",
+        "ar": "• أُعيد بناء نظام التحديث: صار التحديث يُثبَّت بشكل موثوق، ويُعرض التقدّم بدقّة، وإذا حدث أي خلل يبقى برنامجك كما هو دون أي تغيير.\n• رسائل التحديث صارت أوضح وتقول لك مباشرة ما عليك فعله.\n• نافذة المحدِّث صارت تُغلق في كل الحالات.\n• عولجت مشكلة إغلاق البرنامج عند التنقّل بين صفحات الكاميرات.\n• زر «الوزنة الأولى» صار يفتح نموذج الوزن مباشرة؛ وقائمة المركبات الأكثر استخداماً موجودة في زر «⋯» داخل حقول اللوحة/الشركة/الحمولة.\n• تحسينات بسيطة في الواجهة."
+      },
+      "manifest": "v/2.47.json"
+    },
+    {
       "version": "2.46",
       "notes": {
         "tr": "YENİ — Hızlı araç seçimi\n• Plaka, Firma ve Malzeme kutularının sonundaki «⋯» düğmesi en sık gelen araçları listeler; çift tıklayınca o aracın SON kaydındaki tüm bilgiler forma dolar.\n• Otomatik tamamlama artık kayıt sayısı arttıkça yavaşlamıyor ve alfabetik kesilme sorunu giderildi.\n\nYENİ — Terazi güvenliği\n• Donmuş/eski veriden ağırlık alınması engellendi: gösterge veri göndermeyi kestiyse GİRİŞ/ÇIKIŞ tıklaması kabul edilmez.\n• Her tartıma hangi terazinin ölçtüğü kaydedilir; giriş ile çıkış farklı terazilerden ise uyarılırsınız.\n• COM numarası değişse bile (yeniden başlatma / başka USB yuvası) indikatör donanım kimliğinden tanınır — yanlış teraziye bağlanma riski kalktı.\n• İndikatör ayarlarında «Bağlama» sayfası: bir terazinin işlemini hangi terazinin tamamlayabileceğini siz belirlersiniz.\n• Tuşla veya komutla ağırlık gönderen indikatörler destekleniyor (sürekli akış şart değil).\n\nDÜZELTMELER\n• Tamamlanan fiş tek işlemde yazılıyor — yarım kalmış «bekleyen» kayıt oluşamaz.\n• Eski veritabanlarında eksik kalabilen NET ağırlık sütunu otomatik onarılıyor.\n• Geçmişte kayıt düzenlerken boş plaka reddedilince diğer değişiklikler artık kaybolmuyor.\n• Rapor yazdırmada seçtiğiniz sayfa yönü korunuyor.\n• Eksi (negatif) ağırlık sorgusuz kaydedilmiyor.\n• Kayıttan sonra bekleyen araçlar listesi kendiliğinden tazeleniyor.\n• Durum ışıkları (COM / yazıcı / kamera / internet) artık gerçek durumu gösteriyor.\n• Kamera: program kapanırken cihaz serbest bırakılıyor, bellek sızıntısı giderildi.\n• Açılış ve kayıt sonrası bekleme süreleri kısaldı.",
@@ -23,12 +32,7 @@
       "version": "2.43",
       "notes": "• Bilgi/Yardım artık F12; F1 kamera görünümünü açar/kapatır.\r\n• Ana ekran sadeleşti: gereksiz F1 ve gösterge etiketleri kaldırıldı.\r\n• Ayarlarda tüm 'Kapat' düğmeleri aynı görünümde.\r\n• Bağlantı/yazıcı/kamera durumları daha hızlı denetleniyor.\r\n• Yardım içeriği artık kullanıcının açık özelliklerine (kamera/manuel) göre gösteriliyor.",
       "manifest": "v/2.43.json"
-    },
-    {
-      "version": "2.42",
-      "notes": "Kullanıcı-başına kurulum ve yükseltmesiz kendi kendine güncelleme altyapısı.",
-      "manifest": "v/2.42.json"
     }
   ],
-  "sig": "b16c3107a8a1f7fa26523372e4fd3c332311aa62d544f6ce77ce9e94af1feb79"
+  "sig": "d37d7a348c42805e4956c996a31c4fecdd4bbd004f92087d9e6298cdb2df063e"
 }
