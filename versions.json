@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "2.48",
+      "notes": {
+        "tr": "• Güncelleme güvenliği güçlendirildi: kurulacak dosyalar, tam kopyalanmadan hemen önce yeniden doğrulanıyor. Bekleme sırasında bozulmuş bir dosya artık kurulamaz.\n• Güncelleme elektrik kesintisi gibi bir nedenle yarıda kalırsa, program bunu bir sonraki açılışta fark eder ve kaldığı yerden tamamlamayı önerir — yeniden indirme yapmadan.\n• Zayıf veya kesintili internette güncelleme davranışı iyileştirildi.\n• Güncelleme mesajları daha anlaşılır.",
+        "en": "• Update security was strengthened: the files to be installed are re-verified immediately before they are copied, so a file that became corrupted while waiting can no longer be installed.\n• If an update is interrupted (for example by a power cut), the program notices at the next start and offers to finish it from where it stopped — with no re-download.\n• Better behaviour on weak or intermittent internet connections.\n• Clearer update messages.",
+        "ar": "• تعزيز أمان التحديث: يُعاد التحقّق من الملفات قبل نسخها مباشرة، فلم يعد بالإمكان تثبيت ملف تلف أثناء الانتظار.\n• إذا انقطع التحديث (بسبب انقطاع الكهرباء مثلاً)، يلاحظ البرنامج ذلك عند التشغيل التالي ويعرض إكماله من حيث توقّف — دون إعادة تنزيل.\n• تحسين السلوك على الاتصالات الضعيفة أو المتقطّعة.\n• رسائل التحديث صارت أوضح."
+      },
+      "manifest": "v/2.48.json"
+    },
+    {
       "version": "2.47",
       "notes": {
         "tr": "• Güncelleme sistemi baştan sona yenilendi: güncellemeler artık güvenilir biçimde kuruluyor, ilerleme doğru gösteriliyor ve bir sorun çıkarsa programınız hiç değişmeden kalıyor.\n• Güncelleme mesajları sadeleşti: ne yapmanız gerektiğini doğrudan söylüyor.\n• Güncelleyici penceresi artık her durumda kapanıyor.\n• Kamera sayfaları arasında geçerken oluşan kapanma sorunu giderildi.\n• «1. TARTIM» artık doğrudan tartım formunu açıyor; sık kullanılan araç listesi plaka/firma/malzeme alanlarındaki «⋯» düğmesinde.\n• Küçük arayüz iyileştirmeleri.",
@@ -27,12 +36,7 @@
       "version": "2.44",
       "notes": "Kamera: görüntü gecikmesi giderildi, kare/sn ayarı artık uygulanıyor. Bazı kameraların 'yanıt vermiyor' hatası düzeltildi. R tuşu: canlıya atla. Kamera bağlantı adresleri artık şifreli saklanıyor.\nAyarlar: yeni 'Dosya Konumları' sekmesi — yedekleme klasörü ve sıklığı (günlük/2 günde bir/haftalık/aylık), rapor ve anlık görüntü klasörleri.\nFiş: düzenlenen kayıtlarda yalnız değişen alanın yanına '(Düzenlendi)' yazılır.\nRaporlar: büyük dışa aktarımlarda bekleme imleci.",
       "manifest": "v/2.44.json"
-    },
-    {
-      "version": "2.43",
-      "notes": "• Bilgi/Yardım artık F12; F1 kamera görünümünü açar/kapatır.\r\n• Ana ekran sadeleşti: gereksiz F1 ve gösterge etiketleri kaldırıldı.\r\n• Ayarlarda tüm 'Kapat' düğmeleri aynı görünümde.\r\n• Bağlantı/yazıcı/kamera durumları daha hızlı denetleniyor.\r\n• Yardım içeriği artık kullanıcının açık özelliklerine (kamera/manuel) göre gösteriliyor.",
-      "manifest": "v/2.43.json"
     }
   ],
-  "sig": "d37d7a348c42805e4956c996a31c4fecdd4bbd004f92087d9e6298cdb2df063e"
+  "sig": "f35b2f48a821b7c52b43e56a85e8c092c208378a3755715ff95e541845268f8a"
 }
