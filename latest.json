@@ -1,9 +1,9 @@
 {
-  "version": "2.46",
+  "version": "2.47",
   "notes": {
-    "tr": "YENİ — Hızlı araç seçimi\n• Plaka, Firma ve Malzeme kutularının sonundaki «⋯» düğmesi en sık gelen araçları listeler; çift tıklayınca o aracın SON kaydındaki tüm bilgiler forma dolar.\n• Otomatik tamamlama artık kayıt sayısı arttıkça yavaşlamıyor ve alfabetik kesilme sorunu giderildi.\n\nYENİ — Terazi güvenliği\n• Donmuş/eski veriden ağırlık alınması engellendi: gösterge veri göndermeyi kestiyse GİRİŞ/ÇIKIŞ tıklaması kabul edilmez.\n• Her tartıma hangi terazinin ölçtüğü kaydedilir; giriş ile çıkış farklı terazilerden ise uyarılırsınız.\n• COM numarası değişse bile (yeniden başlatma / başka USB yuvası) indikatör donanım kimliğinden tanınır — yanlış teraziye bağlanma riski kalktı.\n• İndikatör ayarlarında «Bağlama» sayfası: bir terazinin işlemini hangi terazinin tamamlayabileceğini siz belirlersiniz.\n• Tuşla veya komutla ağırlık gönderen indikatörler destekleniyor (sürekli akış şart değil).\n\nDÜZELTMELER\n• Tamamlanan fiş tek işlemde yazılıyor — yarım kalmış «bekleyen» kayıt oluşamaz.\n• Eski veritabanlarında eksik kalabilen NET ağırlık sütunu otomatik onarılıyor.\n• Geçmişte kayıt düzenlerken boş plaka reddedilince diğer değişiklikler artık kaybolmuyor.\n• Rapor yazdırmada seçtiğiniz sayfa yönü korunuyor.\n• Eksi (negatif) ağırlık sorgusuz kaydedilmiyor.\n• Kayıttan sonra bekleyen araçlar listesi kendiliğinden tazeleniyor.\n• Durum ışıkları (COM / yazıcı / kamera / internet) artık gerçek durumu gösteriyor.\n• Kamera: program kapanırken cihaz serbest bırakılıyor, bellek sızıntısı giderildi.\n• Açılış ve kayıt sonrası bekleme süreleri kısaldı.",
-    "en": "NEW — Fast vehicle entry\n• The «⋯» button at the end of Plate, Company and Material opens a list of the most frequent vehicles; double-click fills the whole form from that plate's LAST record.\n• Auto-complete no longer slows down as records grow, and the alphabetical cut-off problem is fixed.\n\nNEW — Scale safety\n• Weight can no longer be captured from frozen/stale data: if the indicator stopped sending, an IN/OUT click is refused.\n• Every weighing records WHICH scale measured it; you are warned if entry and exit came from different scales.\n• Even if the COM number changes (restart / different USB socket) the indicator is recognised by its hardware identity — no more connecting to the wrong scale.\n• New «Linking» page per indicator: you decide which scale may complete another scale's ticket.\n• Indicators that send weight on a key press or on command are now supported (a continuous stream is not required).\n\nFIXES\n• A completed ticket is written in a single transaction — no half-finished \"waiting\" record can appear.\n• A NET weight column that could be missing in older databases is repaired automatically.\n• When editing history, rejecting an empty plate no longer discards your other changes.\n• Report printing keeps the page orientation you chose.\n• Negative weights are no longer saved without asking.\n• The waiting-vehicles list refreshes itself after a save.\n• Status lights (COM / printer / camera / internet) now show the real state.\n• Camera: the device is released on shutdown and a memory leak was fixed.\n• Startup and post-save waiting times are shorter.",
-    "ar": "جديد — اختيار سريع للمركبات\n• زر «⋯» في نهاية خانات اللوحة والشركة والمادة يعرض أكثر المركبات تردداً؛ والنقر المزدوج يملأ النموذج كاملاً من آخر سجل لتلك اللوحة.\n• الإكمال التلقائي لم يعد يبطؤ مع كثرة السجلات، وحُلَّت مشكلة الاقتصار الأبجدي.\n\nجديد — أمان الميزان\n• مُنع أخذ الوزن من بيانات متجمّدة/قديمة: إن توقّف المؤشّر عن الإرسال يُرفض الضغط على الدخول/الخروج.\n• كل وزنة تُسجَّل مع الميزان الذي قاسها؛ وتُنبَّه إن كان الدخول والخروج من ميزانين مختلفين.\n• حتى لو تغيّر رقم COM (إعادة تشغيل أو منفذ USB آخر) يُتعرَّف على المؤشّر ببصمة عتاده — انتهى خطر الاتصال بالميزان الخطأ.\n• صفحة «الربط» لكل مؤشّر: أنت تحدّد أي ميزان يستطيع إتمام عملية ميزان آخر.\n• دعم المؤشّرات التي ترسل الوزن بضغطة زر أو بأمر (التدفّق المستمر لم يعد شرطاً).\n\nإصلاحات\n• الفاتورة المكتملة تُكتب في عملية واحدة — لا يمكن أن ينشأ سجل «منتظر» ناقص.\n• عمود الوزن الصافي الذي قد ينقص في قواعد البيانات القديمة يُصلَح تلقائياً.\n• عند تعديل سجل في السجلّات، رفض اللوحة الفارغة لم يعد يُلغي بقية تعديلاتك.\n• طباعة التقارير تحافظ على اتجاه الصفحة الذي اخترته.\n• الوزن السالب لم يعد يُحفظ دون سؤال.\n• قائمة المركبات المنتظرة تتحدّث تلقائياً بعد الحفظ.\n• مؤشّرات الحالة (COM / الطابعة / الكاميرا / الإنترنت) صارت تعرض الحالة الحقيقية.\n• الكاميرا: يُحرَّر الجهاز عند إغلاق البرنامج، وأُصلح تسريب الذاكرة.\n• تقلّصت أزمنة الانتظار عند الإقلاع وبعد الحفظ."
+    "tr": "• Güncelleme sistemi baştan sona yenilendi: güncellemeler artık güvenilir biçimde kuruluyor, ilerleme doğru gösteriliyor ve bir sorun çıkarsa programınız hiç değişmeden kalıyor.\n• Güncelleme mesajları sadeleşti: ne yapmanız gerektiğini doğrudan söylüyor.\n• Güncelleyici penceresi artık her durumda kapanıyor.\n• Kamera sayfaları arasında geçerken oluşan kapanma sorunu giderildi.\n• «1. TARTIM» artık doğrudan tartım formunu açıyor; sık kullanılan araç listesi plaka/firma/malzeme alanlarındaki «⋯» düğmesinde.\n• Küçük arayüz iyileştirmeleri.",
+    "en": "• The update system was rebuilt: updates now install reliably, progress is shown accurately, and if anything goes wrong your program is left completely unchanged.\n• Update messages are simpler and tell you exactly what to do.\n• The updater window now always closes.\n• Fixed a shutdown that could happen when switching camera pages.\n• \"1st WEIGHING\" now opens the weighing form directly; the frequent-vehicle list is on the \"⋯\" button in the plate/company/material fields.\n• Minor interface improvements.",
+    "ar": "• أُعيد بناء نظام التحديث: صار التحديث يُثبَّت بشكل موثوق، ويُعرض التقدّم بدقّة، وإذا حدث أي خلل يبقى برنامجك كما هو دون أي تغيير.\n• رسائل التحديث صارت أوضح وتقول لك مباشرة ما عليك فعله.\n• نافذة المحدِّث صارت تُغلق في كل الحالات.\n• عولجت مشكلة إغلاق البرنامج عند التنقّل بين صفحات الكاميرات.\n• زر «الوزنة الأولى» صار يفتح نموذج الوزن مباشرة؛ وقائمة المركبات الأكثر استخداماً موجودة في زر «⋯» داخل حقول اللوحة/الشركة/الحمولة.\n• تحسينات بسيطة في الواجهة."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -51,6 +51,11 @@
       "path": "_ssl.pyd",
       "sha256": "21ca71b2c1766fc68734cb3d1e7c2c0439b86bcfb95e00b367c5fd48c59e617c",
       "size": 183144
+    },
+    {
+      "path": "_uuid.pyd",
+      "sha256": "99e97e0af615f43150778aaa44d82bc58b70bf595a8412cfafcc5d38be38bdfb",
+      "size": 28008
     },
     {
       "path": "_wmi.pyd",
@@ -149,8 +154,8 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "3891a022edf73c27afa7a0b425ffc0dde5bf2bd8a100e1c04b765789f7eb2169",
-      "size": 22883328
+      "sha256": "53b1ad980756f40d78a0a163fbd23ccc0bf47c19add2f1b5d645df8dd3e3eadd",
+      "size": 23442944
     },
     {
       "path": "avcodec-61.dll",
@@ -588,5 +593,5 @@
       "size": 75264
     }
   ],
-  "sig": "af2a5e1fdaeaf3f5c8e1fc915a9bd16b6256c2bdbb4aebeb56250d1b9211e3b1"
+  "sig": "5d67cc629a969e056e7b9b191ccbe53bd44a25331b3306ac02de37c5769f5fa6"
 }
