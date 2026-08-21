@@ -1,9 +1,9 @@
 {
-  "version": "2.47",
+  "version": "2.48",
   "notes": {
-    "tr": "• Güncelleme sistemi baştan sona yenilendi: güncellemeler artık güvenilir biçimde kuruluyor, ilerleme doğru gösteriliyor ve bir sorun çıkarsa programınız hiç değişmeden kalıyor.\n• Güncelleme mesajları sadeleşti: ne yapmanız gerektiğini doğrudan söylüyor.\n• Güncelleyici penceresi artık her durumda kapanıyor.\n• Kamera sayfaları arasında geçerken oluşan kapanma sorunu giderildi.\n• «1. TARTIM» artık doğrudan tartım formunu açıyor; sık kullanılan araç listesi plaka/firma/malzeme alanlarındaki «⋯» düğmesinde.\n• Küçük arayüz iyileştirmeleri.",
-    "en": "• The update system was rebuilt: updates now install reliably, progress is shown accurately, and if anything goes wrong your program is left completely unchanged.\n• Update messages are simpler and tell you exactly what to do.\n• The updater window now always closes.\n• Fixed a shutdown that could happen when switching camera pages.\n• \"1st WEIGHING\" now opens the weighing form directly; the frequent-vehicle list is on the \"⋯\" button in the plate/company/material fields.\n• Minor interface improvements.",
-    "ar": "• أُعيد بناء نظام التحديث: صار التحديث يُثبَّت بشكل موثوق، ويُعرض التقدّم بدقّة، وإذا حدث أي خلل يبقى برنامجك كما هو دون أي تغيير.\n• رسائل التحديث صارت أوضح وتقول لك مباشرة ما عليك فعله.\n• نافذة المحدِّث صارت تُغلق في كل الحالات.\n• عولجت مشكلة إغلاق البرنامج عند التنقّل بين صفحات الكاميرات.\n• زر «الوزنة الأولى» صار يفتح نموذج الوزن مباشرة؛ وقائمة المركبات الأكثر استخداماً موجودة في زر «⋯» داخل حقول اللوحة/الشركة/الحمولة.\n• تحسينات بسيطة في الواجهة."
+    "tr": "• Güncelleme güvenliği güçlendirildi: kurulacak dosyalar, tam kopyalanmadan hemen önce yeniden doğrulanıyor. Bekleme sırasında bozulmuş bir dosya artık kurulamaz.\n• Güncelleme elektrik kesintisi gibi bir nedenle yarıda kalırsa, program bunu bir sonraki açılışta fark eder ve kaldığı yerden tamamlamayı önerir — yeniden indirme yapmadan.\n• Zayıf veya kesintili internette güncelleme davranışı iyileştirildi.\n• Güncelleme mesajları daha anlaşılır.",
+    "en": "• Update security was strengthened: the files to be installed are re-verified immediately before they are copied, so a file that became corrupted while waiting can no longer be installed.\n• If an update is interrupted (for example by a power cut), the program notices at the next start and offers to finish it from where it stopped — with no re-download.\n• Better behaviour on weak or intermittent internet connections.\n• Clearer update messages.",
+    "ar": "• تعزيز أمان التحديث: يُعاد التحقّق من الملفات قبل نسخها مباشرة، فلم يعد بالإمكان تثبيت ملف تلف أثناء الانتظار.\n• إذا انقطع التحديث (بسبب انقطاع الكهرباء مثلاً)، يلاحظ البرنامج ذلك عند التشغيل التالي ويعرض إكماله من حيث توقّف — دون إعادة تنزيل.\n• تحسين السلوك على الاتصالات الضعيفة أو المتقطّعة.\n• رسائل التحديث صارت أوضح."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -154,8 +154,8 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "53b1ad980756f40d78a0a163fbd23ccc0bf47c19add2f1b5d645df8dd3e3eadd",
-      "size": 23442944
+      "sha256": "c5fc0a4934c11aa135c75563d194d7347e0cd3f036a43004e3913eca9db455f7",
+      "size": 23488512
     },
     {
       "path": "avcodec-61.dll",
@@ -593,5 +593,5 @@
       "size": 75264
     }
   ],
-  "sig": "5d67cc629a969e056e7b9b191ccbe53bd44a25331b3306ac02de37c5769f5fa6"
+  "sig": "844013134b5700cb142c35998cdfa4966ab7c16238a46e11bf2b6feb656c4ce3"
 }
