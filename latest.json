@@ -1,9 +1,9 @@
 {
   "version": "2.49",
   "notes": {
-    "tr": "• Güncelleme imzalama sistemi yenilendi. Programa gelen her güncellemenin gerçekten bizden geldiği artık daha güçlü bir yöntemle doğrulanıyor.\n• Bu sürümden sonraki tüm güncellemeler bu yeni doğrulamayı kullanacak.",
-    "en": "• The update signing system was renewed. Every update the program receives is now verified as genuinely ours using a stronger method.\n• All updates from this version onward will use this new verification.",
-    "ar": "• جرى تجديد نظام توقيع التحديثات. صار التحقّق من أن كل تحديث يصل إلى البرنامج صادر منّا فعلاً يتم بطريقة أقوى.\n• جميع التحديثات بعد هذا الإصدار ستستخدم هذا التحقّق الجديد."
+    "tr": "• Güncelleme sistemi iyileştirildi.",
+    "en": "• Update system improvements.",
+    "ar": "• تحسينات على نظام التحديث."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -603,6 +603,6 @@
       "size": 75264
     }
   ],
-  "sig": "2b0b3c91db112650804cb349fa9977ff2cc50a30fa0a61d70e341a8b91af48d2",
-  "sig2": "6ade9b1634decd756e8780cdc46b980ec4414ee00a30a161769d740daed8402aeafae680e2462155f31eb45e9a5ae9090cf53afd268c32847867b95b81743006"
+  "sig": "183fd28d84b2080b529dbbc773ae95e92fd5de4c375caa5cb87a958cf3aa803d",
+  "sig2": "1ebdc33d975fb630c767de9aefa6cb4e0f047a11d7103816e58d1edc14192761090fea7649f7af749071f83e6f688edcba079d61db4fa74f6fc737a78064fc09"
 }
