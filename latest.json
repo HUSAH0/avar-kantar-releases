@@ -1,9 +1,9 @@
 {
-  "version": "2.48",
+  "version": "2.49",
   "notes": {
-    "tr": "• Güncelleme güvenliği güçlendirildi: kurulacak dosyalar, tam kopyalanmadan hemen önce yeniden doğrulanıyor. Bekleme sırasında bozulmuş bir dosya artık kurulamaz.\n• Güncelleme elektrik kesintisi gibi bir nedenle yarıda kalırsa, program bunu bir sonraki açılışta fark eder ve kaldığı yerden tamamlamayı önerir — yeniden indirme yapmadan.\n• Zayıf veya kesintili internette güncelleme davranışı iyileştirildi.\n• Güncelleme mesajları daha anlaşılır.",
-    "en": "• Update security was strengthened: the files to be installed are re-verified immediately before they are copied, so a file that became corrupted while waiting can no longer be installed.\n• If an update is interrupted (for example by a power cut), the program notices at the next start and offers to finish it from where it stopped — with no re-download.\n• Better behaviour on weak or intermittent internet connections.\n• Clearer update messages.",
-    "ar": "• تعزيز أمان التحديث: يُعاد التحقّق من الملفات قبل نسخها مباشرة، فلم يعد بالإمكان تثبيت ملف تلف أثناء الانتظار.\n• إذا انقطع التحديث (بسبب انقطاع الكهرباء مثلاً)، يلاحظ البرنامج ذلك عند التشغيل التالي ويعرض إكماله من حيث توقّف — دون إعادة تنزيل.\n• تحسين السلوك على الاتصالات الضعيفة أو المتقطّعة.\n• رسائل التحديث صارت أوضح."
+    "tr": "• Güncelleme imzalama sistemi yenilendi. Programa gelen her güncellemenin gerçekten bizden geldiği artık daha güçlü bir yöntemle doğrulanıyor.\n• Bu sürümden sonraki tüm güncellemeler bu yeni doğrulamayı kullanacak.",
+    "en": "• The update signing system was renewed. Every update the program receives is now verified as genuinely ours using a stronger method.\n• All updates from this version onward will use this new verification.",
+    "ar": "• جرى تجديد نظام توقيع التحديثات. صار التحقّق من أن كل تحديث يصل إلى البرنامج صادر منّا فعلاً يتم بطريقة أقوى.\n• جميع التحديثات بعد هذا الإصدار ستستخدم هذا التحقّق الجديد."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -11,6 +11,11 @@
       "path": "_bz2.pyd",
       "sha256": "5ba872caa7fcee0f4fb81c6e0201ceed9bd92a3624f16828dd316144d292a869",
       "size": 86248
+    },
+    {
+      "path": "_cffi_backend.pyd",
+      "sha256": "d5b09da2e726b4e90cf0edad5d2a0ec52f369dfd060e14d3807a32b2205031fa",
+      "size": 180224
     },
     {
       "path": "_ctypes.pyd",
@@ -154,8 +159,8 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "c5fc0a4934c11aa135c75563d194d7347e0cd3f036a43004e3913eca9db455f7",
-      "size": 23488512
+      "sha256": "2346d18df6312b6bd04c1f2db6e887d6ee9f24934b7b634679df11e62f858945",
+      "size": 26667008
     },
     {
       "path": "avcodec-61.dll",
@@ -176,6 +181,11 @@
       "path": "configs/indikator_presets.json",
       "sha256": "0c619a1d220faccd7d3107c545c7cd3d2e842a2f54b81071be30058b887367ab",
       "size": 2389
+    },
+    {
+      "path": "cryptography/hazmat/bindings/_rust.pyd",
+      "sha256": "05fefb14b1cb1c90bcccce87e82d205f5f2396977bf911243972790ba2376849",
+      "size": 9935360
     },
     {
       "path": "libcrypto-3.dll",
@@ -593,5 +603,6 @@
       "size": 75264
     }
   ],
-  "sig": "844013134b5700cb142c35998cdfa4966ab7c16238a46e11bf2b6feb656c4ce3"
+  "sig": "2b0b3c91db112650804cb349fa9977ff2cc50a30fa0a61d70e341a8b91af48d2",
+  "sig2": "6ade9b1634decd756e8780cdc46b980ec4414ee00a30a161769d740daed8402aeafae680e2462155f31eb45e9a5ae9090cf53afd268c32847867b95b81743006"
 }
