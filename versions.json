@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "2.49",
+      "notes": {
+        "tr": "• Güncelleme imzalama sistemi yenilendi. Programa gelen her güncellemenin gerçekten bizden geldiği artık daha güçlü bir yöntemle doğrulanıyor.\n• Bu sürümden sonraki tüm güncellemeler bu yeni doğrulamayı kullanacak.",
+        "en": "• The update signing system was renewed. Every update the program receives is now verified as genuinely ours using a stronger method.\n• All updates from this version onward will use this new verification.",
+        "ar": "• جرى تجديد نظام توقيع التحديثات. صار التحقّق من أن كل تحديث يصل إلى البرنامج صادر منّا فعلاً يتم بطريقة أقوى.\n• جميع التحديثات بعد هذا الإصدار ستستخدم هذا التحقّق الجديد."
+      },
+      "manifest": "v/2.49.json"
+    },
+    {
       "version": "2.48",
       "notes": {
         "tr": "• Güncelleme güvenliği güçlendirildi: kurulacak dosyalar, tam kopyalanmadan hemen önce yeniden doğrulanıyor. Bekleme sırasında bozulmuş bir dosya artık kurulamaz.\n• Güncelleme elektrik kesintisi gibi bir nedenle yarıda kalırsa, program bunu bir sonraki açılışta fark eder ve kaldığı yerden tamamlamayı önerir — yeniden indirme yapmadan.\n• Zayıf veya kesintili internette güncelleme davranışı iyileştirildi.\n• Güncelleme mesajları daha anlaşılır.",
@@ -31,12 +40,8 @@
       "version": "2.45",
       "notes": "YENİ: Yedekten geri yükleme. Ayarlar → Dosya Konumları → 'Yedekten Geri Yükle' ile yedeklerinizi (tarih, boyut ve kayıt sayısıyla) görüp seçtiğinizi geri yükleyebilirsiniz; mevcut veritabanınız önce güvenlik kopyası olarak saklanır.\nEski sürümlerden gelen bazı veritabanlarında raporların ve geçmişin açılmamasına yol açan eksik sütun, açılışta otomatik onarılıyor.\nRapor yazdırma: A4 yatay sayfa düzeni artık korunuyor (bazı yazıcılarda sütunlar kırpılıyordu).\nGeçmiş kaydı düzenleme: plaka boş bırakıldığında verilen uyarıda diğer değişiklikleriniz artık kaybolmuyor.\nTartım akışı: tamamlanan araç bekleyenler listesinden hemen düşüyor; silinmiş veya başka yerde tamamlanmış bir fiş seçildiğinde işlem en başta anlaşılır bir mesajla durduruluyor. Kayıt sonrası bekleme kısaldı.\nAğırlık negatif göründüğünde (terazi sıfırlanmamış olabilir) kayıttan önce uyarı veriliyor.\nKüçük kağıtlarda fiş yazısı daha okunaklı basılıyor.\nKamera: uzun kullanımda bellek büyümesi giderildi; kapanışta kamera düzgün serbest bırakılıyor.",
       "manifest": "v/2.45.json"
-    },
-    {
-      "version": "2.44",
-      "notes": "Kamera: görüntü gecikmesi giderildi, kare/sn ayarı artık uygulanıyor. Bazı kameraların 'yanıt vermiyor' hatası düzeltildi. R tuşu: canlıya atla. Kamera bağlantı adresleri artık şifreli saklanıyor.\nAyarlar: yeni 'Dosya Konumları' sekmesi — yedekleme klasörü ve sıklığı (günlük/2 günde bir/haftalık/aylık), rapor ve anlık görüntü klasörleri.\nFiş: düzenlenen kayıtlarda yalnız değişen alanın yanına '(Düzenlendi)' yazılır.\nRaporlar: büyük dışa aktarımlarda bekleme imleci.",
-      "manifest": "v/2.44.json"
     }
   ],
-  "sig": "f35b2f48a821b7c52b43e56a85e8c092c208378a3755715ff95e541845268f8a"
+  "sig": "51cc90add916a3b37a182a231398bc82126cbd4cdde452e450c0a99b1de3ef18",
+  "sig2": "26edab34a0e7281b3e22e676e2d464e7ebad1c1212643483db7422bb7cd79c8862628a765535382be3d6a52f7668aa977ddf6a9819e8cb773c364296a58e920e"
 }
