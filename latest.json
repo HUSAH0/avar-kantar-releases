@@ -1,9 +1,9 @@
 {
-  "version": "2.50",
+  "version": "2.51",
   "notes": {
-    "tr": "• Yeni: Tartımlar kaydedilir kaydedilmez dış bir sisteme otomatik gönderilebiliyor (Ayarlar → Entegrasyon).\n• Yeni: Kameralar tek ekranda ızgara olarak izlenebiliyor (G tuşu).\n• Yeni: Görünüm ayarları — yazı boyutu ve sade mod (Ayarlar → Görünüm).\n• Güncelleme sistemi iyileştirildi.",
-    "en": "• New: Weighings can be sent automatically to an external system as soon as they are saved (Settings → Integration).\n• New: Cameras can be watched together in a grid on one screen (G key).\n• New: Appearance settings — text size and simple mode (Settings → Appearance).\n• Update system improvements.",
-    "ar": "• جديد: يمكن إرسال الأوزان تلقائياً إلى نظام خارجي فور حفظها (الإعدادات ← التكامل).\n• جديد: يمكن متابعة الكاميرات معاً كشبكة في شاشة واحدة (مفتاح G).\n• جديد: إعدادات المظهر — حجم الخط والوضع المبسّط (الإعدادات ← المظهر).\n• تحسينات على نظام التحديث."
+    "tr": "• Kamera kullanılırken programın zaman zaman donması giderildi.",
+    "en": "• Fixed the program freezing from time to time while a camera was in use.",
+    "ar": "• عولج تجمّد البرنامج من حين لآخر أثناء استخدام الكاميرا."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -169,8 +169,8 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "741c01489eb6e58586fc12a956882d2c9eb5a1470cd947d9021daa8b2237cf94",
-      "size": 30787584
+      "sha256": "26872798b76b2347bc1bcac979c1c3ab09c1772f911d165ea64accc2fa272cb7",
+      "size": 30797312
     },
     {
       "path": "avcodec-61.dll",
@@ -649,7 +649,7 @@
     },
     {
       "path": "updater/AVAR Guncelleyici.exe",
-      "sha256": "39dbb09ed62eb8e5823fe7abe3726d96f2e9c297a55dd0ca736fdbc0b923403a",
+      "sha256": "48547dcaac760570d6b77d59b5a88d1c39d2b6ca4e57fe85e3ed56872a69b41f",
       "size": 11921920
     },
     {
@@ -953,6 +953,6 @@
       "size": 1051648
     }
   ],
-  "sig": "ce1c6eef7eb8eef956d85ab57bf224720733298bbb96e16414a3994a474882dd",
-  "sig2": "2caa4fb10c41e6ca84087eb8c993f13a03bee14d735df22dc1be71ae2034d0fe875ea330e27808c05160b0a53c1346b92e4ab7bc1cbe3a87f3a1b362aa9e6b05"
+  "sig": "2f4c98ece3b02501c93f91c6d41862ccd4c633c05b025921d2fd76ac8711388c",
+  "sig2": "78c00e36b50a56e9bafb8545ab53eea2dd362f2ca2e1f6929983967afd6596a7d09125407dfc45ceff018f81a1e3c785735fa0ba3e9a807fbe59cb85c34c1b08"
 }
