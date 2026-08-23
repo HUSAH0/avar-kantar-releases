@@ -1,0 +1,958 @@
+{
+  "version": "2.51",
+  "notes": {
+    "tr": "• Kamera kullanılırken programın zaman zaman donması giderildi.",
+    "en": "• Fixed the program freezing from time to time while a camera was in use.",
+    "ar": "• عولج تجمّد البرنامج من حين لآخر أثناء استخدام الكاميرا."
+  },
+  "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
+  "files": [
+    {
+      "path": "_bz2.pyd",
+      "sha256": "5ba872caa7fcee0f4fb81c6e0201ceed9bd92a3624f16828dd316144d292a869",
+      "size": 86248
+    },
+    {
+      "path": "_cffi_backend.pyd",
+      "sha256": "d5b09da2e726b4e90cf0edad5d2a0ec52f369dfd060e14d3807a32b2205031fa",
+      "size": 180224
+    },
+    {
+      "path": "_ctypes.pyd",
+      "sha256": "199cd8d7db743c316771ef7bbf414ba9a9cdae1f974e90da6103563b2023538d",
+      "size": 134376
+    },
+    {
+      "path": "_decimal.pyd",
+      "sha256": "f4a486a0ca6a53659159a404614c7e7edccb6bfbcdeb844f6cee544436a826cb",
+      "size": 280296
+    },
+    {
+      "path": "_elementtree.pyd",
+      "sha256": "f7d884c475e5c98006bf7c2abb6b5acbd885157fb809ed2ee06d2347ab409bc0",
+      "size": 135160
+    },
+    {
+      "path": "_hashlib.pyd",
+      "sha256": "14765e83996fe6d50aedc11bb41d7c427a3e846a6a6293a4a46f7ea7e3f14148",
+      "size": 65528
+    },
+    {
+      "path": "_lzma.pyd",
+      "sha256": "6f48e7eba363cb67f3465a6c91b5872454b44fc30b82710dfa4a4489270ce95c",
+      "size": 159224
+    },
+    {
+      "path": "_queue.pyd",
+      "sha256": "e4956834df819c1758d17c1c42a152306f7c0ea7b457ca24ce2f6466a6cb1caa",
+      "size": 34808
+    },
+    {
+      "path": "_socket.pyd",
+      "sha256": "8daefaff53e6956f5aea5279a7c71f17d8c63e2b0d54031c3b9e82fcb0fb84db",
+      "size": 84984
+    },
+    {
+      "path": "_sqlite3.pyd",
+      "sha256": "1decb0ff369a1c314908e0933da663de8aa7732d8bd1472383906d18029cac67",
+      "size": 129528
+    },
+    {
+      "path": "_ssl.pyd",
+      "sha256": "21ca71b2c1766fc68734cb3d1e7c2c0439b86bcfb95e00b367c5fd48c59e617c",
+      "size": 183144
+    },
+    {
+      "path": "_uuid.pyd",
+      "sha256": "99e97e0af615f43150778aaa44d82bc58b70bf595a8412cfafcc5d38be38bdfb",
+      "size": 28008
+    },
+    {
+      "path": "_win32sysloader.pyd",
+      "sha256": "b11b641fc73ab5cc8853e0e7384147ee97056a2508927129dc385237e5a70b3a",
+      "size": 14848
+    },
+    {
+      "path": "_wmi.pyd",
+      "sha256": "ab87fe4b0cf5b2b17901905ea86367b9756c44845eb463e77435648f0f719354",
+      "size": 40304
+    },
+    {
+      "path": "assets/icons/circle-dashed.svg",
+      "sha256": "5011984bee1907d6d49e17c48ecdbf653b24c94dedee0aa1f143ece9af73ada5",
+      "size": 599
+    },
+    {
+      "path": "assets/icons/circle-dot-dashed.svg",
+      "sha256": "95ce9bdd43b236ff90cb9d8dd8493b2b0344a72c0c3591646cbf8300a6206937",
+      "size": 654
+    },
+    {
+      "path": "assets/icons/circle-dot.svg",
+      "sha256": "9f6aae582174e186035086d49a600d77370f6b91bf43423df3ba15654d2a1032",
+      "size": 306
+    },
+    {
+      "path": "assets/icons/fingerprint-pattern.svg",
+      "sha256": "f8e04ea57188cc3d79b549770a9dad643d34c6b39efdf63b6db5bd250a26cb4d",
+      "size": 625
+    },
+    {
+      "path": "assets/icons/flag.svg",
+      "sha256": "3f96e48e45245d6c897ed76fe6da0fe522231dc33dcf027c5990a167d7f7ad4e",
+      "size": 389
+    },
+    {
+      "path": "assets/icons/history.svg",
+      "sha256": "8080555f9bd74ba14665b5264625557bc4a50b34a7daf388f6f7be35c3faf47d",
+      "size": 322
+    },
+    {
+      "path": "assets/icons/package.svg",
+      "sha256": "9aa27d9aaa36ffc1a378caa004fa74113b42e7a91432f06dcb53e0f50ced4d87",
+      "size": 459
+    },
+    {
+      "path": "assets/icons/pencil-line.svg",
+      "sha256": "8450603fc708d1675dc0c585c5d78719c7978358e3c716aadae3962876a278b6",
+      "size": 426
+    },
+    {
+      "path": "assets/icons/printer.svg",
+      "sha256": "941e365b9b8a8188880e79333b88df7f9e351f0758700bada28231f50110b0ce",
+      "size": 423
+    },
+    {
+      "path": "assets/icons/scale.svg",
+      "sha256": "3f122ef0650b0a07c8ae629c6aa347a1f0820e2e398844e29aefad329249860d",
+      "size": 400
+    },
+    {
+      "path": "assets/icons/scroll.svg",
+      "sha256": "038220d898c1521097bbcdf3eb616f7c762fcf8336753be2810a87c370f969be",
+      "size": 389
+    },
+    {
+      "path": "assets/icons/settings.svg",
+      "sha256": "8f0372b40047da7adac6ecab6491aab3e018a1b132a993605b3cc5b08fe83ae6",
+      "size": 609
+    },
+    {
+      "path": "assets/icons/truck-reverse.svg",
+      "sha256": "0c536ab13d0ef28a9fbc5ef2e843780178fb5a634647a8785e00adc3fd00fd1a",
+      "size": 479
+    },
+    {
+      "path": "assets/icons/truck.svg",
+      "sha256": "e0494444e23b79108993786ab332b891eab1d32acc41adb40c4704cb86731efc",
+      "size": 477
+    },
+    {
+      "path": "assets/icons/van.svg",
+      "sha256": "09c3353e3d2fd38e9f7de53e1476bfc96243388210c167ee62ff431f1262424d",
+      "size": 496
+    },
+    {
+      "path": "assets/logo/avar_logo.ico",
+      "sha256": "41ac02843fc23d93e850868b4cf3cfc538cbec55999e943f82830caa87317e0c",
+      "size": 49904
+    },
+    {
+      "path": "assets/logo/avar_logo.png",
+      "sha256": "8c2c57a4a0c26afcb5d09acab22f5cf783c7e57fa4dc331579ac634249b36b2e",
+      "size": 13851
+    },
+    {
+      "path": "assets/logo/avar_logo_hires.png",
+      "sha256": "b4e7ff614f15e8db93f9ae2deff236fd4f23ad21cfbabb1054b83805b20b2fe4",
+      "size": 400215
+    },
+    {
+      "path": "AVAR Kantar.exe",
+      "sha256": "26872798b76b2347bc1bcac979c1c3ab09c1772f911d165ea64accc2fa272cb7",
+      "size": 30797312
+    },
+    {
+      "path": "avcodec-61.dll",
+      "sha256": "5d02f566bfc7116aa2e758191ac60728a6b085f52f0c9df6b0449c3e39fc1eff",
+      "size": 13919968
+    },
+    {
+      "path": "avformat-61.dll",
+      "sha256": "9c9aad9c40ff2c8894b2d677c495aabe21a824b2df92e8dc1d77b8e508ff9bfb",
+      "size": 2642656
+    },
+    {
+      "path": "avutil-59.dll",
+      "sha256": "92e7a65f6ead544506276a9af38ce1ffabfce1691a81d0eab2ab5098576fbe82",
+      "size": 1199328
+    },
+    {
+      "path": "configs/indikator_presets.json",
+      "sha256": "0c619a1d220faccd7d3107c545c7cd3d2e842a2f54b81071be30058b887367ab",
+      "size": 2389
+    },
+    {
+      "path": "cryptography/hazmat/bindings/_rust.pyd",
+      "sha256": "05fefb14b1cb1c90bcccce87e82d205f5f2396977bf911243972790ba2376849",
+      "size": 9935360
+    },
+    {
+      "path": "libcrypto-3.dll",
+      "sha256": "4e5d5d20d6d31e72ab341c81e97b89e514326c4c861b48638243bdf0918cfa43",
+      "size": 5232408
+    },
+    {
+      "path": "libffi-8.dll",
+      "sha256": "eff52743773eb550fcc6ce3efc37c85724502233b6b002a35496d828bd7b280a",
+      "size": 39696
+    },
+    {
+      "path": "libssl-3.dll",
+      "sha256": "2e4d35b681a172d3298caf7dc670451be7a8ba27c26446efc67470742497a950",
+      "size": 792856
+    },
+    {
+      "path": "licenses/Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "size": 11358
+    },
+    {
+      "path": "licenses/GPL-3.0.txt",
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+      "size": 35149
+    },
+    {
+      "path": "licenses/LGPL-3.0.txt",
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118",
+      "size": 7652
+    },
+    {
+      "path": "licenses/lucide-LICENSE.txt",
+      "sha256": "b495047bd93a9b06913511076f504daba17d5bbeb3e0650f3bb53a4220329c57",
+      "size": 3208
+    },
+    {
+      "path": "licenses/openpyxl-LICENSE.txt",
+      "sha256": "0c84bb42f5d367e5ebf9fc2dde35b16141df5ee0fdc189250858bc6c5560f69e",
+      "size": 1131
+    },
+    {
+      "path": "licenses/openssl-LICENSE.txt",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a",
+      "size": 10175
+    },
+    {
+      "path": "licenses/pkg-PySide6-LicenseRef-Qt-Commercial.txt",
+      "sha256": "4f54763ac0fe2abd8f7f8d8fe370a94a08ebf84786aa0b91045bd6628deb08a3",
+      "size": 470
+    },
+    {
+      "path": "licenses/PSF-2.0.txt",
+      "sha256": "78b12c3a81360b357002334f0e70ea0e92eebf7a9b358805c03c48484945f3bb",
+      "size": 13809
+    },
+    {
+      "path": "licenses/pyserial-LICENSE.txt",
+      "sha256": "f30d42819c1b52d6b9bb3d95414e587cb60bb0934aa6c8844eea7bfbd43d5e50",
+      "size": 1886
+    },
+    {
+      "path": "licenses/pywin32-LICENSE.txt",
+      "sha256": "ae254460373deef5dff3e08104f4c1f03a045c2ae1b34760b5c30f7efcef9078",
+      "size": 1511
+    },
+    {
+      "path": "licenses/README.txt",
+      "sha256": "c8128e60668f700bec96fb38ce014a2b78cce59863f27eb777b68693f2334600",
+      "size": 1725
+    },
+    {
+      "path": "licenses/sqlcipher-LICENSE.txt",
+      "sha256": "2a2826f6acf46fa650730cf42cbb22a642be33a7ef119c9c4f4bf6daf3bef48e",
+      "size": 1463
+    },
+    {
+      "path": "mfc140u.dll",
+      "sha256": "643ce7fe6a203c53a96a00f272a1a5b42d5b0c320c84364a6fe866307a19bb65",
+      "size": 5664848
+    },
+    {
+      "path": "msvcp140.dll",
+      "sha256": "ff8a3047798a1757330c0ff2cf66c2fdfc4aaef95043d3dc00483f8925b7cea4",
+      "size": 550112
+    },
+    {
+      "path": "msvcp140_1.dll",
+      "sha256": "10bae850a88d38b5103f583b1f2f7af2f2b146ce92b5cd23636b866f4204e5e1",
+      "size": 28384
+    },
+    {
+      "path": "msvcp140_2.dll",
+      "sha256": "c86a181fcf3953d238fab7ecd9c2a82107383ba3b72a36b5e5bfeb703c531a4c",
+      "size": 272608
+    },
+    {
+      "path": "pyexpat.pyd",
+      "sha256": "b93e6083eb06137cc9191dac0d9cf4483e47192113d3ac2228b4549f737bac85",
+      "size": 202744
+    },
+    {
+      "path": "PySide6/qt-plugins/iconengines/qsvgicon.dll",
+      "sha256": "2f938c548aef4986fce2c2e663c45d1f9fc52843b67bdd1aafb955f39570c3e1",
+      "size": 72416
+    },
+    {
+      "path": "PySide6/qt-plugins/imageformats/qgif.dll",
+      "sha256": "c089124cf71af5a4c6868b0448b9c4d2690e973755aacc07e22f3f202e414c20",
+      "size": 48352
+    },
+    {
+      "path": "PySide6/qt-plugins/imageformats/qicns.dll",
+      "sha256": "1fe9c8948ba3e54d9f2bed55cab531d509c716319f801177649be6456d5c6ceb",
+      "size": 56544
+    },
+    {
+      "path": "PySide6/qt-plugins/imageformats/qico.dll",
+      "sha256": "33bd8b2c3e59541806cd1a8a8b8323d619ddd3e0dd07038429215362e7a92630",
+      "size": 46816
+    },
+    {
+      "path": "PySide6/qt-plugins/imageformats/qjpeg.dll",
+      "sha256": "08a82c59b6127de708df446f8b46b4571e3044bbac3e2f8b8b13f4875e051518",
+      "size": 578272
+    },
+    {
+      "path": "PySide6/qt-plugins/imageformats/qpdf.dll",
+      "sha256": "65e3a2b9a77f28fab357d085097a550750ca27fa3fc6e049bb8b0dfe40ac16b4",
+      "size": 43232
+    },
+    {
+      "path": "PySide6/qt-plugins/imageformats/qsvg.dll",
+      "sha256": "59d8aa665513108c46c517e874f312fc0851d1645dcdebea2771e0e4dc69fd5d",
+      "size": 39648
+    },
+    {
+      "path": "PySide6/qt-plugins/imageformats/qtga.dll",
+      "sha256": "f30551c3f5001641540fcec45192d8cfef201e42b94ff47c39b3ce84ce5b479c",
+      "size": 39136
+    },
+    {
+      "path": "PySide6/qt-plugins/imageformats/qtiff.dll",
+      "sha256": "940145c9aad82d99c06e804fa7a5ccfd763203f7307e68a5cf464d625720abcb",
+      "size": 442592
+    },
+    {
+      "path": "PySide6/qt-plugins/imageformats/qwbmp.dll",
+      "sha256": "646e760b11217f0ef1b1b9bfdfb377b7eba270369ab39c4bf955278531c9dfd4",
+      "size": 37600
+    },
+    {
+      "path": "PySide6/qt-plugins/imageformats/qwebp.dll",
+      "sha256": "230dc55d3521953d74659141fe06d9c3f1813555507142a73e745becb7413892",
+      "size": 562912
+    },
+    {
+      "path": "PySide6/qt-plugins/multimedia/ffmpegmediaplugin.dll",
+      "sha256": "75c70afaa74659b4686869d536cb0ca19414ddb2e895ee59a421c55370268fab",
+      "size": 632544
+    },
+    {
+      "path": "PySide6/qt-plugins/multimedia/windowsmediaplugin.dll",
+      "sha256": "cd3e1ddbcf2735c5df4a0be2ce2e3f1521635eb5922f09900d1d1127cca7daef",
+      "size": 288992
+    },
+    {
+      "path": "PySide6/qt-plugins/platforms/qdirect2d.dll",
+      "sha256": "2465439563b82e2032e511203c7ab5456167c89ecaefbcf7e5df24ec9c2e2194",
+      "size": 1079008
+    },
+    {
+      "path": "PySide6/qt-plugins/platforms/qminimal.dll",
+      "sha256": "fd3c540ff3f8c668f2eff399375326062b4050e7d8e8933f9aea0d52a1aa2ec8",
+      "size": 62176
+    },
+    {
+      "path": "PySide6/qt-plugins/platforms/qoffscreen.dll",
+      "sha256": "e4ad3e81d0bbdab0dca617060f51cf9303dfb456e8f9d8aaf75786d3a19a8a3d",
+      "size": 114400
+    },
+    {
+      "path": "PySide6/qt-plugins/platforms/qwindows.dll",
+      "sha256": "55fdb6d1fb328d9c9b6c284d9a1e7c3e97eb774b45a64ae2ccd57b090863a305",
+      "size": 997088
+    },
+    {
+      "path": "PySide6/qt-plugins/styles/qmodernwindowsstyle.dll",
+      "sha256": "4c4d1e221ba2384360ce34e735910470a03a64f9ed41440e6895d5d7d9a811e1",
+      "size": 224992
+    },
+    {
+      "path": "PySide6/qt-plugins/tls/qcertonlybackend.dll",
+      "sha256": "2b49cb5369b4f06e241be226f192242d99b40b8bd371d78bf5eab17e5fa93dd7",
+      "size": 103136
+    },
+    {
+      "path": "PySide6/qt-plugins/tls/qopensslbackend.dll",
+      "sha256": "440878c3887289eac86fbeafb85094af09546894f2e7c1b30f08330a8370ebeb",
+      "size": 315616
+    },
+    {
+      "path": "PySide6/qt-plugins/tls/qschannelbackend.dll",
+      "sha256": "0e4f0bc8aecd31d5f2a7255b38fc5b538edea8ff70907f751d7da77586b76501",
+      "size": 259808
+    },
+    {
+      "path": "PySide6/QtCore.pyd",
+      "sha256": "c9d7bac7b90833160945fa0d69a4ce87a804b5ca257b40dbf189c852efb12a6d",
+      "size": 3265760
+    },
+    {
+      "path": "PySide6/QtGui.pyd",
+      "sha256": "97612d89bc8a10389751fa96542a49a7b290ac598cb4e6310d0d9afcfc99bed9",
+      "size": 3867872
+    },
+    {
+      "path": "PySide6/QtMultimedia.pyd",
+      "sha256": "c1ec760508822b4ecaf0ddb453e8c76ca7d89617b6c23c183f48d9113f38ad97",
+      "size": 568544
+    },
+    {
+      "path": "PySide6/QtMultimediaWidgets.pyd",
+      "sha256": "0e16d8b997d36ca19f92c7d189895ebe85d9173aab05ad24252bf0a3591ef0aa",
+      "size": 142048
+    },
+    {
+      "path": "PySide6/QtNetwork.pyd",
+      "sha256": "53f1c164055bdee206ead2c1ca8bcbed1a4dd70a1258d7e058f867eeacdfe318",
+      "size": 1000160
+    },
+    {
+      "path": "PySide6/QtPrintSupport.pyd",
+      "sha256": "fb69b6d99d161f7aff43d7c034a4651b371ca074a94df9decf4ce05f9b8d1a27",
+      "size": 275680
+    },
+    {
+      "path": "PySide6/QtSerialPort.pyd",
+      "sha256": "0ab6e8a6abdcf9300d321869ba6e762940e792d2676cf49810c6cc66dfbccca4",
+      "size": 129248
+    },
+    {
+      "path": "PySide6/QtSvg.pyd",
+      "sha256": "153f5aadcacde11dd7cd0454076500f4b260ee54a3f4db3d18320655c6e063fe",
+      "size": 115424
+    },
+    {
+      "path": "PySide6/QtWidgets.pyd",
+      "sha256": "4391acb242eb77c5e6d86cf486374612f0ef47cabbbe2dc3f2f8dedddeaeb3fa",
+      "size": 4804320
+    },
+    {
+      "path": "PySide6/translations/qtbase_ar.qm",
+      "sha256": "e03fe68d83201543698fd7fe267dd5dfc5bfd195147e74ff2f19ac3491401263",
+      "size": 160017
+    },
+    {
+      "path": "PySide6/translations/qtbase_en.qm",
+      "sha256": "494ac9a2b2cb2fdeced353f4a9f898ed8dcf616e9bc667438c62681e3f7f79cf",
+      "size": 33
+    },
+    {
+      "path": "PySide6/translations/qtbase_tr.qm",
+      "sha256": "353fdfd7165659a49212e7a25bf91c0a71588e52c836f7496640f26782414634",
+      "size": 248720
+    },
+    {
+      "path": "pyside6.abi3.dll",
+      "sha256": "e9fbf3fbd8b97f9dee645ece52789643e7472537cd035d07c0aacab3bc6e6047",
+      "size": 260320
+    },
+    {
+      "path": "python3.dll",
+      "sha256": "4f93342b59addedbe45ebd973e6449ab85b11c0aab6ad7962124e293c5d03638",
+      "size": 72424
+    },
+    {
+      "path": "python313.dll",
+      "sha256": "bf68cf819a1e865170430c10e91c18b427aef88db1da1742020443864aa2b749",
+      "size": 6096232
+    },
+    {
+      "path": "pythoncom313.dll",
+      "sha256": "e312c8edb2d43a014daddfa984a805e6b5f933c60777e7b527332e682d9b1813",
+      "size": 690176
+    },
+    {
+      "path": "pywintypes313.dll",
+      "sha256": "9bb6dece38380abc747dce9ba8b0834a2bec469bc942dbcc8658e30ebdfb59a4",
+      "size": 135680
+    },
+    {
+      "path": "qt6core.dll",
+      "sha256": "35039e568fefe592098dca5b5b79d1e907687f9769e6b797be323b023218b2ee",
+      "size": 10107104
+    },
+    {
+      "path": "qt6gui.dll",
+      "sha256": "79c426ba4debf971c3dc38b38192cbcc5d536b2a92299d6d82cf946643beb397",
+      "size": 9446112
+    },
+    {
+      "path": "qt6multimedia.dll",
+      "sha256": "916110a3003c1c1a6ba212217629622595c99cae28153fb0eb41142ab3f70523",
+      "size": 1227488
+    },
+    {
+      "path": "qt6multimediawidgets.dll",
+      "sha256": "b4cc85ad36ca7c49096cc70353953c14c2a8237e8f2d4d5f0ca1f8591b8b96df",
+      "size": 62176
+    },
+    {
+      "path": "qt6network.dll",
+      "sha256": "9ec562e4a338e3bdee306877f9b10130fba412e3eaddd15215cb6f7dfcc21083",
+      "size": 1741024
+    },
+    {
+      "path": "qt6pdf.dll",
+      "sha256": "7e0d11e23888ba7b3b7209dc118b66895679f8fda136b0eda8c52d9464f91f79",
+      "size": 5524704
+    },
+    {
+      "path": "qt6printsupport.dll",
+      "sha256": "5b87112d881984a2140286b3a59cd67d731cd5e5cadf5947de661fe7536e17e4",
+      "size": 406240
+    },
+    {
+      "path": "qt6serialport.dll",
+      "sha256": "db8e8d08fd93a1ac7530b209b6d8493b14b3dcd5db18f132a4b363b9efded607",
+      "size": 133856
+    },
+    {
+      "path": "qt6svg.dll",
+      "sha256": "e15b52e3d7e0a2cd84d6cdf4150d880264e29b1fe9805dc23992657fd2058fb3",
+      "size": 623328
+    },
+    {
+      "path": "qt6widgets.dll",
+      "sha256": "4d68fdd9853b1885e009343e90bb771ffb2faa4eb8de4369d518aab725fd954c",
+      "size": 6558944
+    },
+    {
+      "path": "select.pyd",
+      "sha256": "baee284995b22d495fd12fa8378077e470978db1522c61bfb9af37fb827f33d1",
+      "size": 32248
+    },
+    {
+      "path": "shiboken6/msvcp140.dll",
+      "sha256": "111994b729318cb71a21b4d20ee5a7c990d7f35cad5c02c66f9f505111512b66",
+      "size": 550112
+    },
+    {
+      "path": "shiboken6/msvcp140_1.dll",
+      "sha256": "6e2a130632c0b8322a74115496e545591937c814a05ebbb775120908b0b6f5b6",
+      "size": 28384
+    },
+    {
+      "path": "shiboken6/msvcp140_2.dll",
+      "sha256": "ea5658277b2c6e64f002896738af0afeffda591fe487983de6d4114a45ad17f9",
+      "size": 272608
+    },
+    {
+      "path": "shiboken6/msvcp140_codecvt_ids.dll",
+      "sha256": "b8ee4d44c9b1216941e55afe37c86b5769a1f6d5b9c65c10b279b4dc72e8d7fa",
+      "size": 24288
+    },
+    {
+      "path": "shiboken6/Shiboken.pyd",
+      "sha256": "ec8adade8808455f9f7d237d287f0959aae652ce48d6b761ca6e7f04ea7f7b0a",
+      "size": 34016
+    },
+    {
+      "path": "shiboken6.abi3.dll",
+      "sha256": "be34f390890c06f98817d13d863e755f5d14eae7994cf3f76a8fb42ab98f1a8d",
+      "size": 382688
+    },
+    {
+      "path": "sqlcipher3/_sqlite3.pyd",
+      "sha256": "cd2f77f75ecc40c3df5eec2578bc580842bfbfde2bd2e892185ac334c5ed66c8",
+      "size": 5918720
+    },
+    {
+      "path": "sqlite3.dll",
+      "sha256": "aba94c2a103e9ab331466823c28217c6fa00f4280ed7f3502c11f5aae71c5814",
+      "size": 1541864
+    },
+    {
+      "path": "swresample-5.dll",
+      "sha256": "7d6dede2e7212dd25b04459e7a8d9f328b17fa47aa0b414cf0db4419070569dc",
+      "size": 248032
+    },
+    {
+      "path": "swscale-8.dll",
+      "sha256": "b42ce981f6884c74c458196db073a7dc0f5804849a1500560b034ffa7028cdc0",
+      "size": 753376
+    },
+    {
+      "path": "unicodedata.pyd",
+      "sha256": "a67eec238162fde20ac24ca7df931792734aad0611be22d1b3a71bc15acf72f3",
+      "size": 711160
+    },
+    {
+      "path": "updater/_bz2.pyd",
+      "sha256": "5ba872caa7fcee0f4fb81c6e0201ceed9bd92a3624f16828dd316144d292a869",
+      "size": 86248
+    },
+    {
+      "path": "updater/_cffi_backend.pyd",
+      "sha256": "d5b09da2e726b4e90cf0edad5d2a0ec52f369dfd060e14d3807a32b2205031fa",
+      "size": 180224
+    },
+    {
+      "path": "updater/_ctypes.pyd",
+      "sha256": "199cd8d7db743c316771ef7bbf414ba9a9cdae1f974e90da6103563b2023538d",
+      "size": 134376
+    },
+    {
+      "path": "updater/_decimal.pyd",
+      "sha256": "f4a486a0ca6a53659159a404614c7e7edccb6bfbcdeb844f6cee544436a826cb",
+      "size": 280296
+    },
+    {
+      "path": "updater/_hashlib.pyd",
+      "sha256": "14765e83996fe6d50aedc11bb41d7c427a3e846a6a6293a4a46f7ea7e3f14148",
+      "size": 65528
+    },
+    {
+      "path": "updater/_lzma.pyd",
+      "sha256": "6f48e7eba363cb67f3465a6c91b5872454b44fc30b82710dfa4a4489270ce95c",
+      "size": 159224
+    },
+    {
+      "path": "updater/_queue.pyd",
+      "sha256": "e4956834df819c1758d17c1c42a152306f7c0ea7b457ca24ce2f6466a6cb1caa",
+      "size": 34808
+    },
+    {
+      "path": "updater/_socket.pyd",
+      "sha256": "8daefaff53e6956f5aea5279a7c71f17d8c63e2b0d54031c3b9e82fcb0fb84db",
+      "size": 84984
+    },
+    {
+      "path": "updater/_ssl.pyd",
+      "sha256": "21ca71b2c1766fc68734cb3d1e7c2c0439b86bcfb95e00b367c5fd48c59e617c",
+      "size": 183144
+    },
+    {
+      "path": "updater/_wmi.pyd",
+      "sha256": "ab87fe4b0cf5b2b17901905ea86367b9756c44845eb463e77435648f0f719354",
+      "size": 40304
+    },
+    {
+      "path": "updater/AVAR Guncelleyici.exe",
+      "sha256": "48547dcaac760570d6b77d59b5a88d1c39d2b6ca4e57fe85e3ed56872a69b41f",
+      "size": 11921920
+    },
+    {
+      "path": "updater/cryptography/hazmat/bindings/_rust.pyd",
+      "sha256": "05fefb14b1cb1c90bcccce87e82d205f5f2396977bf911243972790ba2376849",
+      "size": 9935360
+    },
+    {
+      "path": "updater/libcrypto-3.dll",
+      "sha256": "4e5d5d20d6d31e72ab341c81e97b89e514326c4c861b48638243bdf0918cfa43",
+      "size": 5232408
+    },
+    {
+      "path": "updater/libffi-8.dll",
+      "sha256": "eff52743773eb550fcc6ce3efc37c85724502233b6b002a35496d828bd7b280a",
+      "size": 39696
+    },
+    {
+      "path": "updater/libssl-3.dll",
+      "sha256": "2e4d35b681a172d3298caf7dc670451be7a8ba27c26446efc67470742497a950",
+      "size": 792856
+    },
+    {
+      "path": "updater/msvcp140.dll",
+      "sha256": "ff8a3047798a1757330c0ff2cf66c2fdfc4aaef95043d3dc00483f8925b7cea4",
+      "size": 550112
+    },
+    {
+      "path": "updater/msvcp140_1.dll",
+      "sha256": "10bae850a88d38b5103f583b1f2f7af2f2b146ce92b5cd23636b866f4204e5e1",
+      "size": 28384
+    },
+    {
+      "path": "updater/msvcp140_2.dll",
+      "sha256": "c86a181fcf3953d238fab7ecd9c2a82107383ba3b72a36b5e5bfeb703c531a4c",
+      "size": 272608
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/iconengines/qsvgicon.dll",
+      "sha256": "2f938c548aef4986fce2c2e663c45d1f9fc52843b67bdd1aafb955f39570c3e1",
+      "size": 72416
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/imageformats/qgif.dll",
+      "sha256": "c089124cf71af5a4c6868b0448b9c4d2690e973755aacc07e22f3f202e414c20",
+      "size": 48352
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/imageformats/qicns.dll",
+      "sha256": "1fe9c8948ba3e54d9f2bed55cab531d509c716319f801177649be6456d5c6ceb",
+      "size": 56544
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/imageformats/qico.dll",
+      "sha256": "33bd8b2c3e59541806cd1a8a8b8323d619ddd3e0dd07038429215362e7a92630",
+      "size": 46816
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/imageformats/qjpeg.dll",
+      "sha256": "08a82c59b6127de708df446f8b46b4571e3044bbac3e2f8b8b13f4875e051518",
+      "size": 578272
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/imageformats/qpdf.dll",
+      "sha256": "65e3a2b9a77f28fab357d085097a550750ca27fa3fc6e049bb8b0dfe40ac16b4",
+      "size": 43232
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/imageformats/qsvg.dll",
+      "sha256": "59d8aa665513108c46c517e874f312fc0851d1645dcdebea2771e0e4dc69fd5d",
+      "size": 39648
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/imageformats/qtga.dll",
+      "sha256": "f30551c3f5001641540fcec45192d8cfef201e42b94ff47c39b3ce84ce5b479c",
+      "size": 39136
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/imageformats/qtiff.dll",
+      "sha256": "940145c9aad82d99c06e804fa7a5ccfd763203f7307e68a5cf464d625720abcb",
+      "size": 442592
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/imageformats/qwbmp.dll",
+      "sha256": "646e760b11217f0ef1b1b9bfdfb377b7eba270369ab39c4bf955278531c9dfd4",
+      "size": 37600
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/imageformats/qwebp.dll",
+      "sha256": "230dc55d3521953d74659141fe06d9c3f1813555507142a73e745becb7413892",
+      "size": 562912
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/platforms/qdirect2d.dll",
+      "sha256": "2465439563b82e2032e511203c7ab5456167c89ecaefbcf7e5df24ec9c2e2194",
+      "size": 1079008
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/platforms/qminimal.dll",
+      "sha256": "fd3c540ff3f8c668f2eff399375326062b4050e7d8e8933f9aea0d52a1aa2ec8",
+      "size": 62176
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/platforms/qoffscreen.dll",
+      "sha256": "e4ad3e81d0bbdab0dca617060f51cf9303dfb456e8f9d8aaf75786d3a19a8a3d",
+      "size": 114400
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/platforms/qwindows.dll",
+      "sha256": "55fdb6d1fb328d9c9b6c284d9a1e7c3e97eb774b45a64ae2ccd57b090863a305",
+      "size": 997088
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/styles/qmodernwindowsstyle.dll",
+      "sha256": "4c4d1e221ba2384360ce34e735910470a03a64f9ed41440e6895d5d7d9a811e1",
+      "size": 224992
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/tls/qcertonlybackend.dll",
+      "sha256": "2b49cb5369b4f06e241be226f192242d99b40b8bd371d78bf5eab17e5fa93dd7",
+      "size": 103136
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/tls/qopensslbackend.dll",
+      "sha256": "440878c3887289eac86fbeafb85094af09546894f2e7c1b30f08330a8370ebeb",
+      "size": 315616
+    },
+    {
+      "path": "updater/PySide6/qt-plugins/tls/qschannelbackend.dll",
+      "sha256": "0e4f0bc8aecd31d5f2a7255b38fc5b538edea8ff70907f751d7da77586b76501",
+      "size": 259808
+    },
+    {
+      "path": "updater/PySide6/QtCore.pyd",
+      "sha256": "c9d7bac7b90833160945fa0d69a4ce87a804b5ca257b40dbf189c852efb12a6d",
+      "size": 3265760
+    },
+    {
+      "path": "updater/PySide6/QtGui.pyd",
+      "sha256": "97612d89bc8a10389751fa96542a49a7b290ac598cb4e6310d0d9afcfc99bed9",
+      "size": 3867872
+    },
+    {
+      "path": "updater/PySide6/QtNetwork.pyd",
+      "sha256": "53f1c164055bdee206ead2c1ca8bcbed1a4dd70a1258d7e058f867eeacdfe318",
+      "size": 1000160
+    },
+    {
+      "path": "updater/PySide6/QtWidgets.pyd",
+      "sha256": "4391acb242eb77c5e6d86cf486374612f0ef47cabbbe2dc3f2f8dedddeaeb3fa",
+      "size": 4804320
+    },
+    {
+      "path": "updater/pyside6.abi3.dll",
+      "sha256": "e9fbf3fbd8b97f9dee645ece52789643e7472537cd035d07c0aacab3bc6e6047",
+      "size": 260320
+    },
+    {
+      "path": "updater/python3.dll",
+      "sha256": "4f93342b59addedbe45ebd973e6449ab85b11c0aab6ad7962124e293c5d03638",
+      "size": 72424
+    },
+    {
+      "path": "updater/python313.dll",
+      "sha256": "bf68cf819a1e865170430c10e91c18b427aef88db1da1742020443864aa2b749",
+      "size": 6096232
+    },
+    {
+      "path": "updater/pythoncom313.dll",
+      "sha256": "e312c8edb2d43a014daddfa984a805e6b5f933c60777e7b527332e682d9b1813",
+      "size": 690176
+    },
+    {
+      "path": "updater/pywintypes313.dll",
+      "sha256": "9bb6dece38380abc747dce9ba8b0834a2bec469bc942dbcc8658e30ebdfb59a4",
+      "size": 135680
+    },
+    {
+      "path": "updater/qt6core.dll",
+      "sha256": "35039e568fefe592098dca5b5b79d1e907687f9769e6b797be323b023218b2ee",
+      "size": 10107104
+    },
+    {
+      "path": "updater/qt6gui.dll",
+      "sha256": "79c426ba4debf971c3dc38b38192cbcc5d536b2a92299d6d82cf946643beb397",
+      "size": 9446112
+    },
+    {
+      "path": "updater/qt6network.dll",
+      "sha256": "9ec562e4a338e3bdee306877f9b10130fba412e3eaddd15215cb6f7dfcc21083",
+      "size": 1741024
+    },
+    {
+      "path": "updater/qt6pdf.dll",
+      "sha256": "7e0d11e23888ba7b3b7209dc118b66895679f8fda136b0eda8c52d9464f91f79",
+      "size": 5524704
+    },
+    {
+      "path": "updater/qt6svg.dll",
+      "sha256": "e15b52e3d7e0a2cd84d6cdf4150d880264e29b1fe9805dc23992657fd2058fb3",
+      "size": 623328
+    },
+    {
+      "path": "updater/qt6widgets.dll",
+      "sha256": "4d68fdd9853b1885e009343e90bb771ffb2faa4eb8de4369d518aab725fd954c",
+      "size": 6558944
+    },
+    {
+      "path": "updater/select.pyd",
+      "sha256": "baee284995b22d495fd12fa8378077e470978db1522c61bfb9af37fb827f33d1",
+      "size": 32248
+    },
+    {
+      "path": "updater/shiboken6/msvcp140.dll",
+      "sha256": "111994b729318cb71a21b4d20ee5a7c990d7f35cad5c02c66f9f505111512b66",
+      "size": 550112
+    },
+    {
+      "path": "updater/shiboken6/msvcp140_1.dll",
+      "sha256": "6e2a130632c0b8322a74115496e545591937c814a05ebbb775120908b0b6f5b6",
+      "size": 28384
+    },
+    {
+      "path": "updater/shiboken6/msvcp140_2.dll",
+      "sha256": "ea5658277b2c6e64f002896738af0afeffda591fe487983de6d4114a45ad17f9",
+      "size": 272608
+    },
+    {
+      "path": "updater/shiboken6/msvcp140_codecvt_ids.dll",
+      "sha256": "b8ee4d44c9b1216941e55afe37c86b5769a1f6d5b9c65c10b279b4dc72e8d7fa",
+      "size": 24288
+    },
+    {
+      "path": "updater/shiboken6/Shiboken.pyd",
+      "sha256": "ec8adade8808455f9f7d237d287f0959aae652ce48d6b761ca6e7f04ea7f7b0a",
+      "size": 34016
+    },
+    {
+      "path": "updater/shiboken6.abi3.dll",
+      "sha256": "be34f390890c06f98817d13d863e755f5d14eae7994cf3f76a8fb42ab98f1a8d",
+      "size": 382688
+    },
+    {
+      "path": "updater/unicodedata.pyd",
+      "sha256": "a67eec238162fde20ac24ca7df931792734aad0611be22d1b3a71bc15acf72f3",
+      "size": 711160
+    },
+    {
+      "path": "updater/vcruntime140.dll",
+      "sha256": "36585912e5eaf83ba9fea0631534f690ccdc2d7ba91537166fe53e56c221e153",
+      "size": 120400
+    },
+    {
+      "path": "updater/vcruntime140_1.dll",
+      "sha256": "82a2f9ae1e6146ae3cb0f4bc5a62b7227e0384209d9b1aef86bbcc105912f7cd",
+      "size": 49744
+    },
+    {
+      "path": "updater/win32api.pyd",
+      "sha256": "b80722e54741563e72e264ca33e1900ee49c927c475e54ef8f94c3eac9032465",
+      "size": 135168
+    },
+    {
+      "path": "updater/win32evtlog.pyd",
+      "sha256": "d8b40e7c79cf6821b2e7bab2ed279449f42510f3805f783c2fb9f1403481e1f3",
+      "size": 75776
+    },
+    {
+      "path": "vcruntime140.dll",
+      "sha256": "36585912e5eaf83ba9fea0631534f690ccdc2d7ba91537166fe53e56c221e153",
+      "size": 120400
+    },
+    {
+      "path": "vcruntime140_1.dll",
+      "sha256": "82a2f9ae1e6146ae3cb0f4bc5a62b7227e0384209d9b1aef86bbcc105912f7cd",
+      "size": 49744
+    },
+    {
+      "path": "win32api.pyd",
+      "sha256": "b80722e54741563e72e264ca33e1900ee49c927c475e54ef8f94c3eac9032465",
+      "size": 135168
+    },
+    {
+      "path": "win32event.pyd",
+      "sha256": "b70d2aebb12d2a0c8d100f37e109319407cf025fc406ef23d13c1b5ddb64370a",
+      "size": 29184
+    },
+    {
+      "path": "win32evtlog.pyd",
+      "sha256": "d8b40e7c79cf6821b2e7bab2ed279449f42510f3805f783c2fb9f1403481e1f3",
+      "size": 75776
+    },
+    {
+      "path": "win32print.pyd",
+      "sha256": "1a5a443d9154e6a3cf62fe39dd7f40a3fea272c297ac1e0aa9e10c0b0ea68bad",
+      "size": 75264
+    },
+    {
+      "path": "win32ui.pyd",
+      "sha256": "8a9f51b9a5152ef0b0fe3c5017af1f7004036311bdb806eb7987305ce9f1651f",
+      "size": 1051648
+    }
+  ],
+  "sig": "2f4c98ece3b02501c93f91c6d41862ccd4c633c05b025921d2fd76ac8711388c",
+  "sig2": "78c00e36b50a56e9bafb8545ab53eea2dd362f2ca2e1f6929983967afd6596a7d09125407dfc45ceff018f81a1e3c785735fa0ba3e9a807fbe59cb85c34c1b08"
+}
