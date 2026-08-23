@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "2.51",
+      "notes": {
+        "tr": "• Kamera kullanılırken programın zaman zaman donması giderildi.",
+        "en": "• Fixed the program freezing from time to time while a camera was in use.",
+        "ar": "• عولج تجمّد البرنامج من حين لآخر أثناء استخدام الكاميرا."
+      },
+      "manifest": "v/2.51.json"
+    },
+    {
       "version": "2.50",
       "notes": {
         "tr": "• Yeni: Tartımlar kaydedilir kaydedilmez dış bir sisteme otomatik gönderilebiliyor (Ayarlar → Entegrasyon).\n• Yeni: Kameralar tek ekranda ızgara olarak izlenebiliyor (G tuşu).\n• Yeni: Görünüm ayarları — yazı boyutu ve sade mod (Ayarlar → Görünüm).\n• Güncelleme sistemi iyileştirildi.",
@@ -35,17 +44,8 @@
         "ar": "• أُعيد بناء نظام التحديث: صار التحديث يُثبَّت بشكل موثوق، ويُعرض التقدّم بدقّة، وإذا حدث أي خلل يبقى برنامجك كما هو دون أي تغيير.\n• رسائل التحديث صارت أوضح وتقول لك مباشرة ما عليك فعله.\n• نافذة المحدِّث صارت تُغلق في كل الحالات.\n• عولجت مشكلة إغلاق البرنامج عند التنقّل بين صفحات الكاميرات.\n• زر «الوزنة الأولى» صار يفتح نموذج الوزن مباشرة؛ وقائمة المركبات الأكثر استخداماً موجودة في زر «⋯» داخل حقول اللوحة/الشركة/الحمولة.\n• تحسينات بسيطة في الواجهة."
       },
       "manifest": "v/2.47.json"
-    },
-    {
-      "version": "2.46",
-      "notes": {
-        "tr": "YENİ — Hızlı araç seçimi\n• Plaka, Firma ve Malzeme kutularının sonundaki «⋯» düğmesi en sık gelen araçları listeler; çift tıklayınca o aracın SON kaydındaki tüm bilgiler forma dolar.\n• Otomatik tamamlama artık kayıt sayısı arttıkça yavaşlamıyor ve alfabetik kesilme sorunu giderildi.\n\nYENİ — Terazi güvenliği\n• Donmuş/eski veriden ağırlık alınması engellendi: gösterge veri göndermeyi kestiyse GİRİŞ/ÇIKIŞ tıklaması kabul edilmez.\n• Her tartıma hangi terazinin ölçtüğü kaydedilir; giriş ile çıkış farklı terazilerden ise uyarılırsınız.\n• COM numarası değişse bile (yeniden başlatma / başka USB yuvası) indikatör donanım kimliğinden tanınır — yanlış teraziye bağlanma riski kalktı.\n• İndikatör ayarlarında «Bağlama» sayfası: bir terazinin işlemini hangi terazinin tamamlayabileceğini siz belirlersiniz.\n• Tuşla veya komutla ağırlık gönderen indikatörler destekleniyor (sürekli akış şart değil).\n\nDÜZELTMELER\n• Tamamlanan fiş tek işlemde yazılıyor — yarım kalmış «bekleyen» kayıt oluşamaz.\n• Eski veritabanlarında eksik kalabilen NET ağırlık sütunu otomatik onarılıyor.\n• Geçmişte kayıt düzenlerken boş plaka reddedilince diğer değişiklikler artık kaybolmuyor.\n• Rapor yazdırmada seçtiğiniz sayfa yönü korunuyor.\n• Eksi (negatif) ağırlık sorgusuz kaydedilmiyor.\n• Kayıttan sonra bekleyen araçlar listesi kendiliğinden tazeleniyor.\n• Durum ışıkları (COM / yazıcı / kamera / internet) artık gerçek durumu gösteriyor.\n• Kamera: program kapanırken cihaz serbest bırakılıyor, bellek sızıntısı giderildi.\n• Açılış ve kayıt sonrası bekleme süreleri kısaldı.",
-        "en": "NEW — Fast vehicle entry\n• The «⋯» button at the end of Plate, Company and Material opens a list of the most frequent vehicles; double-click fills the whole form from that plate's LAST record.\n• Auto-complete no longer slows down as records grow, and the alphabetical cut-off problem is fixed.\n\nNEW — Scale safety\n• Weight can no longer be captured from frozen/stale data: if the indicator stopped sending, an IN/OUT click is refused.\n• Every weighing records WHICH scale measured it; you are warned if entry and exit came from different scales.\n• Even if the COM number changes (restart / different USB socket) the indicator is recognised by its hardware identity — no more connecting to the wrong scale.\n• New «Linking» page per indicator: you decide which scale may complete another scale's ticket.\n• Indicators that send weight on a key press or on command are now supported (a continuous stream is not required).\n\nFIXES\n• A completed ticket is written in a single transaction — no half-finished \"waiting\" record can appear.\n• A NET weight column that could be missing in older databases is repaired automatically.\n• When editing history, rejecting an empty plate no longer discards your other changes.\n• Report printing keeps the page orientation you chose.\n• Negative weights are no longer saved without asking.\n• The waiting-vehicles list refreshes itself after a save.\n• Status lights (COM / printer / camera / internet) now show the real state.\n• Camera: the device is released on shutdown and a memory leak was fixed.\n• Startup and post-save waiting times are shorter.",
-        "ar": "جديد — اختيار سريع للمركبات\n• زر «⋯» في نهاية خانات اللوحة والشركة والمادة يعرض أكثر المركبات تردداً؛ والنقر المزدوج يملأ النموذج كاملاً من آخر سجل لتلك اللوحة.\n• الإكمال التلقائي لم يعد يبطؤ مع كثرة السجلات، وحُلَّت مشكلة الاقتصار الأبجدي.\n\nجديد — أمان الميزان\n• مُنع أخذ الوزن من بيانات متجمّدة/قديمة: إن توقّف المؤشّر عن الإرسال يُرفض الضغط على الدخول/الخروج.\n• كل وزنة تُسجَّل مع الميزان الذي قاسها؛ وتُنبَّه إن كان الدخول والخروج من ميزانين مختلفين.\n• حتى لو تغيّر رقم COM (إعادة تشغيل أو منفذ USB آخر) يُتعرَّف على المؤشّر ببصمة عتاده — انتهى خطر الاتصال بالميزان الخطأ.\n• صفحة «الربط» لكل مؤشّر: أنت تحدّد أي ميزان يستطيع إتمام عملية ميزان آخر.\n• دعم المؤشّرات التي ترسل الوزن بضغطة زر أو بأمر (التدفّق المستمر لم يعد شرطاً).\n\nإصلاحات\n• الفاتورة المكتملة تُكتب في عملية واحدة — لا يمكن أن ينشأ سجل «منتظر» ناقص.\n• عمود الوزن الصافي الذي قد ينقص في قواعد البيانات القديمة يُصلَح تلقائياً.\n• عند تعديل سجل في السجلّات، رفض اللوحة الفارغة لم يعد يُلغي بقية تعديلاتك.\n• طباعة التقارير تحافظ على اتجاه الصفحة الذي اخترته.\n• الوزن السالب لم يعد يُحفظ دون سؤال.\n• قائمة المركبات المنتظرة تتحدّث تلقائياً بعد الحفظ.\n• مؤشّرات الحالة (COM / الطابعة / الكاميرا / الإنترنت) صارت تعرض الحالة الحقيقية.\n• الكاميرا: يُحرَّر الجهاز عند إغلاق البرنامج، وأُصلح تسريب الذاكرة.\n• تقلّصت أزمنة الانتظار عند الإقلاع وبعد الحفظ."
-      },
-      "manifest": "v/2.46.json"
     }
   ],
-  "sig": "aefe48fd41d396d223e78348357335dde10a7a67c6c0c4c655ae020c4573428f",
-  "sig2": "ffbc47a8efddf8414139e1cf09da9bd4975e9a016fda18498b3900eb6e9ff2120e4187232da006db8887629ac474ed39b4eaebfcc6c9976fcf04af8eca7c9909"
+  "sig": "9079df75df8fd945695291b063798d42f04e769c4f6044b7fc7cab34c5e332e4",
+  "sig2": "c6c4fdea9313364dd65bbf2b88b4c73c2fd660e031b8ce3b6fa4e81903ac145a6326cff8a0d996dd4b1cd221dc27bf588c042279126ce5215ff023b90c05720c"
 }
