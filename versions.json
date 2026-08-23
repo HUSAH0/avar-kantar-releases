@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "2.50",
+      "notes": {
+        "tr": "• Yeni: Tartımlar kaydedilir kaydedilmez dış bir sisteme otomatik gönderilebiliyor (Ayarlar → Entegrasyon).\n• Yeni: Kameralar tek ekranda ızgara olarak izlenebiliyor (G tuşu).\n• Yeni: Görünüm ayarları — yazı boyutu ve sade mod (Ayarlar → Görünüm).\n• Güncelleme sistemi iyileştirildi.",
+        "en": "• New: Weighings can be sent automatically to an external system as soon as they are saved (Settings → Integration).\n• New: Cameras can be watched together in a grid on one screen (G key).\n• New: Appearance settings — text size and simple mode (Settings → Appearance).\n• Update system improvements.",
+        "ar": "• جديد: يمكن إرسال الأوزان تلقائياً إلى نظام خارجي فور حفظها (الإعدادات ← التكامل).\n• جديد: يمكن متابعة الكاميرات معاً كشبكة في شاشة واحدة (مفتاح G).\n• جديد: إعدادات المظهر — حجم الخط والوضع المبسّط (الإعدادات ← المظهر).\n• تحسينات على نظام التحديث."
+      },
+      "manifest": "v/2.50.json"
+    },
+    {
       "version": "2.49",
       "notes": {
         "tr": "• Güncelleme sistemi iyileştirildi.",
@@ -35,13 +44,8 @@
         "ar": "جديد — اختيار سريع للمركبات\n• زر «⋯» في نهاية خانات اللوحة والشركة والمادة يعرض أكثر المركبات تردداً؛ والنقر المزدوج يملأ النموذج كاملاً من آخر سجل لتلك اللوحة.\n• الإكمال التلقائي لم يعد يبطؤ مع كثرة السجلات، وحُلَّت مشكلة الاقتصار الأبجدي.\n\nجديد — أمان الميزان\n• مُنع أخذ الوزن من بيانات متجمّدة/قديمة: إن توقّف المؤشّر عن الإرسال يُرفض الضغط على الدخول/الخروج.\n• كل وزنة تُسجَّل مع الميزان الذي قاسها؛ وتُنبَّه إن كان الدخول والخروج من ميزانين مختلفين.\n• حتى لو تغيّر رقم COM (إعادة تشغيل أو منفذ USB آخر) يُتعرَّف على المؤشّر ببصمة عتاده — انتهى خطر الاتصال بالميزان الخطأ.\n• صفحة «الربط» لكل مؤشّر: أنت تحدّد أي ميزان يستطيع إتمام عملية ميزان آخر.\n• دعم المؤشّرات التي ترسل الوزن بضغطة زر أو بأمر (التدفّق المستمر لم يعد شرطاً).\n\nإصلاحات\n• الفاتورة المكتملة تُكتب في عملية واحدة — لا يمكن أن ينشأ سجل «منتظر» ناقص.\n• عمود الوزن الصافي الذي قد ينقص في قواعد البيانات القديمة يُصلَح تلقائياً.\n• عند تعديل سجل في السجلّات، رفض اللوحة الفارغة لم يعد يُلغي بقية تعديلاتك.\n• طباعة التقارير تحافظ على اتجاه الصفحة الذي اخترته.\n• الوزن السالب لم يعد يُحفظ دون سؤال.\n• قائمة المركبات المنتظرة تتحدّث تلقائياً بعد الحفظ.\n• مؤشّرات الحالة (COM / الطابعة / الكاميرا / الإنترنت) صارت تعرض الحالة الحقيقية.\n• الكاميرا: يُحرَّر الجهاز عند إغلاق البرنامج، وأُصلح تسريب الذاكرة.\n• تقلّصت أزمنة الانتظار عند الإقلاع وبعد الحفظ."
       },
       "manifest": "v/2.46.json"
-    },
-    {
-      "version": "2.45",
-      "notes": "YENİ: Yedekten geri yükleme. Ayarlar → Dosya Konumları → 'Yedekten Geri Yükle' ile yedeklerinizi (tarih, boyut ve kayıt sayısıyla) görüp seçtiğinizi geri yükleyebilirsiniz; mevcut veritabanınız önce güvenlik kopyası olarak saklanır.\nEski sürümlerden gelen bazı veritabanlarında raporların ve geçmişin açılmamasına yol açan eksik sütun, açılışta otomatik onarılıyor.\nRapor yazdırma: A4 yatay sayfa düzeni artık korunuyor (bazı yazıcılarda sütunlar kırpılıyordu).\nGeçmiş kaydı düzenleme: plaka boş bırakıldığında verilen uyarıda diğer değişiklikleriniz artık kaybolmuyor.\nTartım akışı: tamamlanan araç bekleyenler listesinden hemen düşüyor; silinmiş veya başka yerde tamamlanmış bir fiş seçildiğinde işlem en başta anlaşılır bir mesajla durduruluyor. Kayıt sonrası bekleme kısaldı.\nAğırlık negatif göründüğünde (terazi sıfırlanmamış olabilir) kayıttan önce uyarı veriliyor.\nKüçük kağıtlarda fiş yazısı daha okunaklı basılıyor.\nKamera: uzun kullanımda bellek büyümesi giderildi; kapanışta kamera düzgün serbest bırakılıyor.",
-      "manifest": "v/2.45.json"
     }
   ],
-  "sig": "248fe8e7d7eb1f8046ab66f06efe45702ec6cd9008fdca92b4dfdb6e60d9d1fd",
-  "sig2": "9210ae62aff91daff71acd62f2e068dfda96cd3eed481c6ca79f938fbbec5fb77e67c6b0c9759d926c36c54a8d45e846fd2c5563cac7537149ae22f9de2da50f"
+  "sig": "aefe48fd41d396d223e78348357335dde10a7a67c6c0c4c655ae020c4573428f",
+  "sig2": "ffbc47a8efddf8414139e1cf09da9bd4975e9a016fda18498b3900eb6e9ff2120e4187232da006db8887629ac474ed39b4eaebfcc6c9976fcf04af8eca7c9909"
 }
