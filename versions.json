@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "2.52",
+      "notes": {
+        "tr": "• Ayarlar penceresinde sekmeler arasında hızlı geçiş yapılırken oluşan donma giderildi.\n• Korumalı ayar sekmelerine (Kameralar, Kullanıcılar, Yazıcı vb.) fare tekerleğiyle erişim kodu sorulmadan geçilebilmesi engellendi.",
+        "en": "• Fixed a freeze that could occur when quickly switching between tabs in the Settings window.\n• Fixed protected settings tabs (Cameras, Users, Printer, etc.) being reachable via mouse-wheel scrolling without the access code prompt.",
+        "ar": "• عولج تجمّد كان يحدث عند التنقّل السريع بين تبويبات نافذة الإعدادات.\n• مُنع الوصول إلى تبويبات الإعدادات المحمية (الكاميرات، المستخدمون، الطابعة...) عبر عجلة الفأرة دون طلب رمز الوصول."
+      },
+      "manifest": "v/2.52.json"
+    },
+    {
       "version": "2.51",
       "notes": {
         "tr": "• Kamera kullanılırken programın zaman zaman donması giderildi.",
@@ -35,17 +44,8 @@
         "ar": "• تعزيز أمان التحديث: يُعاد التحقّق من الملفات قبل نسخها مباشرة، فلم يعد بالإمكان تثبيت ملف تلف أثناء الانتظار.\n• إذا انقطع التحديث (بسبب انقطاع الكهرباء مثلاً)، يلاحظ البرنامج ذلك عند التشغيل التالي ويعرض إكماله من حيث توقّف — دون إعادة تنزيل.\n• تحسين السلوك على الاتصالات الضعيفة أو المتقطّعة.\n• رسائل التحديث صارت أوضح."
       },
       "manifest": "v/2.48.json"
-    },
-    {
-      "version": "2.47",
-      "notes": {
-        "tr": "• Güncelleme sistemi baştan sona yenilendi: güncellemeler artık güvenilir biçimde kuruluyor, ilerleme doğru gösteriliyor ve bir sorun çıkarsa programınız hiç değişmeden kalıyor.\n• Güncelleme mesajları sadeleşti: ne yapmanız gerektiğini doğrudan söylüyor.\n• Güncelleyici penceresi artık her durumda kapanıyor.\n• Kamera sayfaları arasında geçerken oluşan kapanma sorunu giderildi.\n• «1. TARTIM» artık doğrudan tartım formunu açıyor; sık kullanılan araç listesi plaka/firma/malzeme alanlarındaki «⋯» düğmesinde.\n• Küçük arayüz iyileştirmeleri.",
-        "en": "• The update system was rebuilt: updates now install reliably, progress is shown accurately, and if anything goes wrong your program is left completely unchanged.\n• Update messages are simpler and tell you exactly what to do.\n• The updater window now always closes.\n• Fixed a shutdown that could happen when switching camera pages.\n• \"1st WEIGHING\" now opens the weighing form directly; the frequent-vehicle list is on the \"⋯\" button in the plate/company/material fields.\n• Minor interface improvements.",
-        "ar": "• أُعيد بناء نظام التحديث: صار التحديث يُثبَّت بشكل موثوق، ويُعرض التقدّم بدقّة، وإذا حدث أي خلل يبقى برنامجك كما هو دون أي تغيير.\n• رسائل التحديث صارت أوضح وتقول لك مباشرة ما عليك فعله.\n• نافذة المحدِّث صارت تُغلق في كل الحالات.\n• عولجت مشكلة إغلاق البرنامج عند التنقّل بين صفحات الكاميرات.\n• زر «الوزنة الأولى» صار يفتح نموذج الوزن مباشرة؛ وقائمة المركبات الأكثر استخداماً موجودة في زر «⋯» داخل حقول اللوحة/الشركة/الحمولة.\n• تحسينات بسيطة في الواجهة."
-      },
-      "manifest": "v/2.47.json"
     }
   ],
-  "sig": "9079df75df8fd945695291b063798d42f04e769c4f6044b7fc7cab34c5e332e4",
-  "sig2": "c6c4fdea9313364dd65bbf2b88b4c73c2fd660e031b8ce3b6fa4e81903ac145a6326cff8a0d996dd4b1cd221dc27bf588c042279126ce5215ff023b90c05720c"
+  "sig": "08b31992fff30f24a8ada73e680b3b72bc93ffc7909e69d30a6069b44de3b81d",
+  "sig2": "ebb5bc80e3fa131b59eaa48926f840b8aba72709d23bf981a00d08c347b1fdffa38e7dea0ab97227aca653f4921685b9079b6314a581d798c7047c215d115d02"
 }
