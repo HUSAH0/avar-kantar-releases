@@ -1,9 +1,9 @@
 {
-  "version": "2.52",
+  "version": "2.53",
   "notes": {
-    "tr": "• Ayarlar penceresinde sekmeler arasında hızlı geçiş yapılırken oluşan donma giderildi.\n• Korumalı ayar sekmelerine (Kameralar, Kullanıcılar, Yazıcı vb.) fare tekerleğiyle erişim kodu sorulmadan geçilebilmesi engellendi.",
-    "en": "• Fixed a freeze that could occur when quickly switching between tabs in the Settings window.\n• Fixed protected settings tabs (Cameras, Users, Printer, etc.) being reachable via mouse-wheel scrolling without the access code prompt.",
-    "ar": "• عولج تجمّد كان يحدث عند التنقّل السريع بين تبويبات نافذة الإعدادات.\n• مُنع الوصول إلى تبويبات الإعدادات المحمية (الكاميرات، المستخدمون، الطابعة...) عبر عجلة الفأرة دون طلب رمز الوصول."
+    "tr": "• Kameralar artık Ayarlar › Kameralar sekmesindeki «Kameraları Tara» düğmesiyle aranıyor. Kartlar ve önizlemeler bu düğmeye basınca gelir.\n• Kameralar kullanılırken programın donması giderildi.",
+    "en": "• Cameras are now searched with the «Scan Cameras» button in Settings › Cameras. The cards and previews appear when you press it.\n• Fixed the program freezing while cameras were in use.",
+    "ar": "• صار البحث عن الكاميرات بزرّ «ابحث عن الكاميرات» في الإعدادات ← الكاميرات. تظهر البطاقات والمعاينات عند الضغط عليه.\n• عولج تجمّد البرنامج أثناء استخدام الكاميرات."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -169,8 +169,8 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "7248b2e5fd19ca54ead73304a7dc638d0d9a275d3a7fbc2aeb620aac294515cf",
-      "size": 30805504
+      "sha256": "39bcbe8100acb7efeaa8ada85a4d3000c52ee7afb2df9ee6aef3467a2977aaba",
+      "size": 30818816
     },
     {
       "path": "avcodec-61.dll",
@@ -649,7 +649,7 @@
     },
     {
       "path": "updater/AVAR Guncelleyici.exe",
-      "sha256": "fecb0840c5fc67240ac0c83551ba564308da478e3cd95f64895650765c3ac268",
+      "sha256": "180ce8fb42d9151fcade95a933ba389f2308d35e271a5e1e69578dc113d94dbe",
       "size": 11921920
     },
     {
@@ -953,6 +953,6 @@
       "size": 1051648
     }
   ],
-  "sig": "2c9df984c4a8ada76fa42b476d8615364ba59558e7a6456e6d216c1bea74d687",
-  "sig2": "9456679d4036c7ca86f6f464f11877dea489276d60a197c39a8aca5f2706e21c4e4825b771161a839fce25f8f68a23c62b4956507f34973855d09bf6928d0309"
+  "sig": "e3901470fa08f1be83b3585cbf3ba7bc61fbfff8ff1faec9e656a36a53b794a9",
+  "sig2": "fb320f508505dbd7ad0e32bea3d378ae44712ee8d827b007fadbfb8c64a32d6882a2918a4cf5e8f7bd4db1a3515c97375ab5f975cdba825b567df27cc896d50c"
 }
