@@ -1,9 +1,9 @@
 {
-  "version": "2.51",
+  "version": "2.52",
   "notes": {
-    "tr": "• Kamera kullanılırken programın zaman zaman donması giderildi.",
-    "en": "• Fixed the program freezing from time to time while a camera was in use.",
-    "ar": "• عولج تجمّد البرنامج من حين لآخر أثناء استخدام الكاميرا."
+    "tr": "• Ayarlar penceresinde sekmeler arasında hızlı geçiş yapılırken oluşan donma giderildi.\n• Korumalı ayar sekmelerine (Kameralar, Kullanıcılar, Yazıcı vb.) fare tekerleğiyle erişim kodu sorulmadan geçilebilmesi engellendi.",
+    "en": "• Fixed a freeze that could occur when quickly switching between tabs in the Settings window.\n• Fixed protected settings tabs (Cameras, Users, Printer, etc.) being reachable via mouse-wheel scrolling without the access code prompt.",
+    "ar": "• عولج تجمّد كان يحدث عند التنقّل السريع بين تبويبات نافذة الإعدادات.\n• مُنع الوصول إلى تبويبات الإعدادات المحمية (الكاميرات، المستخدمون، الطابعة...) عبر عجلة الفأرة دون طلب رمز الوصول."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -169,8 +169,8 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "26872798b76b2347bc1bcac979c1c3ab09c1772f911d165ea64accc2fa272cb7",
-      "size": 30797312
+      "sha256": "7248b2e5fd19ca54ead73304a7dc638d0d9a275d3a7fbc2aeb620aac294515cf",
+      "size": 30805504
     },
     {
       "path": "avcodec-61.dll",
@@ -649,7 +649,7 @@
     },
     {
       "path": "updater/AVAR Guncelleyici.exe",
-      "sha256": "48547dcaac760570d6b77d59b5a88d1c39d2b6ca4e57fe85e3ed56872a69b41f",
+      "sha256": "fecb0840c5fc67240ac0c83551ba564308da478e3cd95f64895650765c3ac268",
       "size": 11921920
     },
     {
@@ -953,6 +953,6 @@
       "size": 1051648
     }
   ],
-  "sig": "2f4c98ece3b02501c93f91c6d41862ccd4c633c05b025921d2fd76ac8711388c",
-  "sig2": "78c00e36b50a56e9bafb8545ab53eea2dd362f2ca2e1f6929983967afd6596a7d09125407dfc45ceff018f81a1e3c785735fa0ba3e9a807fbe59cb85c34c1b08"
+  "sig": "2c9df984c4a8ada76fa42b476d8615364ba59558e7a6456e6d216c1bea74d687",
+  "sig2": "9456679d4036c7ca86f6f464f11877dea489276d60a197c39a8aca5f2706e21c4e4825b771161a839fce25f8f68a23c62b4956507f34973855d09bf6928d0309"
 }
