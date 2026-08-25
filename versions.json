@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "2.54.1",
+      "notes": {
+        "tr": "• Ekran düzeni ayarları artık erişim kodu istemeden değiştirilebiliyor.\n• Güncelleme yarıda kalırsa program eski sürümüne eksiksiz geri dönüyor.",
+        "en": "• Screen layout settings no longer ask for an access code.\n• If an update is interrupted, the program returns completely to its previous version.",
+        "ar": "• إعدادات تخطيط الشاشة لم تعد تطلب رمز الوصول.\n• إذا انقطع التحديث، يعود البرنامج بالكامل إلى نسخته السابقة."
+      },
+      "manifest": "v/2.54.1.json"
+    },
+    {
       "version": "2.54",
       "notes": {
         "tr": "• Şifrenizi unutursanız artık destek hattından alacağınız tek kullanımlık bir kodla yeni şifre oluşturabilirsiniz.\n• Program kararlılığı iyileştirildi.",
@@ -35,17 +44,8 @@
         "ar": "• عولج تجمّد البرنامج من حين لآخر أثناء استخدام الكاميرا."
       },
       "manifest": "v/2.51.json"
-    },
-    {
-      "version": "2.50",
-      "notes": {
-        "tr": "• Yeni: Tartımlar kaydedilir kaydedilmez dış bir sisteme otomatik gönderilebiliyor (Ayarlar → Entegrasyon).\n• Yeni: Kameralar tek ekranda ızgara olarak izlenebiliyor (G tuşu).\n• Yeni: Görünüm ayarları — yazı boyutu ve sade mod (Ayarlar → Görünüm).\n• Güncelleme sistemi iyileştirildi.",
-        "en": "• New: Weighings can be sent automatically to an external system as soon as they are saved (Settings → Integration).\n• New: Cameras can be watched together in a grid on one screen (G key).\n• New: Appearance settings — text size and simple mode (Settings → Appearance).\n• Update system improvements.",
-        "ar": "• جديد: يمكن إرسال الأوزان تلقائياً إلى نظام خارجي فور حفظها (الإعدادات ← التكامل).\n• جديد: يمكن متابعة الكاميرات معاً كشبكة في شاشة واحدة (مفتاح G).\n• جديد: إعدادات المظهر — حجم الخط والوضع المبسّط (الإعدادات ← المظهر).\n• تحسينات على نظام التحديث."
-      },
-      "manifest": "v/2.50.json"
     }
   ],
-  "sig": "a0b06b64e06f56619957b4c1ec7bbea8e3ad7cb20f303e3740d3f323f375850b",
-  "sig2": "9e6aaf9252e16fd6754e1eed2eb4d2bfa681ed71a1d36ba6eb635faccd2985399b12f4615d1be169efc03e5052232cff7019fbc2475262fb0e4bdc86dad15000"
+  "sig": "ed449f3b7cd7fbd905ce68d28ee70b265d5fc72bf023bb70e7e72a2f08b14b48",
+  "sig2": "a1371c13101a6891d1cb7613528041c1733956ed1f153f85d09cd037b16fc0568b40aff2f311a29c707446066d834dc82367d98146c8a4e9e9479573df9f8902"
 }
