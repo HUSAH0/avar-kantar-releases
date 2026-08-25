@@ -1,9 +1,9 @@
 {
-  "version": "2.54",
+  "version": "2.54.1",
   "notes": {
-    "tr": "• Şifrenizi unutursanız artık destek hattından alacağınız tek kullanımlık bir kodla yeni şifre oluşturabilirsiniz.\n• Program kararlılığı iyileştirildi.",
-    "en": "• If you forget your password, you can now create a new one with a single-use code from support.\n• Stability improvements.",
-    "ar": "• إذا نسيت كلمة المرور، يمكنك الآن إنشاء واحدة جديدة برمز يُستعمل مرّة واحدة تحصل عليه من الدعم.\n• تحسينات في استقرار البرنامج."
+    "tr": "• Ekran düzeni ayarları artık erişim kodu istemeden değiştirilebiliyor.\n• Güncelleme yarıda kalırsa program eski sürümüne eksiksiz geri dönüyor.",
+    "en": "• Screen layout settings no longer ask for an access code.\n• If an update is interrupted, the program returns completely to its previous version.",
+    "ar": "• إعدادات تخطيط الشاشة لم تعد تطلب رمز الوصول.\n• إذا انقطع التحديث، يعود البرنامج بالكامل إلى نسخته السابقة."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -169,8 +169,8 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "62dc0456997ebd465c576208ddc630b00cb9dacd3d69793b1075b53d9831a018",
-      "size": 30970368
+      "sha256": "78911a65287f125334d948045a1393094414a1db0e5ff6e6fdd45e9b1cf1eaff",
+      "size": 30968832
     },
     {
       "path": "avcodec-61.dll",
@@ -649,8 +649,8 @@
     },
     {
       "path": "updater/AVAR Guncelleyici.exe",
-      "sha256": "f5191769208ea8a7b9d4c13b45aabc80667de6a0d9cdbaad937c5b243ebdce4a",
-      "size": 11960320
+      "sha256": "4579bac14bdb1407387849ca1931977b462b1e04183b31e20a5370396861b58c",
+      "size": 11962880
     },
     {
       "path": "updater/cryptography/hazmat/bindings/_rust.pyd",
@@ -953,6 +953,6 @@
       "size": 1051648
     }
   ],
-  "sig": "5db1e0d2ceca475de71f360b358578dff4e7eb3454b0f5e85320163958d04bf6",
-  "sig2": "d17c48b4d872e4011d97c8d9e59a000bdf6e114ed19e351d758451371b06cb9a645d3fb77bf1a4e075c64e7cf920f256d5f9508c80f9981a92c66a172513dd0a"
+  "sig": "40a0b64ec7d407444e61a7c543abd3403d8e161a8bcb688d31545594b8b5f3bc",
+  "sig2": "20fc125dc42efa3d7bfdd6fdcd2fbf0eb9050443d26c6f0a407b9a139e3c85a563acf46f16eddd8932bab50db4a86b38eccd293862717692ec158f4c44c4c20e"
 }
