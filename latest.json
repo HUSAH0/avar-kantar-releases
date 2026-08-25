@@ -1,9 +1,9 @@
 {
-  "version": "2.53",
+  "version": "2.54",
   "notes": {
-    "tr": "• Kameralar artık Ayarlar › Kameralar sekmesindeki «Kameraları Tara» düğmesiyle aranıyor. Kartlar ve önizlemeler bu düğmeye basınca gelir.\n• Kameralar kullanılırken programın donması giderildi.",
-    "en": "• Cameras are now searched with the «Scan Cameras» button in Settings › Cameras. The cards and previews appear when you press it.\n• Fixed the program freezing while cameras were in use.",
-    "ar": "• صار البحث عن الكاميرات بزرّ «ابحث عن الكاميرات» في الإعدادات ← الكاميرات. تظهر البطاقات والمعاينات عند الضغط عليه.\n• عولج تجمّد البرنامج أثناء استخدام الكاميرات."
+    "tr": "• Şifrenizi unutursanız artık destek hattından alacağınız tek kullanımlık bir kodla yeni şifre oluşturabilirsiniz.\n• Program kararlılığı iyileştirildi.",
+    "en": "• If you forget your password, you can now create a new one with a single-use code from support.\n• Stability improvements.",
+    "ar": "• إذا نسيت كلمة المرور، يمكنك الآن إنشاء واحدة جديدة برمز يُستعمل مرّة واحدة تحصل عليه من الدعم.\n• تحسينات في استقرار البرنامج."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -169,8 +169,8 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "39bcbe8100acb7efeaa8ada85a4d3000c52ee7afb2df9ee6aef3467a2977aaba",
-      "size": 30818816
+      "sha256": "62dc0456997ebd465c576208ddc630b00cb9dacd3d69793b1075b53d9831a018",
+      "size": 30970368
     },
     {
       "path": "avcodec-61.dll",
@@ -649,8 +649,8 @@
     },
     {
       "path": "updater/AVAR Guncelleyici.exe",
-      "sha256": "180ce8fb42d9151fcade95a933ba389f2308d35e271a5e1e69578dc113d94dbe",
-      "size": 11921920
+      "sha256": "f5191769208ea8a7b9d4c13b45aabc80667de6a0d9cdbaad937c5b243ebdce4a",
+      "size": 11960320
     },
     {
       "path": "updater/cryptography/hazmat/bindings/_rust.pyd",
@@ -953,6 +953,6 @@
       "size": 1051648
     }
   ],
-  "sig": "e3901470fa08f1be83b3585cbf3ba7bc61fbfff8ff1faec9e656a36a53b794a9",
-  "sig2": "fb320f508505dbd7ad0e32bea3d378ae44712ee8d827b007fadbfb8c64a32d6882a2918a4cf5e8f7bd4db1a3515c97375ab5f975cdba825b567df27cc896d50c"
+  "sig": "5db1e0d2ceca475de71f360b358578dff4e7eb3454b0f5e85320163958d04bf6",
+  "sig2": "d17c48b4d872e4011d97c8d9e59a000bdf6e114ed19e351d758451371b06cb9a645d3fb77bf1a4e075c64e7cf920f256d5f9508c80f9981a92c66a172513dd0a"
 }
