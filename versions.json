@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "2.55",
+      "notes": {
+        "tr": "• Bazı bilgisayarlarda girişten sonra beliren lisans ekranı sorunu giderildi.\n• Lisans süresi dolmak üzereyken uyarı artık program açıkken de gösteriliyor.\n• Parola kurtarma iyileştirildi; verilen yeni şifre fareyle seçilebiliyor.",
+        "en": "• Fixed the licence screen that appeared after login on some computers.\n• The licence expiry warning is now also shown while the program is running.\n• Password recovery improved; the new password can be selected with the mouse.",
+        "ar": "• عولجت مشكلة ظهور شاشة الترخيص بعد تسجيل الدخول على بعض الأجهزة.\n• تنبيه قرب انتهاء الترخيص صار يظهر أيضاً أثناء تشغيل البرنامج.\n• تحسّنت استعادة كلمة المرور، ويمكن تحديد كلمة المرور الجديدة بالفأرة."
+      },
+      "manifest": "v/2.55.json"
+    },
+    {
       "version": "2.54.1",
       "notes": {
         "tr": "• Ekran düzeni ayarları artık erişim kodu istemeden değiştirilebiliyor.\n• Güncelleme yarıda kalırsa program eski sürümüne eksiksiz geri dönüyor.",
@@ -35,17 +44,8 @@
         "ar": "• عولج تجمّد كان يحدث عند التنقّل السريع بين تبويبات نافذة الإعدادات.\n• مُنع الوصول إلى تبويبات الإعدادات المحمية (الكاميرات، المستخدمون، الطابعة...) عبر عجلة الفأرة دون طلب رمز الوصول."
       },
       "manifest": "v/2.52.json"
-    },
-    {
-      "version": "2.51",
-      "notes": {
-        "tr": "• Kamera kullanılırken programın zaman zaman donması giderildi.",
-        "en": "• Fixed the program freezing from time to time while a camera was in use.",
-        "ar": "• عولج تجمّد البرنامج من حين لآخر أثناء استخدام الكاميرا."
-      },
-      "manifest": "v/2.51.json"
     }
   ],
-  "sig": "ed449f3b7cd7fbd905ce68d28ee70b265d5fc72bf023bb70e7e72a2f08b14b48",
-  "sig2": "a1371c13101a6891d1cb7613528041c1733956ed1f153f85d09cd037b16fc0568b40aff2f311a29c707446066d834dc82367d98146c8a4e9e9479573df9f8902"
+  "sig": "71a23207f8ddbad5fbfd509918ab935a9a3ace967adf67efceed32863248099c",
+  "sig2": "0f08d3cf1920049d4529644bc04066039fe0d438867982b788acc2e0bb2ee5a9cb8d3274af8caa0a7a3ab52138c89463dd9f290a90aa305eb04f12d502a1ee05"
 }
