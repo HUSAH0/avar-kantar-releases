@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "2.56",
+      "notes": {
+        "tr": "• Yeni: Canlı Panel — tartımları, bekleyen araçları ve raporları tarayıcıdan izleyin (Ayarlar → Canlı Panel).\n• Yeni: Malzeme fiyatı girip günlük ve dönemlik ciroyu görebilirsiniz.\n• Kamera göstergesi artık doğru durumu gösteriyor.\n• Fiyat kutusu «8.750,00» yazımını da kabul ediyor.\n• Bazı veritabanlarında görülen açılış sorunu giderildi.",
+        "en": "• New: Live Panel — follow weighings, waiting vehicles and reports from your browser (Settings → Live Panel).\n• New: enter material prices and see daily and period revenue.\n• The camera indicator now shows the correct state.\n• The price box now also accepts the «8,750.00» format.\n• Fixed a start-up problem seen on some databases.",
+        "ar": "• جديد: اللوحة الحية — تابع التطبيقات والمركبات المنتظرة والتقارير من المتصفّح (الإعدادات ← اللوحة الحية).\n• جديد: أدخل أسعار المواد لترى عائد اليوم والفترة.\n• مؤشّر الكاميرا صار يعرض الحالة الصحيحة.\n• خانة السعر صارت تقبل صيغة «8.750,00» أيضاً.\n• عولجت مشكلة إقلاع كانت تظهر في بعض قواعد البيانات."
+      },
+      "manifest": "v/2.56.json"
+    },
+    {
       "version": "2.55",
       "notes": {
         "tr": "• Bazı bilgisayarlarda girişten sonra beliren lisans ekranı sorunu giderildi.\n• Lisans süresi dolmak üzereyken uyarı artık program açıkken de gösteriliyor.\n• Parola kurtarma iyileştirildi; verilen yeni şifre fareyle seçilebiliyor.",
@@ -35,17 +44,8 @@
         "ar": "• صار البحث عن الكاميرات بزرّ «ابحث عن الكاميرات» في الإعدادات ← الكاميرات. تظهر البطاقات والمعاينات عند الضغط عليه.\n• عولج تجمّد البرنامج أثناء استخدام الكاميرات."
       },
       "manifest": "v/2.53.json"
-    },
-    {
-      "version": "2.52",
-      "notes": {
-        "tr": "• Ayarlar penceresinde sekmeler arasında hızlı geçiş yapılırken oluşan donma giderildi.\n• Korumalı ayar sekmelerine (Kameralar, Kullanıcılar, Yazıcı vb.) fare tekerleğiyle erişim kodu sorulmadan geçilebilmesi engellendi.",
-        "en": "• Fixed a freeze that could occur when quickly switching between tabs in the Settings window.\n• Fixed protected settings tabs (Cameras, Users, Printer, etc.) being reachable via mouse-wheel scrolling without the access code prompt.",
-        "ar": "• عولج تجمّد كان يحدث عند التنقّل السريع بين تبويبات نافذة الإعدادات.\n• مُنع الوصول إلى تبويبات الإعدادات المحمية (الكاميرات، المستخدمون، الطابعة...) عبر عجلة الفأرة دون طلب رمز الوصول."
-      },
-      "manifest": "v/2.52.json"
     }
   ],
-  "sig": "71a23207f8ddbad5fbfd509918ab935a9a3ace967adf67efceed32863248099c",
-  "sig2": "0f08d3cf1920049d4529644bc04066039fe0d438867982b788acc2e0bb2ee5a9cb8d3274af8caa0a7a3ab52138c89463dd9f290a90aa305eb04f12d502a1ee05"
+  "sig": "8e0a22ff10a10143d8cf61d51340c042c306156fa334e78adaf78f799374320a",
+  "sig2": "321e6c49d989602c484d2f7945ad415f50644b667cb8e2b083053bb3b53f35ea93dc24b668ebf309c026c4434584aaf7d29f1ff30dd843bc4badc0670e142909"
 }
