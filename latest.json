@@ -1,9 +1,9 @@
 {
-  "version": "2.56",
+  "version": "2.57",
   "notes": {
-    "tr": "• Yeni: Canlı Panel — tartımları, bekleyen araçları ve raporları tarayıcıdan izleyin (Ayarlar → Canlı Panel).\n• Yeni: Malzeme fiyatı girip günlük ve dönemlik ciroyu görebilirsiniz.\n• Kamera göstergesi artık doğru durumu gösteriyor.\n• Fiyat kutusu «8.750,00» yazımını da kabul ediyor.\n• Bazı veritabanlarında görülen açılış sorunu giderildi.",
-    "en": "• New: Live Panel — follow weighings, waiting vehicles and reports from your browser (Settings → Live Panel).\n• New: enter material prices and see daily and period revenue.\n• The camera indicator now shows the correct state.\n• The price box now also accepts the «8,750.00» format.\n• Fixed a start-up problem seen on some databases.",
-    "ar": "• جديد: اللوحة الحية — تابع التطبيقات والمركبات المنتظرة والتقارير من المتصفّح (الإعدادات ← اللوحة الحية).\n• جديد: أدخل أسعار المواد لترى عائد اليوم والفترة.\n• مؤشّر الكاميرا صار يعرض الحالة الصحيحة.\n• خانة السعر صارت تقبل صيغة «8.750,00» أيضاً.\n• عولجت مشكلة إقلاع كانت تظهر في بعض قواعد البيانات."
+    "tr": "• Dil artık giriş ekranından seçilebiliyor.\n• Aynı plakayla ikinci bir giriş tartımı açılmak istenirse uyarı verilir; istenirse önceki kayıt silinir.\n• Yedekleme: «Şimdi Yedekle» düğmesi ve kaç yedek saklanacağı ayarı eklendi (Ayarlar → Dosya Konumları).\n• Ekran düzeni: durum ışıkları, alt şerit, form satırları ve grup başlıkları tek tek gizlenebiliyor.\n• «Son 5 tartım» satırına çift tıklayınca kaydın tamamı açılıyor.\n• Ağırlık göstergesi her görünümde tam görünüyor; yazı büyütme göstergeye de uygulanıyor.\n• «Görünüm» ve «Alanlar» ayarları yalnız yöneticide görünür.",
+    "en": "• The language can now be chosen on the login screen.\n• Opening a second entry weighing for the same plate now shows a warning; the earlier record can be deleted.\n• Backup: a «Back Up Now» button and a setting for how many backups to keep (Settings → File Locations).\n• Screen layout: status lights, the bottom bar, form rows and group titles can each be hidden.\n• Double-clicking a row in «Last 5 weighings» opens the full record.\n• The weight display now stays complete in every view, and text enlargement applies to it too.\n• The «Appearance» and «Fields» settings are visible to administrators only.",
+    "ar": "• يمكن الآن اختيار اللغة من شاشة الدخول.\n• عند فتح وزنة دخول ثانية بنفس اللوحة يظهر تنبيه، ويمكن حذف السجل السابق.\n• النسخ الاحتياطي: زر «انسخ الآن» وإعداد لعدد النسخ المحفوظة (الإعدادات ← أماكن الملفات).\n• ترتيب الشاشة: يمكن إخفاء أضواء الحالة والشريط السفلي وصفوف النموذج وعناوين المجموعات كلٌّ على حدة.\n• النقر المزدوج على صف في «آخر ٥ عمليات» يفتح السجل كاملاً.\n• شاشة الوزن تظهر كاملة في كل العروض، وتكبير الخط يُطبَّق عليها أيضاً.\n• إعدادات «المظهر» و«الحقول» تظهر للمدير فقط."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -174,8 +174,8 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "39d4aa770c6b3c4916c8e50a7ad3618c47f68fb6e7cb44dd234a6ff17e65049c",
-      "size": 33291264
+      "sha256": "3c5f97834d7f9696f85621a56d36ad8d84accd3b117022df6b6fd3d6225775fc",
+      "size": 33574400
     },
     {
       "path": "avcodec-61.dll",
@@ -659,8 +659,8 @@
     },
     {
       "path": "updater/AVAR Guncelleyici.exe",
-      "sha256": "b6efdce522a2c1b7cfc5415037a42f0011dd01d40db83cbd3defbd56dff30162",
-      "size": 12071424
+      "sha256": "8f9bbd6499fb4f2cfccbc9157ea0e477bccb6e9420f79235f00eb82c2d8f8558",
+      "size": 12073472
     },
     {
       "path": "updater/cryptography/hazmat/bindings/_rust.pyd",
@@ -963,6 +963,6 @@
       "size": 1051648
     }
   ],
-  "sig": "fcffe39d11ea9f4371cdfff6656745a36dd02a8a7a015731b481c9df85439b24",
-  "sig2": "654b33c3fdda83eb17d64b31ca0ae920c8d9d3b965de25d8003b221f19544adf2e1cbb708661f0f1f06cec4d91078c7b841f83af6914096b04689ba8627e1701"
+  "sig": "df2af13ba653706826b7ecfeb5ce3da7cb942bc5fa9c8d8c9219b530f882f1c9",
+  "sig2": "85bd0a75d4211d4f013e836065da82e24b54b47ceacbd40fcd3bdc75398b4c3d67a652095d4c726c81b92b1180081bce9da47d9a521a6dbdbce42a982f6bc402"
 }
