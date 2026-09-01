@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "2.57",
+      "notes": {
+        "tr": "• Dil artık giriş ekranından seçilebiliyor.\n• Aynı plakayla ikinci bir giriş tartımı açılmak istenirse uyarı verilir; istenirse önceki kayıt silinir.\n• Yedekleme: «Şimdi Yedekle» düğmesi ve kaç yedek saklanacağı ayarı eklendi (Ayarlar → Dosya Konumları).\n• Ekran düzeni: durum ışıkları, alt şerit, form satırları ve grup başlıkları tek tek gizlenebiliyor.\n• «Son 5 tartım» satırına çift tıklayınca kaydın tamamı açılıyor.\n• Ağırlık göstergesi her görünümde tam görünüyor; yazı büyütme göstergeye de uygulanıyor.\n• Kullanıcı yetkisi alt şeritte doğru yazıyor (Operatör / Admin / Yönetici).\n• «Görünüm» ve «Alanlar» ayarları yalnız yöneticide görünür.\n• Lisansınıza dâhil olmayan özellikler artık arayüzde de görünmüyor.",
+        "en": "• The language can now be chosen on the login screen.\n• Opening a second entry weighing for the same plate now shows a warning; the earlier record can be deleted.\n• Backup: a «Back Up Now» button and a setting for how many backups to keep (Settings → File Locations).\n• Screen layout: status lights, the bottom bar, form rows and group titles can each be hidden.\n• Double-clicking a row in «Last 5 weighings» opens the full record.\n• The weight display stays complete in every view, and text enlargement applies to it too.\n• The user role is now shown correctly in the bottom bar (Operator / Admin / Administrator).\n• The «Appearance» and «Fields» settings are visible to administrators only.\n• Features not included in your licence are no longer shown in the interface.",
+        "ar": "• يمكن الآن اختيار اللغة من شاشة الدخول.\n• عند فتح وزنة دخول ثانية بنفس اللوحة يظهر تنبيه، ويمكن حذف السجل السابق.\n• النسخ الاحتياطي: زر «انسخ الآن» وإعداد لعدد النسخ المحفوظة (الإعدادات ← أماكن الملفات).\n• ترتيب الشاشة: يمكن إخفاء أضواء الحالة والشريط السفلي وصفوف النموذج وعناوين المجموعات كلٌّ على حدة.\n• النقر المزدوج على صف في «آخر ٥ عمليات» يفتح السجل كاملاً.\n• شاشة الوزن تظهر كاملة في كل العروض، وتكبير الخط يُطبَّق عليها أيضاً.\n• صلاحية المستخدم تظهر بشكل صحيح في الشريط السفلي (مشغّل / مسؤول / مدير).\n• إعدادات «المظهر» و«الحقول» تظهر للمدير فقط.\n• الميزات غير المشمولة برخصتك لم تعد تظهر في الواجهة."
+      },
+      "manifest": "v/2.57.json"
+    },
+    {
       "version": "2.56",
       "notes": {
         "tr": "• Yeni: Canlı Panel — tartımları, bekleyen araçları ve raporları tarayıcıdan izleyin (Ayarlar → Canlı Panel).\n• Yeni: Malzeme fiyatı girip günlük ve dönemlik ciroyu görebilirsiniz.\n• Kamera göstergesi artık doğru durumu gösteriyor.\n• Fiyat kutusu «8.750,00» yazımını da kabul ediyor.\n• Bazı veritabanlarında görülen açılış sorunu giderildi.",
@@ -35,17 +44,8 @@
         "ar": "• إذا نسيت كلمة المرور، يمكنك الآن إنشاء واحدة جديدة برمز يُستعمل مرّة واحدة تحصل عليه من الدعم.\n• تحسينات في استقرار البرنامج."
       },
       "manifest": "v/2.54.json"
-    },
-    {
-      "version": "2.53",
-      "notes": {
-        "tr": "• Kameralar artık Ayarlar › Kameralar sekmesindeki «Kameraları Tara» düğmesiyle aranıyor. Kartlar ve önizlemeler bu düğmeye basınca gelir.\n• Kameralar kullanılırken programın donması giderildi.",
-        "en": "• Cameras are now searched with the «Scan Cameras» button in Settings › Cameras. The cards and previews appear when you press it.\n• Fixed the program freezing while cameras were in use.",
-        "ar": "• صار البحث عن الكاميرات بزرّ «ابحث عن الكاميرات» في الإعدادات ← الكاميرات. تظهر البطاقات والمعاينات عند الضغط عليه.\n• عولج تجمّد البرنامج أثناء استخدام الكاميرات."
-      },
-      "manifest": "v/2.53.json"
     }
   ],
-  "sig": "8e0a22ff10a10143d8cf61d51340c042c306156fa334e78adaf78f799374320a",
-  "sig2": "321e6c49d989602c484d2f7945ad415f50644b667cb8e2b083053bb3b53f35ea93dc24b668ebf309c026c4434584aaf7d29f1ff30dd843bc4badc0670e142909"
+  "sig": "4b3763c998dbb89f19853eb1e8c328b29dd9f4af1f5b68d525805d491c37ff9c",
+  "sig2": "e4da82954ebff92007cda122c986b05af7b9d527f7049279d151008349df917060e38e046fe5fd0643de949fd59fcd157c3acec9ad35efb0ed59351908940804"
 }
