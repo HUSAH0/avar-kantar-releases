@@ -1,9 +1,9 @@
 {
-  "version": "2.56",
+  "version": "2.57",
   "notes": {
-    "tr": "• Yeni: Canlı Panel — tartımları, bekleyen araçları ve raporları tarayıcıdan izleyin (Ayarlar → Canlı Panel).\n• Yeni: Malzeme fiyatı girip günlük ve dönemlik ciroyu görebilirsiniz.\n• Kamera göstergesi artık doğru durumu gösteriyor.\n• Fiyat kutusu «8.750,00» yazımını da kabul ediyor.\n• Bazı veritabanlarında görülen açılış sorunu giderildi.",
-    "en": "• New: Live Panel — follow weighings, waiting vehicles and reports from your browser (Settings → Live Panel).\n• New: enter material prices and see daily and period revenue.\n• The camera indicator now shows the correct state.\n• The price box now also accepts the «8,750.00» format.\n• Fixed a start-up problem seen on some databases.",
-    "ar": "• جديد: اللوحة الحية — تابع التطبيقات والمركبات المنتظرة والتقارير من المتصفّح (الإعدادات ← اللوحة الحية).\n• جديد: أدخل أسعار المواد لترى عائد اليوم والفترة.\n• مؤشّر الكاميرا صار يعرض الحالة الصحيحة.\n• خانة السعر صارت تقبل صيغة «8.750,00» أيضاً.\n• عولجت مشكلة إقلاع كانت تظهر في بعض قواعد البيانات."
+    "tr": "• Dil artık giriş ekranından seçilebiliyor.\n• Aynı plakayla ikinci bir giriş tartımı açılmak istenirse uyarı verilir; istenirse önceki kayıt silinir.\n• Yedekleme: «Şimdi Yedekle» düğmesi ve kaç yedek saklanacağı ayarı eklendi (Ayarlar → Dosya Konumları).\n• Ekran düzeni: durum ışıkları, alt şerit, form satırları ve grup başlıkları tek tek gizlenebiliyor.\n• «Son 5 tartım» satırına çift tıklayınca kaydın tamamı açılıyor.\n• Ağırlık göstergesi her görünümde tam görünüyor; yazı büyütme göstergeye de uygulanıyor.\n• Kullanıcı yetkisi alt şeritte doğru yazıyor (Operatör / Admin / Yönetici).\n• «Görünüm» ve «Alanlar» ayarları yalnız yöneticide görünür.\n• Lisansınıza dâhil olmayan özellikler artık arayüzde de görünmüyor.",
+    "en": "• The language can now be chosen on the login screen.\n• Opening a second entry weighing for the same plate now shows a warning; the earlier record can be deleted.\n• Backup: a «Back Up Now» button and a setting for how many backups to keep (Settings → File Locations).\n• Screen layout: status lights, the bottom bar, form rows and group titles can each be hidden.\n• Double-clicking a row in «Last 5 weighings» opens the full record.\n• The weight display stays complete in every view, and text enlargement applies to it too.\n• The user role is now shown correctly in the bottom bar (Operator / Admin / Administrator).\n• The «Appearance» and «Fields» settings are visible to administrators only.\n• Features not included in your licence are no longer shown in the interface.",
+    "ar": "• يمكن الآن اختيار اللغة من شاشة الدخول.\n• عند فتح وزنة دخول ثانية بنفس اللوحة يظهر تنبيه، ويمكن حذف السجل السابق.\n• النسخ الاحتياطي: زر «انسخ الآن» وإعداد لعدد النسخ المحفوظة (الإعدادات ← أماكن الملفات).\n• ترتيب الشاشة: يمكن إخفاء أضواء الحالة والشريط السفلي وصفوف النموذج وعناوين المجموعات كلٌّ على حدة.\n• النقر المزدوج على صف في «آخر ٥ عمليات» يفتح السجل كاملاً.\n• شاشة الوزن تظهر كاملة في كل العروض، وتكبير الخط يُطبَّق عليها أيضاً.\n• صلاحية المستخدم تظهر بشكل صحيح في الشريط السفلي (مشغّل / مسؤول / مدير).\n• إعدادات «المظهر» و«الحقول» تظهر للمدير فقط.\n• الميزات غير المشمولة برخصتك لم تعد تظهر في الواجهة."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -174,8 +174,8 @@
     },
     {
       "path": "AVAR Kantar.exe",
-      "sha256": "39d4aa770c6b3c4916c8e50a7ad3618c47f68fb6e7cb44dd234a6ff17e65049c",
-      "size": 33291264
+      "sha256": "a963ae51652a110d56da092c7931d22934a2479af20b3d342a70395e0d72547c",
+      "size": 33582080
     },
     {
       "path": "avcodec-61.dll",
@@ -659,8 +659,8 @@
     },
     {
       "path": "updater/AVAR Guncelleyici.exe",
-      "sha256": "b6efdce522a2c1b7cfc5415037a42f0011dd01d40db83cbd3defbd56dff30162",
-      "size": 12071424
+      "sha256": "2c0a82beaf2e481b9ff19b1e3fa912c8ad57fec596c2571aa9bd7290a333d547",
+      "size": 12073472
     },
     {
       "path": "updater/cryptography/hazmat/bindings/_rust.pyd",
@@ -963,6 +963,6 @@
       "size": 1051648
     }
   ],
-  "sig": "fcffe39d11ea9f4371cdfff6656745a36dd02a8a7a015731b481c9df85439b24",
-  "sig2": "654b33c3fdda83eb17d64b31ca0ae920c8d9d3b965de25d8003b221f19544adf2e1cbb708661f0f1f06cec4d91078c7b841f83af6914096b04689ba8627e1701"
+  "sig": "ac2d4fb260173409b8b6c49389491ade2ffb6772e436d53aed41da7c8387c042",
+  "sig2": "bf63d213cbe6c82288a4caad3ca1cdbd07ffe986e7c24b29e837a29bd55b11fe839d2932f20c6f6c8ce6a5dbe7c4b04e268176062b686552540526b0dc3aa500"
 }
