@@ -1,9 +1,9 @@
 {
-  "version": "2.57",
+  "version": "2.57.1",
   "notes": {
-    "tr": "• Dil artık giriş ekranından seçilebiliyor.\n• Aynı plakayla ikinci bir giriş tartımı açılmak istenirse uyarı verilir; istenirse önceki kayıt silinir.\n• Yedekleme: «Şimdi Yedekle» düğmesi ve kaç yedek saklanacağı ayarı eklendi (Ayarlar → Dosya Konumları).\n• Ekran düzeni: durum ışıkları, alt şerit, form satırları ve grup başlıkları tek tek gizlenebiliyor.\n• «Son 5 tartım» satırına çift tıklayınca kaydın tamamı açılıyor.\n• Ağırlık göstergesi her görünümde tam görünüyor; yazı büyütme göstergeye de uygulanıyor.\n• Kullanıcı yetkisi alt şeritte doğru yazıyor (Operatör / Admin / Yönetici).\n• «Görünüm» ve «Alanlar» ayarları yalnız yöneticide görünür.\n• Lisansınıza dâhil olmayan özellikler artık arayüzde de görünmüyor.",
-    "en": "• The language can now be chosen on the login screen.\n• Opening a second entry weighing for the same plate now shows a warning; the earlier record can be deleted.\n• Backup: a «Back Up Now» button and a setting for how many backups to keep (Settings → File Locations).\n• Screen layout: status lights, the bottom bar, form rows and group titles can each be hidden.\n• Double-clicking a row in «Last 5 weighings» opens the full record.\n• The weight display stays complete in every view, and text enlargement applies to it too.\n• The user role is now shown correctly in the bottom bar (Operator / Admin / Administrator).\n• The «Appearance» and «Fields» settings are visible to administrators only.\n• Features not included in your licence are no longer shown in the interface.",
-    "ar": "• يمكن الآن اختيار اللغة من شاشة الدخول.\n• عند فتح وزنة دخول ثانية بنفس اللوحة يظهر تنبيه، ويمكن حذف السجل السابق.\n• النسخ الاحتياطي: زر «انسخ الآن» وإعداد لعدد النسخ المحفوظة (الإعدادات ← أماكن الملفات).\n• ترتيب الشاشة: يمكن إخفاء أضواء الحالة والشريط السفلي وصفوف النموذج وعناوين المجموعات كلٌّ على حدة.\n• النقر المزدوج على صف في «آخر ٥ عمليات» يفتح السجل كاملاً.\n• شاشة الوزن تظهر كاملة في كل العروض، وتكبير الخط يُطبَّق عليها أيضاً.\n• صلاحية المستخدم تظهر بشكل صحيح في الشريط السفلي (مشغّل / مسؤول / مدير).\n• إعدادات «المظهر» و«الحقول» تظهر للمدير فقط.\n• الميزات غير المشمولة برخصتك لم تعد تظهر في الواجهة."
+    "tr": "• Entegrasyona gönderilen kamera görüntüsü artık bilgisayarda da saklanıyor. Geçmiş ekranında kayda sağ tıklayıp «Gönderilen görüntüyü aç» ile açabilirsiniz.\n• Arşiv klasörünü ve arşivlemenin açık/kapalı olmasını Ayarlar → Dosya Konumları'ndan seçebilirsiniz.\n• Canlı panelde kayıt satırındaki yeşil işaret o tartımın görüntüsü olduğunu gösterir; tıklayınca görüntü açılır.",
+    "en": "• The camera image sent to the integration is now also kept on this computer. Right-click a record on the History screen and choose “Open sent image”.\n• Choose the archive folder, and turn archiving on or off, under Settings → File Locations.\n• In the live panel, the green mark on a record row means that weighing has an image; click it to open the image.",
+    "ar": "• صورة الكاميرا المُرسلة إلى التكامل صارت تُحفَظ على هذا الجهاز أيضاً. من شاشة السجل، انقر بزر الفأرة الأيمن على السجل ثم «افتح الصورة المُرسلة».\n• يمكنك اختيار مجلد الأرشيف وتفعيل الأرشفة أو إيقافها من الإعدادات ← مواقع الملفات.\n• في اللوحة الحية، العلامة الخضراء في سطر السجل تعني أن لهذه الوزنة صورة؛ انقر عليها لفتح الصورة."
   },
   "blob_base": "https://raw.githubusercontent.com/HUSAH0/avar-kantar-releases/main/blobs",
   "files": [
@@ -173,9 +173,14 @@
       "size": 400215
     },
     {
+      "path": "assets/logo/avar_logo_mid.png",
+      "sha256": "acae43f34a40079b9aa06e7a0cbdf877eb24147b767eea2d7c037803a47414e2",
+      "size": 112550
+    },
+    {
       "path": "AVAR Kantar.exe",
-      "sha256": "a963ae51652a110d56da092c7931d22934a2479af20b3d342a70395e0d72547c",
-      "size": 33582080
+      "sha256": "863dad10e5a99039aaacf8ac92376d89a9fdc0664c618851fcb27780b3861376",
+      "size": 34146816
     },
     {
       "path": "avcodec-61.dll",
@@ -659,8 +664,8 @@
     },
     {
       "path": "updater/AVAR Guncelleyici.exe",
-      "sha256": "2c0a82beaf2e481b9ff19b1e3fa912c8ad57fec596c2571aa9bd7290a333d547",
-      "size": 12073472
+      "sha256": "154ffbfbeb244868fddc3b5c3bcf1f59c87b8ceb10764694604db6f94cd592b7",
+      "size": 12106752
     },
     {
       "path": "updater/cryptography/hazmat/bindings/_rust.pyd",
@@ -963,6 +968,6 @@
       "size": 1051648
     }
   ],
-  "sig": "ac2d4fb260173409b8b6c49389491ade2ffb6772e436d53aed41da7c8387c042",
-  "sig2": "bf63d213cbe6c82288a4caad3ca1cdbd07ffe986e7c24b29e837a29bd55b11fe839d2932f20c6f6c8ce6a5dbe7c4b04e268176062b686552540526b0dc3aa500"
+  "sig": "c174ff0b49930814f628d54642735b2e2442314be11217caa57939ef21955815",
+  "sig2": "495187ef2f8717695ec28cdd02c88da0871570fd7a4dabae850ecdcbd185d692dd7ff9dbb4112a621d7733fedbe009a5d8a5f5ce2d852c0dc3b1dc29b897a50e"
 }
