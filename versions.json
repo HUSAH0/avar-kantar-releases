@@ -1,6 +1,15 @@
 {
   "versions": [
     {
+      "version": "2.57.1",
+      "notes": {
+        "tr": "• Entegrasyona gönderilen kamera görüntüsü artık bilgisayarda da saklanıyor. Geçmiş ekranında kayda sağ tıklayıp «Gönderilen görüntüyü aç» ile açabilirsiniz.\n• Arşiv klasörünü ve arşivlemenin açık/kapalı olmasını Ayarlar → Dosya Konumları'ndan seçebilirsiniz.\n• Canlı panelde kayıt satırındaki yeşil işaret o tartımın görüntüsü olduğunu gösterir; tıklayınca görüntü açılır.",
+        "en": "• The camera image sent to the integration is now also kept on this computer. Right-click a record on the History screen and choose “Open sent image”.\n• Choose the archive folder, and turn archiving on or off, under Settings → File Locations.\n• In the live panel, the green mark on a record row means that weighing has an image; click it to open the image.",
+        "ar": "• صورة الكاميرا المُرسلة إلى التكامل صارت تُحفَظ على هذا الجهاز أيضاً. من شاشة السجل، انقر بزر الفأرة الأيمن على السجل ثم «افتح الصورة المُرسلة».\n• يمكنك اختيار مجلد الأرشيف وتفعيل الأرشفة أو إيقافها من الإعدادات ← مواقع الملفات.\n• في اللوحة الحية، العلامة الخضراء في سطر السجل تعني أن لهذه الوزنة صورة؛ انقر عليها لفتح الصورة."
+      },
+      "manifest": "v/2.57.1.json"
+    },
+    {
       "version": "2.57",
       "notes": {
         "tr": "• Dil artık giriş ekranından seçilebiliyor.\n• Aynı plakayla ikinci bir giriş tartımı açılmak istenirse uyarı verilir; istenirse önceki kayıt silinir.\n• Yedekleme: «Şimdi Yedekle» düğmesi ve kaç yedek saklanacağı ayarı eklendi (Ayarlar → Dosya Konumları).\n• Ekran düzeni: durum ışıkları, alt şerit, form satırları ve grup başlıkları tek tek gizlenebiliyor.\n• «Son 5 tartım» satırına çift tıklayınca kaydın tamamı açılıyor.\n• Ağırlık göstergesi her görünümde tam görünüyor; yazı büyütme göstergeye de uygulanıyor.\n• Kullanıcı yetkisi alt şeritte doğru yazıyor (Operatör / Admin / Yönetici).\n• «Görünüm» ve «Alanlar» ayarları yalnız yöneticide görünür.\n• Lisansınıza dâhil olmayan özellikler artık arayüzde de görünmüyor.",
@@ -35,17 +44,8 @@
         "ar": "• إعدادات تخطيط الشاشة لم تعد تطلب رمز الوصول.\n• إذا انقطع التحديث، يعود البرنامج بالكامل إلى نسخته السابقة."
       },
       "manifest": "v/2.54.1.json"
-    },
-    {
-      "version": "2.54",
-      "notes": {
-        "tr": "• Şifrenizi unutursanız artık destek hattından alacağınız tek kullanımlık bir kodla yeni şifre oluşturabilirsiniz.\n• Program kararlılığı iyileştirildi.",
-        "en": "• If you forget your password, you can now create a new one with a single-use code from support.\n• Stability improvements.",
-        "ar": "• إذا نسيت كلمة المرور، يمكنك الآن إنشاء واحدة جديدة برمز يُستعمل مرّة واحدة تحصل عليه من الدعم.\n• تحسينات في استقرار البرنامج."
-      },
-      "manifest": "v/2.54.json"
     }
   ],
-  "sig": "4b3763c998dbb89f19853eb1e8c328b29dd9f4af1f5b68d525805d491c37ff9c",
-  "sig2": "e4da82954ebff92007cda122c986b05af7b9d527f7049279d151008349df917060e38e046fe5fd0643de949fd59fcd157c3acec9ad35efb0ed59351908940804"
+  "sig": "ed98f0a5440a36c6a817bf167b3e9e79d3bbecbfd23fcc29d3b2cfbce4cc8b0c",
+  "sig2": "af10c3c30c8811d0ed300bcf9a01da560258f853df09c1650fd1013f7c7387f581f9602b6dba4f00fba7c60c0e32f7b17b540eeab611f5e2a78f4118573e5c04"
 }
