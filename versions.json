@@ -1,6 +1,16 @@
 {
   "versions": [
     {
+      "version": "2.60",
+      "notes": {
+        "tr": "• İsteğe bağlı ekran kilidi: belirlenen süre işlem yapılmazsa ekran kilitlenir, kendi şifrenizle açılır (Ayarlar › Kullanıcılar)\n• Güvenlik iyileştirmeleri: yöneticiler «Kayıtları Denetle» ile kayıtların sonradan değiştirilip değiştirilmediğini kontrol edebilir\n• Uzun listeler (plaka seçici, cariler) artık anında açılır\n• Özel temalar: renkleri kendi zevkinize göre ayarlayın\n• Yazdırma iyileştirmeleri: fiş düzeni her kâğıt boyutu ve yönü için ayrı ayarlanır, logo ve firma başlığı eklenebilir\n• Performans iyileştirmeleri: daha hızlı ve daha kararlı çalışma",
+        "en": "• Optional screen lock: the screen locks after a set period of inactivity and opens with your own password (Settings › Users)\n• Security improvements: administrators can use \"Check Records\" to verify that records were not altered afterwards\n• Long lists (plate picker, accounts) now open instantly\n• Custom themes: set the colours to your own taste\n• Printing improvements: the receipt layout is set separately for each paper size and orientation, with logo and company header\n• Performance improvements: faster and more stable",
+        "ar": "• قفل شاشة اختياري: تُقفل الشاشة بعد مدة محددة دون استخدام وتُفتح بكلمة مرورك (الإعدادات › المستخدمون)\n• تحسينات أمنية: يستطيع المدير عبر «فحص السجلات» التأكد من أن السجلات لم تُعدَّل لاحقاً\n• القوائم الطويلة (منتقي اللوحات، الحسابات) تُفتح فوراً\n• ثيمات مخصصة: اضبط الألوان على ذوقك\n• تحسين الطباعة: تخطيط الإيصال يُضبط لكل مقاس ورق واتجاه على حدة، مع إمكانية إضافة الشعار وترويسة الشركة\n• تحسينات على الأداء: عمل أسرع وأكثر ثباتاً",
+        "ru": "• Необязательная блокировка экрана: экран блокируется после заданного времени бездействия и открывается вашим паролем (Настройки › Пользователи)\n• Улучшения безопасности: администратор может с помощью «Проверить записи» убедиться, что записи не изменялись задним числом\n• Длинные списки (выбор номера, контрагенты) теперь открываются мгновенно\n• Пользовательские темы: настройте цвета по своему вкусу\n• Улучшения печати: макет чека настраивается отдельно для каждого размера и ориентации бумаги, можно добавить логотип и шапку компании\n• Улучшения производительности: быстрее и стабильнее"
+      },
+      "manifest": "v/2.60.json"
+    },
+    {
       "version": "2.57.1",
       "notes": {
         "tr": "• Entegrasyona gönderilen kamera görüntüsü artık bilgisayarda da saklanıyor. Geçmiş ekranında kayda sağ tıklayıp «Gönderilen görüntüyü aç» ile açabilirsiniz.\n• Arşiv klasörünü ve arşivlemenin açık/kapalı olmasını Ayarlar → Dosya Konumları'ndan seçebilirsiniz.\n• Canlı panelde kayıt satırındaki yeşil işaret o tartımın görüntüsü olduğunu gösterir; tıklayınca görüntü açılır.",
@@ -35,17 +45,8 @@
         "ar": "• عولجت مشكلة ظهور شاشة الترخيص بعد تسجيل الدخول على بعض الأجهزة.\n• تنبيه قرب انتهاء الترخيص صار يظهر أيضاً أثناء تشغيل البرنامج.\n• تحسّنت استعادة كلمة المرور، ويمكن تحديد كلمة المرور الجديدة بالفأرة."
       },
       "manifest": "v/2.55.json"
-    },
-    {
-      "version": "2.54.1",
-      "notes": {
-        "tr": "• Ekran düzeni ayarları artık erişim kodu istemeden değiştirilebiliyor.\n• Güncelleme yarıda kalırsa program eski sürümüne eksiksiz geri dönüyor.",
-        "en": "• Screen layout settings no longer ask for an access code.\n• If an update is interrupted, the program returns completely to its previous version.",
-        "ar": "• إعدادات تخطيط الشاشة لم تعد تطلب رمز الوصول.\n• إذا انقطع التحديث، يعود البرنامج بالكامل إلى نسخته السابقة."
-      },
-      "manifest": "v/2.54.1.json"
     }
   ],
-  "sig": "ed98f0a5440a36c6a817bf167b3e9e79d3bbecbfd23fcc29d3b2cfbce4cc8b0c",
-  "sig2": "af10c3c30c8811d0ed300bcf9a01da560258f853df09c1650fd1013f7c7387f581f9602b6dba4f00fba7c60c0e32f7b17b540eeab611f5e2a78f4118573e5c04"
+  "sig": "bba588d1a1be3f5e6776cc3e2c5fa80a6994c1f4d95bf9ae46a9fc45037c4196",
+  "sig2": "d8e3a1005362a1fba2430c4d3c0de9b425431c43631d97f7407892fb757a191de2e385b9dba06c9403eb3a5605cdcb3a977bbe915d2a35a015135d95e74a0b04"
 }
